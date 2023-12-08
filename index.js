@@ -142,7 +142,7 @@ const firstLine = document.querySelectorAll(".about-content h2 span")
 const secondLine =document.querySelector(".about-title span")
 gsap.to([firstLine,secondLine],{scrollTrigger:{
     trigger:".about-title",
-    start:"top 40%",
+    start:"top 20%",
     end:"bottom bottom",
     ease:"Power3.inOut",
 },
@@ -152,7 +152,7 @@ duration:1,
 opacity:1})
 gsap.to(".about .btn",{scrollTrigger:{
     trigger:".about-title",
-    start:"top 40%",
+    start:"top 20%",
     end:"bottom bottom",
     ease:"power2",
 },width:"10rem",scale:1,duration:1})
