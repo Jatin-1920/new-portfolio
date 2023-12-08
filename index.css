@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: j1;
+    src: url(Peace\ Sans.otf);
+}
+:root{
+    --h1-font:clamp(1.75rem,2vw + 1rem,3rem);
+}
+body{
+    min-height: 100vh;
+    width: 100vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+
+.mouse-event{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    background: palegreen;
+    mix-blend-mode: difference;
+    z-index: 101;
+    display: flex;
+    justify-content: center;
+    align-items: 
+    center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    pointer-events: none;
+    transition: all .6s ease-in-out;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    font-size: 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.menu-toggle{
+    position: relative;
+    z-index: 100;
+    font-family: j1;
+}
+.primary-nav{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    inset: 0;
+    display: none;
+}
+.first-nav{
+    position: absolute;
+    width: 100%;
+    height: 0vh;
+    inset: 0;
+    background: black;
+    z-index: 10;
+
+}
+.second-nav{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 0vh;
+    background: red;
+    z-index: 10;
+    overflow: hidden;
+    color: white;
+}
+.primary-navigation{
+    display: flex;
+    flex-direction: column;
+    gap: var(--h1-font);
+    font-size: var(--h1-font);
+    justify-content: center;
+margin-left: 15vw;
+height: 100%;
+font-family: j1;
+}
+.primary-navigation>li:hover{
+    color: black;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.side{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+   
+}
+
+.title{
+    font-size: var(--h1-font);
+    width: 70vw;
+    margin: 0px 15vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.title > h2{
+    font-family: j1;
+}
+.small-title{
+   font-size: 1.25rem;
+   width: 50%;
+   margin-left: auto;
+}
+.name{
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+.right-side .title .name{
+    color:black;
+}
+.left-side .title .name{
+    color: white;
+}
+
+.left-side{
+    background:palegreen;
+    z-index: 2;
+    color: black;
+}
+.right-side{
+    background: rgb(217, 22, 22);
+    color: white;
+}
+
+.fancy{
+    color: yellow;
+}
+.fancy2{
+    color: navy;
+}
+.work-slider{
+    white-space: nowrap;
+    margin-block: 5rem ;
+    padding: .5rem;
+    font-size: 2rem;
+    background: #333;
+    color:palegreen;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0  10px rgba(0, 0, 0, 0.696);
+    z-index: 2;
+    font-family: j1;
+
+}
+
+.work-slide{
+    display: inline-block;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.work-slide>div{
+    margin-inline: 2.5rem;
+    display: inline-block;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.project{
+    margin-block:5rem;
+}
+.content-container{
+    display: flex;
+gap: 1rem;
+}
+.content-container>*{
+    flex: 1;
+}
+.content-block{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding-left: 1rem;
+}
+.prj-title{
+    font-size: var(--h1-font);
+    font-family: j1;
+}
+.content>p{
+    margin-block: 1.5rem;
+}
+.media-image{
+    display: none;
+}
+.content{
+    height: 80vh;
+justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-inline: auto;
+}
+.work-container{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+background:rgb(216, 216, 216);
+padding-inline: 2rem;
+}
+.project-image{
+    height: 50vh;
+    width: 100%;
+position: relative;
+overflow: hidden;
+box-shadow: 0 25px 50px -12px rgb(0 0 0 /0.25);
+border:2px solid black;
+border-radius: 1rem;
+}
+
+.image{
+height: 100%;
+position: absolute;
+width:100%;
+box-shadow: 0 25px 50px -12px rgb(0 0 0 /0.25);
+overflow: hidden;
+inset: 0;
+
+}
+.img1{
+    background:url(img/IMG_20230908_134018.jpg) ;
+    background-size:100% 100%;
+    background-position: 100% 100%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.img2{
+    background:url(img/IMG_20230908_134031.jpg) ;
+    background-size:100% 100%;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.img3{
+    background:url(img/IMG_20230908_134048.jpg) ;
+    background-size:100% 100%;
+    background-position: 100% 100%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.img4{
+    background:url(img/Screenshot_2023-09-25-18-47-02-22_40deb401b9ffe8e1df2f1cc5ba480b12.jpg) ;
+    background-size:100% 100%;
+    background-position: 100% 100%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.about{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+padding-inline: 1rem;
+margin-block: 10rem;
+place-items: center;
+height: 50vh;
+}
+
+
+.about-title{
+    font-size: 2rem;
+}
+.about-content{
+margin-inline:2rem;
+font-size: 1.25rem;
+}
+.about-content>p{
+    margin-inline: auto;
+}
+.btn{
+    background: black;
+    color: white;
+    padding-block: .75rem;
+    border-radius: 2rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 350ms ease-in-out;
+}
+
+.btn:hover{
+    background: palegreen;
+    color: black;
+}
+
+.races{
+   width: fit-content;
+   display: flex;
+   flex-wrap: nowrap;
+  
+}
+.races h2{
+font-size: 10vw;
+color:red;
+flex-shrink: 0;
+padding: 3rem;
+margin: 0;
+background: black;
+
+}
+
+.races .gsap{
+    background:mediumslateblue;
+}
+@media (max-width:700px) {
+.small-title{
+width: 75%;
+font-size: 1.1rem;
+}
+ .name{
+    font-size: 1.25rem};
+    
+    .content{
+        width: 100%;
+        padding-inline: 1rem;
+    }
+    .content-container{
+        display: block;
+    }
+    .content-block{
+        gap: 5rem;
+    }
+    .content{
+        height: 100%;
+    }
+    .work-container{
+        display: none;
+    }
+    .media-image{
+        display: block;
+        width: 100%;
+        height: 12.5rem;
+        margin-block: 2.5rem;
+    }
+    .about{
+       display: block;
+        place-items: start;
+        margin-inline: 1.5rem;
+        width: 100%;
+        }
+    .about-content{
+        margin: 1.5rem 0;
+        width: 80%;
+    }
+   
+}
