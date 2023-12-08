@@ -93,7 +93,7 @@ contentSection.forEach((details,index)=>{
 })
 }
 
-let tween = gsap.to(".work-slide-text",{xPercent:-100,repeat:-1,duration:5,ease:"linear",}).totalProgress(0.5)
+let tween = gsap.to(".work-slide-text",{xPercent:-100,repeat:-1,duration:2,ease:"linear",}).totalProgress(0.5)
 gsap.set(".work-slide",{xPercent:-50})
 
 window.addEventListener("scroll",()=>{
@@ -133,3 +133,26 @@ ScrollTrigger.create({
     invalidateOnRefresh:true,
     animation:slider
 })
+
+
+    //  TEXT ANIMATION //
+
+
+const firstLine = document.querySelectorAll(".about-content h2 span")
+const secondLine =document.querySelector(".about-title span")
+gsap.to([firstLine,secondLine],{scrollTrigger:{
+    trigger:".about-title",
+    start:"top 40%",
+    end:"bottom bottom",
+    ease:"Power3.inOut",
+},
+duration:1,
+    y: 0,
+    stagger:0.05,
+opacity:1})
+gsap.to(".about .btn",{scrollTrigger:{
+    trigger:".about-title",
+    start:"top 40%",
+    end:"bottom bottom",
+    ease:"power2",
+},width:"10rem",scale:1,duration:1})

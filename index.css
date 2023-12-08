@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +13,11 @@
 }
 :root{
     --h1-font:clamp(1.75rem,2vw + 1rem,3rem);
+    --bg-1:#f0dba5;
+    --bg-2:#151515;
+    --bg-3:#edb74d;
+    --bg-4:#151515;
+    --bg-5:#6fb18a;
 }
 body{
     min-height: 100vh;
@@ -105,6 +111,9 @@ a{
     position: relative;
     height: 100vh;
     width: 100%;
+    background: url(img/caricature-5280770_1280.jpg);
+    background-size: cover;
+    z-index: 20;
 }
 
 .side{
@@ -151,6 +160,7 @@ a{
     background:palegreen;
     z-index: 2;
     color: black;
+
 }
 .right-side{
     background: rgb(217, 22, 22);
@@ -297,19 +307,36 @@ inset: 0;
 padding-inline: 1rem;
 margin-block: 10rem;
 place-items: center;
-height: 50vh;
+height: 100%;
 }
 
 
 .about-title{
     font-size: 2rem;
+    overflow: hidden;
+    font-weight: normal;
+}
+.about-title span{
+    overflow: hidden;
+    display: inline-block;
+    transform: translateY(-100%);
 }
 .about-content{
 margin-inline:2rem;
 font-size: 1.25rem;
+overflow: hidden;
 }
-.about-content>p{
+.about-content h2{
     margin-inline: auto;
+    overflow: hidden;
+    font-size: 1.25rem;
+    font-weight: normal;
+    line-height: 1.6;
+}
+.about-content h2 span {
+transform: translateY(-100%);
+display:  inline-block;
+opacity: 0;
 }
 .btn{
     background: black;
@@ -322,7 +349,11 @@ font-size: 1.25rem;
     align-items: center;
     transition: all 350ms ease-in-out;
 }
-
+.about .btn{
+width: 0px;
+transform: scale(0);
+transform-origin: 50% 50%;
+}
 .btn:hover{
     background: palegreen;
     color: black;
