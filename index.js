@@ -157,3 +157,15 @@ gsap.to(".about .btn",{scrollTrigger:{
     end:"bottom bottom",
     ease:"power2",
 },width:"10rem",scale:1,duration:1})
+
+
+// contact mask image //
+const timeLine =gsap.timeline().from(".bus",{scale:2}).to(".mask",{
+    clipPath:"inset(0 0 0 0)"
+},0).to(".mask",{scale:.95,duration:1})
+ScrollTrigger.create({
+    trigger:".contact",
+    start:"top top",
+    end:"bottom bottom",
+    animation:timeLine
+})
