@@ -138,7 +138,10 @@ body{
     pointer-events: none;
     transition: all .6s ease-in-out;
 }
-
+.scale{
+    width: 8rem;
+    height: 8rem;
+}
 nav{
     display: flex;
     justify-content: space-between;
