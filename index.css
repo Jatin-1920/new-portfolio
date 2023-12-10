@@ -484,6 +484,20 @@ font-family:j1;
     height:100vh;
     width:100%;
     background:palegreen;
+    position:relative;
+}
+.mask{
+    position: absolute;
+    clip-path:inset(25% 25% 25% 25%)
+    inset:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+.bus{
+    max-width:100%;
+    height:100%;
+    object-fit:cover;
 }
 .upperPart{
     height:80%;
