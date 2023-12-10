@@ -38,6 +38,7 @@ window.onmousemove = e => {
         mouse.innerText=""
         mouse.classList.remove("scale")
     }
+    animated(e)
 }
 
 const menuToggle = document.querySelector(".menu-toggle")
