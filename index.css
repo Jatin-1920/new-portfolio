@@ -512,6 +512,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    color: white;
 }
 .lowerPart{
     height:20%;
