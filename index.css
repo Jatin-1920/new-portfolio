@@ -496,7 +496,7 @@ font-family:j1;
     justify-content:space-between;
     align-items:center;
     padding-inline:1rem;
-    font-size:1.25rem;
+    font-size:.8rem;
     border-top:1px solid black;
 }
 @media (max-width:700px) {
