@@ -281,24 +281,23 @@ a{
     box-shadow: 0 0  10px rgba(0, 0, 0, 0.696);
     z-index: 2;
     font-family: j1;
-
+    display:flex;
+    align-items:center;
 }
 
 .work-slide{
-    display: inline-block;
+    display: flex;
     text-transform: uppercase;
     overflow: hidden;
+    width:fit-content;
+    align-items:center;
 }
 
 .work-slide>div{
     margin-inline: 2.5rem;
     display: inline-block;
 }
-.work-slide-text{
-    display:flex;
-    height:100%;
-    align-items:center;
-}
+
 
 @keyframes slide{
     0%{
