@@ -548,9 +548,7 @@ font-size: 1.1rem;
         width: 100%;
         
     } 
-    .about-content h2{
-        font-size:1rem
-    }
+    
    .lowerPart{
        flex-direction:column;
        justify-content:center;
