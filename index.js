@@ -10,7 +10,15 @@ const handleMove = e => {
 header.onmousemove = e => handleMove(e)
 header.ontouchmove = e => handleMove(e.touches[0])
 
-
+const switchEvent = e => {
+    switch(e){
+        case "Work":
+            return "Work";
+        case "About":
+            return "About";
+        case "Skills":
+            return "Skills"
+}
 const animated = e => {
     const x = e.pageX
     const y = e.pageY
@@ -23,6 +31,9 @@ window.onmousemove = e => {
     const interatable = e.target.closest(".interact")
     const interacting = interatable !== null
     animated(e)
+    if(interacting) {
+        mouse.innerHTML = switchEvent(e.target.dataset.icon)
+    }
 }
 
 const menuToggle = document.querySelector(".menu-toggle")
