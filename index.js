@@ -1,6 +1,6 @@
 const left = document.getElementById("left")
 const header = document.querySelector(".header")
-const mouse = document.querySelector(".mouse-event")
+let mouse = document.querySelector(".mouse-event")
 const handleMove = e => {
     const x = e.clientX / window.innerWidth * 100
 
