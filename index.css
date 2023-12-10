@@ -272,7 +272,7 @@ a{
 .work-slider{
     white-space: nowrap;
     margin-block: 5rem ;
-    padding: .5rem;
+    padding: 1rem;
     font-size: 2rem;
     background: #333;
     color:palegreen;
@@ -293,7 +293,11 @@ a{
 .work-slide>div{
     margin-inline: 2.5rem;
     display: inline-block;
-    padding-block:.5rem;
+}
+.work-slide-text{
+    display:flex;
+    height:100%;
+    align-items:center;
 }
 
 @keyframes slide{
