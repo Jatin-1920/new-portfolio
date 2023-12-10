@@ -514,9 +514,8 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .upperPart{
     width:100%;
-    font-size: var(--h1-font);
+    font-size: var(--m-text);
     font-family: j1;
-    gap:var(--h1-font);
     display:flex;
     gap:1rem;
     color: lightgreen;
@@ -526,7 +525,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     display:flex;
     gap:1rem;
     font-family: j1;
-    font-size: var(--h1-font);
+    font-size: var(--m-text);
     color: lightgreen;
 }
 @media (max-width:700px) {
