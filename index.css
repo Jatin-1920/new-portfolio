@@ -292,6 +292,7 @@ a{
     align-items:center;
     height:100%;
     flex:auto;
+    flex-direction:row;
 }
 
 .work-slide>div{
