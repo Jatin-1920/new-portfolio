@@ -367,14 +367,14 @@ transform-origin: 50% 50%;
    flex-wrap: nowrap;
   height:50vh;
     align-items: center;
+    background: black;
 }
 .races h2{
-font-size: 20vw;
+font-size: 30vw;
 color:red;
 flex-shrink: 0;
 padding-inline: 3rem;
 margin: 0;
-background: black;
 font-family: Luckiest Guy;
 }
 
