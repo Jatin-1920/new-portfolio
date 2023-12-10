@@ -165,7 +165,7 @@ const timeLine =gsap.timeline().from(".bus",{scale:2, duration:1}).to(".mask",{
 },0).to(".mask",{scale:1,duration:1})
 ScrollTrigger.create({
     trigger:".contact",
-    start:"top top",
+    start:"top 20%",
     end:"bottom bottom",
     animation:timeLine
 })
