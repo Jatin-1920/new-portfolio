@@ -4,6 +4,7 @@
 html {
     font-size: 100%;
     color-scheme: light dark;
+    overflow-x: hidden;
   }
   
   *,*::before,
@@ -115,11 +116,9 @@ body{
     overflow-x: hidden;
     min-height:100vh;
     width:100%;
-    
+    font-family:Sen;
 }
-html{
-    overflow-x: hidden;
-}
+
 .mouse-event{
     position: absolute;
     width: 3rem;
