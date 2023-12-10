@@ -360,7 +360,11 @@ transform-origin: 50% 50%;
     background: palegreen;
     color: black;
 }
-
+.racesWrapper{
+    height:100vh;
+    display:flex;
+align-items:center;
+}
 .races{
    width: fit-content;
    display: flex;
