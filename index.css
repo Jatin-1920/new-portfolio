@@ -424,7 +424,6 @@ overflow: hidden;
     overflow: hidden;
     font-size: 1.25rem;
     font-weight: normal;
-    line-height: 1.6;
 }
 .about-content h2 span {
 transform: translateY(-100%);
@@ -473,7 +472,7 @@ font-family:j1;
 }
 @media (max-width:700px) {
 .small-title{
-width: 75%;
+width: 80%;
 font-size: 1.1rem;
 }
  .name{
@@ -504,12 +503,12 @@ font-size: 1.1rem;
     .about{
        display: block;
         place-items: start;
-        margin-inline: 1.5rem;
+        padding-inline: 1.5rem;
         width: 100%;
         }
     .about-content{
         margin: 1.5rem 0;
-        width: 80%;
+        width: 100%;
     }
    
 }
