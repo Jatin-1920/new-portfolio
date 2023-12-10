@@ -464,7 +464,7 @@ transform-origin: 50% 50%;
 font-size: 15vw;
 color:red;
 flex-shrink: 0;
-padding:4rem 3rem;
+padding:4rem;
 margin: 0;
 font-family:j1;
     background:black;
@@ -472,6 +472,7 @@ font-family:j1;
 
 .races .gsap{
     background:mediumslateblue;
+    color:palegreen;
 }
 .contact{
     height:100vh;
