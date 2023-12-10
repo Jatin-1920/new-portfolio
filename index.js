@@ -30,10 +30,10 @@ const animated = e => {
 window.onmousemove = e => {
     const interatable = e.target.closest(".interact")
     const interacting = interatable !== null
-    animated(e)
+    
     if(interacting) {
        mouse.classList.add("scale")
-        mouse.innerText= switchEvent(e.target.dataset.icon)
+        mouse.innerText= switchEvent(e.currentTarget.dataset.icon)
     } else{
         mouse.innerText=""
         mouse.classList.remove("scale")
