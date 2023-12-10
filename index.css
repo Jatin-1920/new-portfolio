@@ -370,7 +370,7 @@ transform-origin: 50% 50%;
     background: black;
 }
 .races h2{
-font-size: 30vw;
+font-size: 15vw;
 color:red;
 flex-shrink: 0;
 padding-inline: 3rem;
