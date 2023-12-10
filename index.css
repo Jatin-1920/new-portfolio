@@ -546,7 +546,10 @@ font-size: 1.1rem;
     .about-content{
         margin: 1.5rem 0;
         width: 100%;
-        font-size:1rem;
+        
+    } 
+    .about-content h2{
+        font-size:1rem
     }
    .lowerPart{
        flex-direction:column;
