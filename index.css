@@ -272,7 +272,7 @@ a{
 .work-slider{
     white-space: nowrap;
     margin-block: 5rem ;
-    height:6rem;
+    height:9rem;
     font-size: 2rem;
     background: #333;
     color:palegreen;
@@ -281,9 +281,7 @@ a{
     box-shadow: 0 0  10px rgba(0, 0, 0, 0.696);
     z-index: 2;
     font-family: j1;
-    display:flex;
-    align-items:center;
-    width:100%;
+    
 }
 
 .work-slide{
