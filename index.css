@@ -486,6 +486,7 @@ font-family:j1;
     position:relative;
     overflow: hidden;
     display:flex;
+    flex-direction: column;
     justify-content:center;
     align-items:center;
 }
