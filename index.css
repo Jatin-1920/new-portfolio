@@ -291,11 +291,11 @@ a{
     width:fit-content;
     align-items:center;
     height:100%;
+    flex:auto;
 }
 
 .work-slide>div{
     margin-inline:5rem;
-    display: inline-block;
 }
 
 
