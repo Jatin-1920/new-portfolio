@@ -33,9 +33,9 @@ window.onmousemove = e => {
     
     if(interacting) {
        mouse.classList.add("scale")
-        mouse.innerText= switchEvent(e.currentTarget.dataset.icon)
+        mouse.textContent= switchEvent(e.currentTarget.dataset.icon)
     } else{
-        mouse.innerText=""
+        mouse.textContent=""
         mouse.classList.remove("scale")
     }
     animated(e)
