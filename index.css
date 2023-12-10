@@ -110,10 +110,11 @@ html {
   
 }
 body{
-    min-height: 100vh;
-    width: 100%;
-    font-family:Sen;
-    overflow-x: hidden
+    text-rendering: optimizeSpeed;
+    line-height: 1.6;
+    overflow-x: hidden;
+    min-height:100vh;
+    width:100%;
     
 }
 html{
