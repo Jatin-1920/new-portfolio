@@ -93,7 +93,7 @@ html {
     src: url(Peace\ Sans.otf);
 }
 :root{
-    --h1-font:clamp(1.75rem,2vw + 1rem,3rem);
+    --h1-font:clamp(1.5rem,2vw + 1rem,3rem);
     --bg-1:#f0dba5;
     --bg-2:#151515;
     --bg-3:#edb74d;
