@@ -361,7 +361,7 @@ transform-origin: 50% 50%;
     color: black;
 }
 .racesWrapper{
-    height:100vh;
+    height:50vh;
     display:flex;
 align-items:center;
 }
