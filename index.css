@@ -293,6 +293,7 @@ a{
 .work-slide>div{
     margin-inline: 2.5rem;
     display: inline-block;
+    padding-block:.5rem;
 }
 
 @keyframes slide{
