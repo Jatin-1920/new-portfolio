@@ -539,5 +539,9 @@ font-size: 1.1rem;
         margin: 1.5rem 0;
         width: 100%;
     }
-   
+   .lowerPart{
+       flex-direction:column;
+       justify-content:center;
+       gap:1rem;
+   }
 }
