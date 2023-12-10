@@ -32,7 +32,11 @@ window.onmousemove = e => {
     const interacting = interatable !== null
     animated(e)
     if(interacting) {
-        mouse.innerHTML = switchEvent(e.target.dataset.icon)
+       mouse.classList.add("scale")
+        mouse.innerText= switchEvent(e.target.dataset.icon)
+    } else{
+        mouse.innerText=""
+        mouse.classList.remove("scale")
     }
 }
 
