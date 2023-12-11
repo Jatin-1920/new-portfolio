@@ -485,25 +485,17 @@ font-family:j1;
     width:100%;
     position:relative;
     overflow: hidden;
-    display:grid;
-    grid-template-columns:1fr .5fr 1fr;
+    display:flex;
+    padding-inline:1rem;
+    flex-direction:column;
+    
 }
 .ct-hover{
-    height:0%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-inline:2px solid black;
-    padding-inline:1rem;
+    margin-block:3rem 4rem;
 }
 .contact-title{
-    
-    display:flex;
-    align-items:center;
-    justify-content:center; 
    color:white;
-    font-size: 1.15rem;
-    
+    font-size: var(--h1-font);
 }
 
 .mask{
@@ -524,23 +516,32 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .upperPart{
     width:100%;
-    font-size: var(--m-text);
+    font-size:1.1rem;
     display:flex;
-    flex-direction:column;
-    gap:2rem;
-    color: lightgreen;
-    justify-content:center;
-    align-items:center;
+    gap:.5rem;
+    color: lightsalmon;
+    position: absolute;
+    top:5rem;
+    right:3rem;
+}
+.linkedIn{
+    border-left:1px solid black;
+}
+.email{
+    position: absolute;
+    bottom:1rem;
+    right:1rem;
+    font-size: var(--h1-font);
+    width:100%;
+    color:red;
 }
 .lowerPart{
     width:100%;
     display:flex;
-    gap:2rem;
-    font-size: var(--m-text);
-    color: lightgreen;
-    justify-content:center;
-    align-items:center;
+    gap:1rem;
+    font-size: 1.25rem;
     flex-direction:column;
+    color:white;
 }
 @media (max-width:700px) {
 .small-title{
