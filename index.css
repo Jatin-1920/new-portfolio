@@ -551,10 +551,10 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 .soc-el:hover,.nav-social:hover{
     transform:scale(2);
 }
- .nav-gmail{
+ #nav-gmail{
     background:rgba(144, 238, 144 ,.7);
 }
-#gmail{
+.fa-envelope-square{
     color:green;
     background:rgba(144, 238, 144,.5);
 }
