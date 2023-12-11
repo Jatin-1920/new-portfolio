@@ -552,11 +552,11 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     transform:scale(2);
 }
  .nav-gmail{
-    background:rgba(204, 151, 251 ,.5);
+    background:rgba(98, 42, 85 ,.5);
 }
 .nav-gmail .fa-envelope {
     color:tomato;
-    background:rgba(204, 151, 251,.7);
+    background:rgba(98, 42, 85,.7);
 }
 .gmail{
     background:rgba(255,99,71,.5);
