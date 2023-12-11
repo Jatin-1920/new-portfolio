@@ -315,7 +315,6 @@ a{
 }
 .content-container{
     display: flex;
-gap: 1rem;
 }
 .content-container>*{
     flex: 1;
