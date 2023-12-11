@@ -591,10 +591,10 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 @keyframes rotate{
     from{
-        transform:rotate(0) scale(.8);
+        transform:rotate(0);
     }
     to{
-        transform:rotate(1turn) scale(1);
+        transform:rotate(1turn);
     }
 }
 @keyframes border-move{
