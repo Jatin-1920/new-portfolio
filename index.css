@@ -159,7 +159,7 @@ nav{
 }
 .primary-nav{
     position: fixed;
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
     overflow: hidden;
     inset: 0;
@@ -190,7 +190,7 @@ nav{
     gap: var(--h1-font);
     font-size: var(--h1-font);
     justify-content: center;
-margin-left: 15vw;
+margin-left: 15dvw;
 height: 100%;
 font-family: j1;
 }
@@ -205,7 +205,7 @@ a{
 }
 .header{
     position: relative;
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
     background: url(img/caricature-5280770_1280.jpg);
     background-size: cover;
@@ -224,8 +224,8 @@ a{
 
 .title{
     font-size: var(--h1-font);
-    width: 70vw;
-    margin: 0px 15vw;
+    width: 70dvw;
+    margin: 0px 15dvw;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -337,7 +337,7 @@ gap: 1rem;
     display: none;
 }
 .content{
-    height: 80vh;
+    height: 80dvh;
 justify-content: center;
     display: flex;
     flex-direction: column;
@@ -345,7 +345,7 @@ justify-content: center;
     margin-inline: auto;
 }
 .work-container{
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
     display: grid;
     place-items: center;
@@ -353,7 +353,7 @@ background:rgb(216, 216, 216);
 padding-inline: 2rem;
 }
 .project-image{
-    height: 50vh;
+    height: 50dvh;
     width: 100%;
 position: relative;
 overflow: hidden;
@@ -467,7 +467,7 @@ transform-origin: 50% 50%;
   
 }
 .races h2{
-font-size: 15vw;
+font-size: 15dvw;
 color:red;
 flex-shrink: 0;
 padding:4rem;
@@ -481,7 +481,7 @@ font-family:j1;
     color:palegreen;
 }
 .contact{
-    height:100vh;
+    height:100dvh;
     width:100%;
     position:relative;
     overflow: hidden;
