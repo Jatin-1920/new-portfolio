@@ -380,7 +380,7 @@ inset: 0;
     background-repeat: no-repeat;
 }
 .img2{
-    background:url(img/IMG_20230908_134031.jpg) ;
+    background:url(img/IMG_20230908_134048.jpg) ;
     background-size:100% 100%;
     background-position: 50% 50%;
     width: 100%;
@@ -388,7 +388,8 @@ inset: 0;
     background-repeat: no-repeat;
 }
 .img3{
-    background:url(img/IMG_20230908_134048.jpg) ;
+    background:url(img/Screenshot_2023-09-25-18-47-02-22_40deb401b9ffe8e1df2f1cc5ba480b12.jpg) ;
+    
     background-size:100% 100%;
     background-position: 100% 100%;
     width: 100%;
@@ -396,7 +397,7 @@ inset: 0;
     background-repeat: no-repeat;
 }
 .img4{
-    background:url(img/Screenshot_2023-09-25-18-47-02-22_40deb401b9ffe8e1df2f1cc5ba480b12.jpg) ;
+    background:url(img/IMG_20230908_134031.jpg); 
     background-size:100% 100%;
     background-position: 100% 100%;
     width: 100%;
