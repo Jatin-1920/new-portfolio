@@ -89,11 +89,11 @@ html {
     
 @font-face {
     font-family: j1;
-    src: url(heavy_dock11.otf);
+    src: url(j2.otf);
 }
 @font-face {
     font-family:j2;
-    src:url(02_APompadourTextSample.otf);
+    src:url(j1.otf);
 }
 :root{
     --h1-font:clamp(1.75rem,2vw + 1rem,3rem);
