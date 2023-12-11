@@ -44,7 +44,7 @@ menuToggle.innerHTML = state ? "Close":"Menu"
 if(state) {
     gsap.to(primaryNav,{display:"block"})
 gsap.fromTo([firstNav,secondNav],{height:"0vh",skewY:3,transformOrigin:"right top"},{height:"100vh",skewY:0,duration:.8,ease:"Power3.inOut",stagger:{
-    amount:.085
+    amount:.1
 }})
 } else{
     gsap.to(primaryNav,{display:"none",delay:.65})
