@@ -558,7 +558,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .fa-envelope{
     color:#e2103a;
-    background:rgba(255,99,71,.8);
+    background:rgba(255,99,71,.7);
 }
 .github{
     background:rgba(113,121,126,.5);
@@ -567,16 +567,16 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .fa-github{
     color: black;
-    background:rgba(113,121,126,.8);
+    background:rgba(113,121,126,.7);
 }
 .linkedin{
-    background:rgba(45,85,255,.3);
+    background:rgba(45,85,255,.5);
     bottom:3rem;
     left:2rem;
 }
 .fa-linkedin{
     color:#002366;
-    background:rgba(45,85,255,.6);
+    background:rgba(45,85,255,.7);
 }
 
 @keyframes border-move{
