@@ -497,21 +497,13 @@ font-family:j1;
     padding-inline:1rem;
 }
 .contact-title{
-    width:5rem;
-    height:5rem;
-    background:#333;
-    border-radius:100%;
+    
     display:flex;
     align-items:center;
     justify-content:center; 
    color:white;
     font-size: 1.15rem;
-    transition:all 5s ease-in-out;
-    box-shadow: 0 25px 50px -12px rgb(0 0 0 /0.25);
-}
-.contact-title:hover{
-    width:6rem;
-    height:6rem;
+    
 }
 
 .mask{
@@ -533,7 +525,6 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 .upperPart{
     width:100%;
     font-size: var(--m-text);
-    font-family: j1;
     display:flex;
     flex-direction:column;
     gap:2rem;
@@ -545,7 +536,6 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     width:100%;
     display:flex;
     gap:2rem;
-    font-family: j1;
     font-size: var(--m-text);
     color: lightgreen;
     justify-content:center;
