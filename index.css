@@ -491,7 +491,7 @@ font-family:j1;
     
 }
 .ct-hover{
-    margin-block:3rem 4rem;
+    margin-block:3rem;
 }
 .contact-title{
    color:white;
@@ -522,7 +522,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     color: lightsalmon;
     position: absolute;
     top:5rem;
-    right:3rem;
+    right:2rem;
 }
 .linkedIn{
     border-left:1px solid black;
