@@ -72,7 +72,7 @@ html {
   }
   
   /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-/*  @media (prefers-reduced-motion: reduce) {
+  @media (prefers-reduced-motion: reduce) {
     html:focus-within {
       scroll-behavior: auto;
     }
@@ -86,7 +86,7 @@ html {
       scroll-behavior: auto !important;
     }
   }
-*/
+
     
 @font-face {
     font-family: j1;
@@ -555,7 +555,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     }
 
 25.1% {
-    border-radius: 31% 69% 23% 77% / 66% 18% 82% 34%
+    border-radius: 31% 69% 23% 77% / 66% 18% 82% 34%;
                     
 }
 
@@ -563,7 +563,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     border-radius:61% 39% 60% 40% / 44% 57% 43% 56% ;
 }
 
-100%{
+99.1%{
     border-radius:70% 30% 44% 56% / 44% 57% 43% 56% ;
 }
 }
