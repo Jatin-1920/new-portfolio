@@ -557,7 +557,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     left:5rem;
 }
 .fa-envelope{
-    color:rgb(240,128,128);
+    color:#f08080;
     background:rgba(255,99,71,.7);
 }
 .github{
