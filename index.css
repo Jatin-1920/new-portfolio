@@ -510,7 +510,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 .bus{
     width:100%;
     height:100%;
-    object-fit:cover;
+    object-fit:none;
     object-position:center center;
     position: absolute;
     inset:0;
