@@ -532,11 +532,13 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     align-items:center;
     overflow:hidden;
     transition:all 2.5s ease-in-out;
+}
+.soc-el{
     animation:border-move 6s linear infinite;
 }
-
 .nav-social{
     z-index:11;
+    animation:rotate 3s linear infinite;
 }
 .soc-el i,.nav-social i{
     height:3rem;
@@ -545,9 +547,11 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     display:flex;
     justify-content:center;
     align-items:center;
+    
+}
+.soc-el i {
     animation:border-move 6s linear infinite;
 }
-
 .soc-el:hover,.nav-social:hover{
     transform:scale(2);
 }
@@ -585,7 +589,14 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     color:#002366;
     background:rgba(45,85,255,.7);
 }
-
+@keyframes rotate{
+    from{
+        transform:rotate(0);
+    }
+    to{
+        transform:rotate(1turn);
+    }
+}
 @keyframes border-move{
   0%,
   100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
