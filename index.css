@@ -554,7 +554,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 
 .gmail{
     background:rgba(255,99,71,.5);
-    top:5rem;
+    top:3rem;
     left:5rem;
 }
 .fa-envelope{
@@ -572,7 +572,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .linkedin{
     background:rgba(45,85,255,.5);
-    bottom:6rem;
+    bottom:3rem;
     left:5rem;
 }
 .fa-linkedin{
