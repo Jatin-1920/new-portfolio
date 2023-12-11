@@ -561,13 +561,13 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     background:rgba(255,99,71,.8);
 }
 .github{
-    background:rgba(128,128,128,.5);
+    background:rgba(113,121,126,.5);
     top:40%;
     right:2rem;
 }
 .fa-github{
     color: black;
-    background:rgba(128,128,128,.8);
+    background:rgba(113,121,126,.8);
 }
 .linkedin{
     background:rgba(45,85,255,.3);
