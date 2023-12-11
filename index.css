@@ -522,8 +522,8 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 
 
 .soc-el i{
-    height:2.5rem;
-    width:2.5rem;
+    height:3rem;
+    width:3rem;
     border-radius:100%;
     display:flex;
     justify-content:center;
@@ -534,19 +534,19 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     background:rgba(255,99,71,.5);
 }
 .fa-envelope{
-    background: tomato;
+    background:rgba(255,99,71,.8)
 }
 .github{
     background:rgba(211,211,211,.5)
 }
 .fa-github{
-    background:silver;
+    background:rgba(211,211,211,.8);
 }
 .linkedin{
     background:rgba(45,85,255,.5)
 }
 .fa-linkedin{
-    background:blue;
+    background:rgba(45,85,255,.8);
 }
 @media (max-width:700px) {
 .small-title{
