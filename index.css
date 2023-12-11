@@ -518,6 +518,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     justify-content:center;
     align-items:center;
     overflow:hidden;
+    animation:move 6s linear infinite;
 }
 
 
@@ -547,6 +548,20 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .fa-linkedin{
     background:rgba(45,85,255,.6);
+}
+@keyrames move{
+    0%{
+    border-radius:55% 45% 62% 38% / 30% 61% 39% 70% ;
+    },
+25%{
+    border-radius:88% 12% 69% 31% / 25% 57% 43% 75% ;
+},
+50%{
+    border-radius:61% 39% 60% 40% / 44% 57% 43% 56% ;
+},
+100%{
+    border-radius:70% 30% 44% 56% / 44% 57% 43% 56% ;
+}
 }
 @media (max-width:700px) {
 .small-title{
