@@ -556,6 +556,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     left:5rem;
 }
 .fa-envelope{
+    color:tomato;
     background:rgba(255,99,71,.8);
 }
 .github{
@@ -564,6 +565,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     right:2rem;
 }
 .fa-github{
+    color: black;
     background:rgba(128,128,128,.8);
 }
 .linkedin{
@@ -572,6 +574,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     left:2rem;
 }
 .fa-linkedin{
+    color:#000080;
     background:rgba(45,85,255,.6);
 }
 
