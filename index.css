@@ -535,7 +535,9 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     animation:border-move 6s linear infinite;
 }
 
-
+.nav-social{
+    z-index:11;
+}
 .soc-el i,.nav-social i{
     height:3rem;
     width:3rem;
