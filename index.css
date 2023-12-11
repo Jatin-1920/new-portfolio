@@ -517,6 +517,11 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     justify-content:center;
     padding-left:1rem;
 }
+.contact-info h2{
+    font-size:1.1rem;
+    color:white;
+    font-weight:normal;
+}
 .soc-el{
     position: absolute;
     height:4rem;
