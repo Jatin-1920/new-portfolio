@@ -83,7 +83,7 @@ ScrollTrigger.create({
 
 contentSection.forEach((details,index)=>{
     let headline = details.querySelector("h1")
-    let animation = gsap.timeline().to(photos[index],{yPercent:0}).set(allPhotos[index],{autoAlpha:0}).to(".content-block",{backgroundColor:`${details.dataset.color}`,duration:1,ease:"none"})
+    let animation = gsap.timeline().to(photos[index],{yPercent:0}).set(allPhotos[index],{autoAlpha:0}).to(".content-block",{background:`${details.dataset.color}`,duration:1,ease:"none"})
     ScrollTrigger.create({
         trigger:headline,
         start:"top 80%",
