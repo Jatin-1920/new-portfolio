@@ -521,7 +521,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     color:white;
     font-weight:normal;
 }
-.soc-el{
+.soc-el,.nav-social{
     font-size:1.25rem;
     position: absolute;
     height:4rem;
@@ -537,7 +537,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 
 
-.soc-el i{
+.soc-el i,.nav-social i{
     height:3rem;
     width:3rem;
     border-radius:100%;
@@ -547,7 +547,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     animation:border-move 6s linear infinite;
 }
 
-.soc-el:hover{
+.soc-el:hover,.nav-social:hover{
     transform:scale(2);
 }
 
