@@ -529,6 +529,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     display:flex;
     justify-content:center;
     align-items:center;
+    animation:border-move 6s linear infinite;
 }
 
 .gmail{
