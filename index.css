@@ -516,6 +516,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .upperPart{
     width:100%;
+    height:100%;
     font-size:1.1rem;
     display:flex;
     gap:.5rem;
@@ -534,6 +535,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     font-size: var(--h1-font);
     width:100%;
     color:red;
+    height:100%;
 }
 .lowerPart{
     width:100%;
