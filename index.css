@@ -523,6 +523,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     font-weight:normal;
 }
 .soc-el{
+    font-size:1.25rem;
     position: absolute;
     height:4rem;
     width:4rem;
@@ -556,7 +557,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     left:5rem;
 }
 .fa-envelope{
-    color:lightsalmon;
+    color:#cb0001;
     background:rgba(255,99,71,.8);
 }
 .github{
