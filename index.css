@@ -348,7 +348,6 @@ justify-content: center;
     width: 100%;
     display: grid;
     place-items: center;
-background:rgb(216, 216, 216);
 padding-inline: 2rem;
 }
 .project-image{
