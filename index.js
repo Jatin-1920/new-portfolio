@@ -38,10 +38,11 @@ const project = document.querySelector(".project")
 const content = document.querySelectorAll(".content")
 let state = false
 gsap.registerPlugin(ScrollTrigger)
+gsap.set(".nav-social",{opacity:0,scale:0})
 menuToggle.addEventListener("click",(e)=>{
 state = !state
+})
 menuToggle.innerHTML = state ? "Close":"Menu"
-    gsap.set(".nav-social",{opacity:0,scale:0})
 if(state) {
     gsap.to(primaryNav,{display:"block"})
 gsap.fromTo([firstNav,secondNav],{height:"0vh",skewY:3,transformOrigin:"right top"},{height:"100vh",skewY:0,duration:.8,ease:"Power3.inOut",stagger:{
@@ -54,9 +55,6 @@ gsap.fromTo([firstNav,secondNav],{height:"0vh",skewY:3,transformOrigin:"right to
         amount:.085
     }})
 }
-
-})
-
 
 link.forEach(li=>{
     li.addEventListener("click",()=>{
