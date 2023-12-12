@@ -628,7 +628,7 @@ font-size: var(--p-text);
     .content{
         width: 100%;
         }
-    . content:not(div){
+    . content:has(h1,p,a){
         padding-inline: 1rem;
     }
     .content-container{
