@@ -630,7 +630,7 @@ font-size: var(--p-text);
         height: 100%;
         padding-inline:0rem;
         }
-    . content:has(h1,p,a){
+    .content:has(h1,p,a){
         padding-inline: 1rem;
     }
     .content-container{
