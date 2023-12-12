@@ -41,9 +41,8 @@ gsap.registerPlugin(ScrollTrigger)
 gsap.set(".nav-social",{opacity:0,scale:0})
 menuToggle.addEventListener("click",(e)=>{
 state = !state
-})
-menuToggle.innerHTML = state ? "Close":"Menu"
-if(state) {
+    menuToggle.innerHTML = state ? "Close":"Menu"
+    if(state) {
     gsap.to(primaryNav,{display:"block"})
 gsap.fromTo([firstNav,secondNav],{height:"0vh",skewY:3,transformOrigin:"right top"},{height:"100vh",skewY:0,duration:.8,ease:"Power3.inOut",stagger:{
     amount:.1
@@ -54,12 +53,12 @@ gsap.fromTo([firstNav,secondNav],{height:"0vh",skewY:3,transformOrigin:"right to
     gsap.to([secondNav,firstNav],{height:"0vh",duration:.65,ease:"Power3.inOut",stagger:{
         amount:.085
     }})
-}
+    }
+})
+
 
 link.forEach(li=>{
-    li.addEventListener("click",()=>{
-        state =!state
-    })
+    
     li.addEventListener("mouseover",(e)=>{
         gsap.to(e.target,{skewX:4,y:3,duration:0.3,ease:"Power3.inOut"
     })
