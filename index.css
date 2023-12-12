@@ -334,6 +334,7 @@ a{
 }
 .content>p{
     margin-block: 1.5rem;
+    font-size:var(--p-text):
 }
 .media-image{
     display: none;
@@ -433,7 +434,7 @@ overflow: hidden;
 .about-content h2{
     margin-inline: auto;
     overflow: hidden;
-    font-size: 1.25rem;
+    font-size:var(--p-text);
     font-weight: normal;
 }
 .about-content h2 span {
@@ -520,9 +521,9 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     padding-left:1rem;
 }
 .contact-info h2{
-    font-size:1.1rem;
     color:white;
     font-weight:normal;
+    font-size:var(--p-text);
 }
 .soc-el,.nav-social{
     font-size:1.25rem;
@@ -614,7 +615,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 @media (max-width:700px) {
 .small-title{
 width: 80%;
-font-size: 1.1rem;
+font-size: var(--p-text);
 }
  .name{
     font-size: 1.25rem};
