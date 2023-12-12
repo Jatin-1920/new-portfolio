@@ -48,6 +48,7 @@ gsap.fromTo([firstNav,secondNav],{height:"0vh",skewY:3,transformOrigin:"right to
 }})
     gsap.from(".nav-social",{scale:0,opacity:0,delay:1, duration:1,ease:"Power3.inOut"})
 } else{
+    gsap.to(".nav-social",{scale:0, opacity:0, duration:.5,ease:"Power3.inOut"})
     gsap.to(primaryNav,{display:"none",delay:.65})
     gsap.to([secondNav,firstNav],{height:"0vh",duration:.65,ease:"Power3.inOut",stagger:{
         amount:.085
