@@ -627,7 +627,6 @@ font-size: var(--p-text);
     .content{
         width: 100%;
         height: 100%;
-        padding-inline:1.5rem;
         }
     
     .content-container{
@@ -649,7 +648,7 @@ font-size: var(--p-text);
     .about{
        display: block;
         place-items: start;
-        padding-inline: 1.5rem;
+        padding-inline: 1rem;
         width: 100%;
         }
     .about-content{
