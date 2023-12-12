@@ -122,9 +122,7 @@ body{
     font-family:j2;
     color:black;
 }
-a{
-    color:black;
-}
+
 .mouse-event{
     position: absolute; 
     width: 3rem;
@@ -199,6 +197,11 @@ nav{
 margin-left: 15dvw;
 height: 100%;
 font-family: j1;
+}
+. primary-navigation a{
+    
+    color:white;
+    
 }
 .primary-navigation>a:hover{
     color: black;
