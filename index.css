@@ -122,7 +122,9 @@ body{
     font-family:j2;
     color:black;
 }
-
+a{
+    color:black;
+}
 .mouse-event{
     position: absolute; 
     width: 3rem;
