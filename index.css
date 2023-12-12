@@ -628,11 +628,8 @@ font-size: var(--p-text);
     .content{
         width: 100%;
         height: 100%;
-        padding-inline:0rem;
         }
-    .content:has(h1,p,a){
-        padding-inline: 1rem;
-    }
+    
     .content-container{
         display: block;
     }
