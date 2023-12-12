@@ -41,12 +41,13 @@ gsap.registerPlugin(ScrollTrigger)
 menuToggle.addEventListener("click",(e)=>{
 state = !state
 menuToggle.innerHTML = state ? "Close":"Menu"
+    gsao.set(".nav-social",{opacity:0,scale:0})
 if(state) {
     gsap.to(primaryNav,{display:"block"})
 gsap.fromTo([firstNav,secondNav],{height:"0vh",skewY:3,transformOrigin:"right top"},{height:"100vh",skewY:0,duration:.8,ease:"Power3.inOut",stagger:{
     amount:.1
 }})
-    gsap.from(".nav-social",{scale:0,opacity:0,delay:1, duration:1,ease:"Power3.inOut"})
+    gsap.to(".nav-social",{scale:1,opacity:1,delay:.8, duration:.8,ease:"Power3.inOut"})
 } else{
     gsap.to(".nav-social",{scale:0, opacity:0, duration:.5,ease:"Power3.inOut"})
     gsap.to(primaryNav,{display:"none",delay:.65})
