@@ -38,9 +38,9 @@ const project = document.querySelector(".project")
 const content = document.querySelectorAll(".content")
 let state = false
 gsap.registerPlugin(ScrollTrigger)
-gsap.set(".nav-social",{opacity:0,scale:0})
 menuToggle.addEventListener("click",(e)=>{
 state = !state
+    gsap.set(".nav-social",{opacity:0,scale:0})
     menuToggle.innerHTML = state ? "Close":"Menu"
     if(state) {
     gsap.to(primaryNav,{display:"block"})
