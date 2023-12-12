@@ -545,7 +545,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 .soc-el{
     animation:border-move 6s linear infinite;
 }
-.nav-social{
+.nav-social i{
     z-index:11;
     animation:rotate 3s linear infinite;
 }
