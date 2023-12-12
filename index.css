@@ -340,7 +340,7 @@ a{
     display: none;
 }
 .content{
-    height: 80dvh;
+    height: 100dvh;
 justify-content: center;
     display: flex;
     flex-direction: column;
