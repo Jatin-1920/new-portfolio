@@ -627,6 +627,7 @@ font-size: var(--p-text);
     
     .content{
         width: 100%;
+        height: 100%;
         }
     . content:has(h1,p,a){
         padding-inline: 1rem;
@@ -637,9 +638,7 @@ font-size: var(--p-text);
     .content-block{
         gap: 5rem;
     }
-    .content{
-        height: 100%;
-    }
+    
     .work-container{
         display: none;
     }
