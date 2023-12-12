@@ -46,6 +46,7 @@ if(state) {
 gsap.fromTo([firstNav,secondNav],{height:"0vh",skewY:3,transformOrigin:"right top"},{height:"100vh",skewY:0,duration:.8,ease:"Power3.inOut",stagger:{
     amount:.1
 }})
+    gsap.from(".nav-social",{scale:0,opacity:0,delay:1, duration:1,ease:"Power3.inOut"})
 } else{
     gsap.to(primaryNav,{display:"none",delay:.65})
     gsap.to([secondNav,firstNav],{height:"0vh",duration:.65,ease:"Power3.inOut",stagger:{
