@@ -632,7 +632,6 @@ font-size: var(--p-text);
         display: block;
     }
     .content-block{
-        gap: 2.5rem;
         margin-block: 2.5rem;
     }
     
