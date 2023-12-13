@@ -122,7 +122,16 @@ body{
     font-family:j2;
     color:black;
 }
-
+.logo(
+width:3rem;
+height:3rem;
+border-radius:100%;
+box-shadow: 0 25px 50px -12px rgb(0 0 0 /0.25);
+background:url(img/logo.png);
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+)
 .mouse-event{
     position: absolute; 
     width: 3rem;
