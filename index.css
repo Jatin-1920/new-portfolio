@@ -632,7 +632,7 @@ font-size: var(--p-text);
         display: block;
     }
     .content-block{
-        margin-block: 2.5rem;
+        margin-block: 1rem;
     }
     
     .work-container{
