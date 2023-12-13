@@ -633,7 +633,7 @@ font-size: var(--p-text);
         display: block;
     }
     .content-block{
-        gap: 5rem;
+        gap: 3rem;
     }
     
     .work-container{
