@@ -109,7 +109,7 @@ html {
     --h1-text: clamp(2.5rem, 3vw + 1rem, 3.5rem);
     --m-text: clamp(1rem, 0.75vw + 0.75rem, 3rem);
   --ml-text: clamp(1.35rem, 2vw + 1rem, 1.75rem);
---brg-heading: clamp(4rem, 2.5vw + 2.5rem, 6.25rem);
+--brg-heading: clamp(2.5rem, 2.5vw + 1rem, 5rem);
 --xl-text: clamp(4.75rem, 3vw + 3.25rem, 7.5rem);
   
 }
