@@ -641,7 +641,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     height:0;
     width:100%;
     background:#f9f6ee;
-    margin-top:10%;
+    margin-top:10vh;
 }
 .second-footer{
     position: absolute;
