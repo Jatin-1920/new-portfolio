@@ -634,7 +634,6 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     width:100%;
     position:relative;
     overflow:hidden;
-    display:none;
 }
 .first-footer{
     position: absolute;
