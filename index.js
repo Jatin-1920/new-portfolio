@@ -162,7 +162,7 @@ gsap.to(".about .btn",{scrollTrigger:{
 
 
 // contact mask image //
-//const timeLine =gsap.timeline().from(".bus",{scale:2, duration:2}).to(".mask",{
+/* const timeLine =gsap.timeline().from(".bus",{scale:2, duration:2}).to(".mask",{
     clipPath:"polygon(0% 0%,100% 0%,100% 100%,0% 100%)"
 },0).to(".mask",{scale:1,duration:1}).from(".soc-el",{scale:0,opacity:0, duration:1,ease:"Power3.inOut"}).from(".contact-info",{opacity:0, duration:1})
 ScrollTrigger.create({
@@ -170,5 +170,5 @@ ScrollTrigger.create({
     start:"top 20%",
     end:"bottom bottom",
     animation:timeLine
-})//
+}) */
 
