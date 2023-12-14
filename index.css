@@ -634,18 +634,19 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     width:100%;
     position:relative;
     overflow:hidden;
+    display:none;
 }
 .first-footer{
     position: absolute;
     inset:0;
-    height:100%;
+    height:0;
     width:100%;
     background:#f9f6ee;
 }
 .second-footer{
     position: absolute;
     inset:0;
-    height:85%;
+    height:0;
     width:100%;
     background:#faf9f6; 
     display:flex;
@@ -706,7 +707,7 @@ font-size: var(--p-text);
         
     }
     .second-footer{
-        height:89%
+        height:0;
     }
    
 }
