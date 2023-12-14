@@ -172,11 +172,3 @@ ScrollTrigger.create({
     animation:timeLine
 }) */
 
-const secondFooter = document.querySelector(".second-footer")
-const firstFooter  = document.querySelector(".first-footer")
-const footer = document.querySelector(".footer")
-gsap.to([firstFooter,secondFooter],{height:"100%",stagger:{amount:.075}, duration:.8,ease:"Power3.inOut",scrollTrigger:{
-    trigger:".footer",
-    start:"top 30%",
-    end:"bottom bottom"
-}})
