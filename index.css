@@ -475,6 +475,9 @@ transform-origin: 50% 50%;
     background: palegreen;
     color: black;
 }
+.racesWrapper{
+    margin-bottom:20vh;
+}
 
 .races{
    width: fit-content;
