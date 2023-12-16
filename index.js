@@ -177,3 +177,13 @@ const dates = document.querySelector(".date")
 const date = new Date()
 const year = date.getFullYear()
 dates.innerHTML = year
+const firstFooter = document.querySelector(".footer-container")
+const secondFooter = document.querySelector(".endFooter")
+
+gsap.to([firstFooter,secondFooter],{stagger:{
+    amount:0.02
+},duration:.8,ease:"power2.out",height:"100%",scrollTrigger:{
+    trigger:".footer",
+    start:"top 20%"
+    end:"bottom bottom"
+}})
