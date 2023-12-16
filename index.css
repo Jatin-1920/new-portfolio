@@ -648,7 +648,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     align-items:center;
     padding: 2rem 1.5rem;
     justify-content:space-between;
-    background:#f6f7fa;
+    background:#faf9f6;
     width:100%;
 }
 @media (width<700px) {
