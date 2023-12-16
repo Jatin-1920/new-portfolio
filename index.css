@@ -646,6 +646,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 .endFooter{
     display:flex;
     padding: 2rem ;
+    align-items:flex-end;
     justify-content:space-between;
     background:#f6f7fa;
     width:100%;
