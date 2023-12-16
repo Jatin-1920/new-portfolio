@@ -171,4 +171,9 @@ ScrollTrigger.create({
     end:"bottom bottom",
     animation:timeLine
 }) */
+// date //
+const dates = document.querySelector(".date")
 
+const date = new Date()
+const year = date.getFullYear()
+dates.innerHTML = year
