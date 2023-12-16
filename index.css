@@ -479,7 +479,7 @@ transform-origin: 50% 50%;
     height:60vh;
     display:flex;
     align-items:center;
-    background:#f3f2f2;
+    background:#f9f6ee;
 }
 
 .races{
@@ -628,7 +628,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     position:relative;
     flex-wrap:wrap;
     gap:1.5rem;
-    background:#f2f2f2;
+    background:#faf9f6;
     box-shadow: 0 6px 32px 0px rgba(0,0,0,.25);
 }
 .footer-block{
@@ -648,7 +648,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     align-items:center;
     padding: 2rem 1.5rem;
     justify-content:space-between;
-    background:#f3f2f2;
+    background:#f9f6ee;
     width:100%;
 }
 @media (width<700px) {
