@@ -629,7 +629,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     flex-wrap:wrap;
     gap:1.5rem;
     background:#faf9f6;
-    box-shadow: 0 12px 27px -12px rgba(105,105,105,.45);
+    box-shadow: 0 12px 27px -12px rgba(105,105,105,.4);
 }
 .footer-block{
     display:flex;
