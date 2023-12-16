@@ -476,7 +476,7 @@ transform-origin: 50% 50%;
     color: black;
 }
 .racesWrapper{
-    height:50vh;
+    height:60vh;
     display:flex;
     align-items:center;
     background:#f9f6ee;
@@ -486,7 +486,7 @@ transform-origin: 50% 50%;
    width: fit-content;
    display: flex;
    flex-wrap: nowrap;
-  
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .races h2{
 font-size: 15dvw;
