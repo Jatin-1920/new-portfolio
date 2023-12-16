@@ -476,7 +476,7 @@ transform-origin: 50% 50%;
     color: black;
 }
 .racesWrapper{
-    height:50vh;
+    height:60vh;
     display:flex;
     align-items:center;
     background:#f9f6ee;
@@ -629,7 +629,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     flex-wrap:wrap;
     gap:1.5rem;
     background:#faf9f6;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: 0 4px 2px -2px gray;
 }
 .footer-block{
     display:flex;
