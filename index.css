@@ -479,7 +479,7 @@ transform-origin: 50% 50%;
     height:60vh;
     display:flex;
     align-items:center;
-    background:#f9f6ee;
+    background:#dbdbdb;
 }
 
 .races{
@@ -628,8 +628,8 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     position:relative;
     flex-wrap:wrap;
     gap:1.5rem;
-    background:#faf9f6;
-    box-shadow: 0 12px 27px -12px rgba(105,105,105,.4);
+    background:#e4ebed;
+    box-shadow: 0 6px 32px rgba(0,0,0,.25);
 }
 .footer-block{
     display:flex;
@@ -648,7 +648,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     align-items:center;
     padding: 2rem 1.5rem;
     justify-content:space-between;
-    background:#f9f6ee;
+    background:#dbdbdb;
     width:100%;
 }
 @media (width<700px) {
