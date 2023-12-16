@@ -644,10 +644,6 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     align-items:center;
     padding: 3rem;
     justify-content:space-between;
-    position: absolute;
-    height:10vh;
-    left:0;
-    bottom:-10vh;
     background:#f9f6ee;
     width:100%;
 }
