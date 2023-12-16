@@ -645,8 +645,8 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .endFooter{
     display:flex;
-    height:0;
-    align-items:start;
+    height:100%;
+    align-items:end;
     padding: 2rem ;
     justify-content:space-between;
     background:#f6f7fa;
