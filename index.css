@@ -696,7 +696,6 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     align-items:center;
     gap:1rem;
     font-family:j1;
-    height:100%;
     width:100%;
 }
 .sm-text1{
