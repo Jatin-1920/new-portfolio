@@ -618,6 +618,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 .footer{
     width:100%;
     height:100%;
+    color:#333;
 }
 .footer-container{
     width:100%;
