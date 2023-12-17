@@ -653,6 +653,12 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     background:#f6f7fa;
     width:100%;
 }
+.address{
+    position: absolute;
+    left:2rem;
+    bottom:2rem;
+    width:100%;
+}
 @media (width<700px) {
 .small-title{
 width: 100%;
