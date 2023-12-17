@@ -633,7 +633,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .footer-block{
     display:flex;
-    gap:2rem;
+    gap:1rem;
 }
 .footer-block h4{
     font-weight:500;
@@ -655,8 +655,8 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .address{
     position: absolute;
-    left:2rem;
-    bottom:2rem;
+    left:1rem;
+    bottom:1rem;
     width:100%;
 }
 @media (width<700px) {
@@ -702,7 +702,7 @@ font-size: var(--p-text);
     .footer-container{
         display:grid;
         grid-template-columns:1fr 1fr;
-        gap:1rem;
+        gap:2rem;
     }
    
 }
