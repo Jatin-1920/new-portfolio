@@ -652,7 +652,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     gap:1rem;
 }
 .small-footer{
-   width:100%;
+   width:10rem;
     height:4rem;
     padding:.15rem;
     display:flex;
@@ -690,8 +690,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     padding:1rem;
     color:#9400ff;
     display:flex;
-    justify-content:center;
-    align-items:center;
+    margin:auto;
     gap:1rem;
     font-family:j1;
     width:100%;
