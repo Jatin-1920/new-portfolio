@@ -662,6 +662,9 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     border-radius:.5rem;
     background:#9400ff;
 }
+.small-footer>*{
+    flex:1;
+}
 .sm-img{
     background:url(img/foot.jpg);
     background-size: cover;
@@ -670,7 +673,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     box-shadow: rgba(0, 0, 0, 0.02);
     border-radius:.5rem;
     height:100%;
-    width:100%;
+    order:-1;
 }
 .end-footer{
     position: absolute;
