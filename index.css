@@ -692,7 +692,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     color:#9400ff;
     display:flex;
     gap:1rem;
-    font-family:j2;
+    font-family:j1;
 }
 .sm-text1{
     transform:translateY(-3rem) rotate(5deg);
