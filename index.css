@@ -636,12 +636,15 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     gap:1rem;
 }
 .footer-block h4{
-    font-weight:500;
+    font-weight:bold;
 }
 .footer-links{
     display:flex;
     flex-direction: column;
     gap:.75rem;
+}
+.footer-links a {
+    color:#333;
 }
 .endFooter{
     display:flex;
