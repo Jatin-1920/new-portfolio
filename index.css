@@ -628,7 +628,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     background-repeat:no-repeat;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 2px 4px 0px inset;
     overflow:hidden;
-    height:50vh;
+    height:30vh;
     width:100%;
 }
 .footer-container{
