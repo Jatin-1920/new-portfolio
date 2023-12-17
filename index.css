@@ -678,9 +678,11 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     justify-content:space-between;
 }
 .sm-text{
-    font-size:var(--xl-text);
+    font-size:10dvw;
     padding:3.2rem;
     color:#9400ff;
+    display:flex;
+    gap:1rem;
 }
 .sm-text1{
     transform:translateY(-3rem) rotate(15deg);
