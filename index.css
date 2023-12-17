@@ -643,7 +643,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     gap:1rem;
     justify-content:space-between;
     padding:2rem 1rem;
-    border-bottom:2px solid black;
+    border-bottom:1px solid black;
 }
 
 .footer-links{
@@ -682,9 +682,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     position: absolute;
     bottom:1rem;
     left:1rem;
-    right:1rem;
     display:flex;
-    width:100%;
     justify-content:space-between;
 }
 .sm-text{
