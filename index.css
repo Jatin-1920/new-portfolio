@@ -659,7 +659,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     gap:.5rem;
     align-items:center;
     
-    border-radius:.5rem;
+    border-radius:.65rem;
     background:#9400ff;
 }
 .small-footer>*{
@@ -674,7 +674,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     background-position:center center;
     background-repeat:no-repeat;
     box-shadow: rgba(0, 0, 0, 0.02);
-    border-radius:.5rem;
+    border-radius:.65rem;
     height:100%;
     order:-1;
 }
@@ -687,7 +687,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     justify-content:space-between;
 }
 .sm-text{
-    font-size:15dvw;
+    font-size:16dvw;
     padding:1rem;
     color:#9400ff;
     display:flex;
@@ -709,7 +709,8 @@ width: 100%;
 font-size: var(--p-text);
 }
  .name{
-    font-size: 1.25rem};
+    font-size: 1.25rem
+ };
     
     .content{
         width: 100%;
