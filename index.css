@@ -658,12 +658,15 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     display:flex;
     gap:.5rem;
     align-items:center;
-    color:white;
+    
     border-radius:.5rem;
     background:#9400ff;
 }
 .small-footer>*{
     flex:1;
+}
+.small-footer a {
+    color:white;
 }
 .sm-img{
     background:url(img/foot.jpg);
@@ -684,21 +687,21 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     justify-content:space-between;
 }
 .sm-text{
-    font-size:18dvw;
+    font-size:15dvw;
     padding:1rem;
     color:#9400ff;
     display:flex;
-    gap:2rem;
+    gap:1rem;
     font-family:j2;
 }
 .sm-text1{
-    transform:translateY(-3rem) rotate(15deg);
+    transform:translateY(-3rem) rotate(5deg);
 }
 .sm-text2{
     transform:rotate(60deg);
 }
 .sm-text3{
-    transform:rotate(35deg);
+    transform:rotate(23deg);
 }
 @media (width<700px) {
 .small-title{
