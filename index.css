@@ -703,6 +703,9 @@ font-size: var(--p-text);
         display:grid;
         grid-template-columns:1fr 1fr;
         gap:2rem;
+        padding-inline:1rem;
     }
-   
+   .endFooter{
+       padding-inline:1rem;
+   }
 }
