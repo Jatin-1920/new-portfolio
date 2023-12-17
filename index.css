@@ -655,8 +655,8 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .address{
     position: absolute;
-    left:1rem;
-    bottom:1rem;
+    left:2rem;
+    bottom:2rem;
     width:100%;
 }
 @media (width<700px) {
@@ -708,4 +708,8 @@ font-size: var(--p-text);
    .endFooter{
        padding-inline:1rem;
    }
+    .address{
+        left:1rem;
+        bottom:1rem;
+    }
 }
