@@ -664,11 +664,13 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .sm-img{
     background:url(img/foot.jpg);
-    background-size:100% 100%;
+    background-size: cover;
     background-position:center center;
     background-repeat:no-repeat;
     box-shadow: rgba(0, 0, 0, 0.02);
     border-radius:.5rem;
+    height:100%;
+    width:100%;
 }
 .end-footer{
     position: absolute;
