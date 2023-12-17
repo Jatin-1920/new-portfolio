@@ -693,7 +693,7 @@ font-size: var(--p-text);
         width: 100%;
         
     } 
-    . footer-container{
+    .footer-container{
         display:grid;
         grid-template-columns:1fr 1fr;
         gap:1rem;
