@@ -623,7 +623,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .footImg{
     background:url(img/foot.jpg);
-    background-size:150% 100%;
+    background-size:120% 100%;
     background-position:center center;
     background-repeat:no-repeat;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 2px 4px 0px inset;
