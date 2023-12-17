@@ -654,7 +654,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 .small-footer{
    width:100%;
     height:4rem;
-    padding:1rem;
+    padding:.15rem;
     display:flex;
     gap:.5rem;
     align-items:center;
@@ -682,7 +682,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .sm-text{
     font-size:18dvw;
-    padding:3.2rem;
+    padding:1rem;
     color:#9400ff;
     display:flex;
     gap:2rem;
