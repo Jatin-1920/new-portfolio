@@ -686,7 +686,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .sm-text{
     font-size:17dvw;
-    padding:1rem;
+    padding:5rem 1rem;
     color:#9400ff;
     display:flex;
     justify-content:center;
