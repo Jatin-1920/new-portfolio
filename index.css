@@ -636,7 +636,9 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     justify-content:space-evenly;
     gap:1rem;
 }
-
+.footer-links a {
+    color:black;
+}
 
 .end-footer{
     position: absolute;
