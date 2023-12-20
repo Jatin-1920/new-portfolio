@@ -110,7 +110,7 @@ html {
     --m-text: clamp(1rem, 0.75vw + 0.75rem, 3rem);
   --ml-text: clamp(1.35rem, 2vw + 1rem, 1.75rem);
 --brg-heading: clamp(2.5rem, 2.5vw + 1rem, 5rem);
---xl-text: clamp(2.5rem, 2vw + 1rem, 3.5rem);
+--xl-text: clamp(2rem, 1.5vw + 0.5rem, 3.5rem);
   
 }
 body{
@@ -710,4 +710,5 @@ font-size: var(--p-text);
     .footer{
         padding:2rem 1.5rem;
     }
+    
 }
