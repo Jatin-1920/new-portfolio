@@ -655,7 +655,7 @@ bottom:2rem;
     grid-template-columns: repeat(2,1fr);
     font-family:j1;
     width:100%;
-    margin-block:2rem;
+     place-items:center;
 }
 .sm-text1{
     transform:translateY(-3rem) rotate(5deg);
