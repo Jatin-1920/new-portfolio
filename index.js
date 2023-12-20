@@ -135,7 +135,6 @@ ScrollTrigger.create({
     scrub:1,
     invalidateOnRefresh:true,
     animation:slider,
-    background:"#f6f7fa";
 })
 
 
