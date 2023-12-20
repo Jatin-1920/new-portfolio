@@ -642,8 +642,8 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 .end-footer{
     margin-top:auto;
     display:flex;
-    min-height:100%;
-    aligm-items:end;
+    height:100%;
+    align-items:end;
     justify-content:space-between;
 }
  .sm-text{
@@ -654,7 +654,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     gap:1rem;
     font-family:j1;
     width:100%;
-     margin-block:2rem;
+     margin-block:3rem;
 }
 .sm-text1{
     transform:translateY(-3rem) rotate(5deg);
