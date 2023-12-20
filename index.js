@@ -94,20 +94,8 @@ contentSection.forEach((details,index)=>{
         scrub:true
     })
 })
-} else {
-    contentSection.forEach((details,index)=>{
-    let headline = details.querySelector("h1")
-    let animation = gsap.timeline().to(".content-container",{background:`${details.dataset.color}`,color:`${details.dataset.clr}`,duration:2,ease:"linear"})
-    ScrollTrigger.create({
-        trigger:headline,
-        start:"top 20%",
-        end:"top 50%",
-        animation:animation,
-        scrub:true
-    })
-})
-}
-
+} 
+  
 let tween = gsap.to(".work-slide-text",{xPercent:-100,repeat:-1,duration:5,ease:"linear"}).totalProgress(0.5)
 gsap.set(".work-slide",{xPercent:-50})
 
