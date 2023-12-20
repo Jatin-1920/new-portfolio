@@ -641,11 +641,8 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 
 .end-footer{
-    position: absolute;
-    bottom:1rem;
-    left:1rem;
+    margin-top:auto;
     display:flex;
-    width:100%;
     justify-content:space-between;
 }
  .sm-text{
@@ -656,6 +653,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     gap:1rem;
     font-family:j1;
     width:100%;
+     margin-block:1rem;
 }
 .sm-text1{
     transform:translateY(-3rem) rotate(5deg);
