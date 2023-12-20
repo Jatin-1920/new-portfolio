@@ -652,7 +652,7 @@ bottom:2rem;
  .sm-text{
     font-size:17dvw;
     display:grid;
-    grid-template-column: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
     font-family:j1;
     width:100%;
     margin-block:2rem;
