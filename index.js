@@ -134,7 +134,8 @@ ScrollTrigger.create({
     pin:true,
     scrub:1,
     invalidateOnRefresh:true,
-    animation:slider
+    animation:slider,
+    background:"#f6f7fa";
 })
 
 
