@@ -296,7 +296,7 @@ a{
     color:palegreen;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 0  10px rgba(0, 0, 0, 0.696);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     z-index: 2;
     font-family: j1;
     
