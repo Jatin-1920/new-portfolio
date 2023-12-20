@@ -653,10 +653,9 @@ bottom:2rem;
     font-size:17dvw;
     display:grid;
     grid-template-column: repeat(2,1fr);
-    gap:2rem;
     font-family:j1;
     width:100%;
-    margin-block:3rem;
+    margin-block:2rem;
 }
 .sm-text1{
     transform:translateY(-3rem) rotate(5deg);
