@@ -655,7 +655,6 @@ bottom:1rem;
     grid-template-columns: repeat(2,1fr);
     font-family:j1;
     width:100%;
-    grid-template-rows:1fr;
      place-items:center;
 }
 .sm-text1{
