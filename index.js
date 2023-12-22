@@ -166,7 +166,50 @@ const dates = document.querySelector(".date")
 const date = new Date()
 const year = date.getFullYear()
 dates.innerHTML = year;
-const canvas = document.querySelectorAll(".canvas")
+const canvas = document.querySelector(".canvas")
+const footer = document.querySelector(".footer")
 const ctx = canvas.getContext(2d)
-ctx.lineCap = "round"
 
+canvas.width = footer.width
+canvas.height = footer.height
+ctx.lineCap = "round"
+ctx.lineJoin = "round"
+ctx.lineWidth = 100
+ctx.strokeStyle ="green"
+
+let drawing = false;
+let lastX = 0;
+let lastY = 0;
+let hue = 0;
+let direction= true
+
+function draw(e) {
+    if(!drawing) return 
+    ctx.beginPath() 
+    ctx.moveTo(lastX,lastY)
+    ctx.strokeStyle = `hsl(${hue},100%,50%)`
+    ctx.lineTo(e.offsetX,e.offsetY)
+    ctx.stroke()
+    [lastX,lastY] = [e.offsetX,e.offsetY]
+    hue++
+    if(hue>=360){
+        hue = 0
+    }
+}
+
+function clearCanvas(){
+    ctx.clearRect(0,0,canvas.width,canvas.height)
+}
+canvas.addEventListener("mouseDown",(e)=>{
+    drawing= true
+    [lastX,lastY] = [e.offsetX,e.offsetY]
+})
+canvas.addEventListener("mousemove",draw)
+canvas.addEventListener("mouseUp",(e)=>{
+    drawing= false
+    clearCanvas()
+})
+canvas.addEventListener("mouseout",(e)=>{
+    drawing= false
+    clearCanvas()
+})
