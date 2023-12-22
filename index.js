@@ -160,20 +160,13 @@ gsap.to(".about .btn",{scrollTrigger:{
     ease:"power2",
 },width:"10rem",scale:1,duration:1})
 
-
-// contact mask image //
-/* const timeLine =gsap.timeline().from(".bus",{scale:2, duration:2}).to(".mask",{
-    clipPath:"polygon(0% 0%,100% 0%,100% 100%,0% 100%)"
-},0).to(".mask",{scale:1,duration:1}).from(".soc-el",{scale:0,opacity:0, duration:1,ease:"Power3.inOut"}).from(".contact-info",{opacity:0, duration:1})
-ScrollTrigger.create({
-    trigger:".contact",
-    start:"top 20%",
-    end:"bottom bottom",
-    animation:timeLine
-}) */
 // date //
 const dates = document.querySelector(".date")
 
 const date = new Date()
 const year = date.getFullYear()
-dates.innerHTML = year
+dates.innerHTML = year;
+const canvas = document.querySelectorAll(".canvas")
+const ctx = canvas.getContext(2d)
+ctx.lineCap = "round"
+
