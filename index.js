@@ -168,7 +168,7 @@ const year = date.getFullYear()
 dates.innerHTML = year;
 const canvas = document.querySelector(".canvas")
 const footer = document.querySelector(".footer")
-const ctx = canvas.getContext(2d)
+const ctx = canvas.getContext("2d")
 
 canvas.width = footer.width
 canvas.height = footer.height
