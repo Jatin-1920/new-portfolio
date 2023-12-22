@@ -213,3 +213,5 @@ canvas.addEventListener("mouseout",(e)=>{
     drawing= false
     clearCanvas()
 })
+    canvas.ontouchmove = e => draw(e.touches[0])
+
