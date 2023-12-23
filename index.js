@@ -204,7 +204,9 @@ canvas.addEventListener("mouseDown",(e)=>{
     drawing= true
     [lastX,lastY] = [e.offsetX,e.offsetY]
 })
-canvas.addEventListener("mousemove",draw)
+canvas.addEventListener("mousemove",(e)=>{
+   draw(e) 
+})
 canvas.addEventListener("mouseUp",(e)=>{
     drawing= false
     clearCanvas()
@@ -213,5 +215,5 @@ canvas.addEventListener("mouseout",(e)=>{
     drawing= false
     clearCanvas()
 })
-    canvas.ontouchmove = e => draw(e.touches[0])
+    canvas.ontouchmove = e => draw(e)
 
