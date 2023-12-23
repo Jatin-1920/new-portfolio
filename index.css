@@ -353,6 +353,11 @@ a{
 .media-image{
     display: none;
 }
+.media-image img {
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
 .content{
     height: 100dvh;
 justify-content: center;
