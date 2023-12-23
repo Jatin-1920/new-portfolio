@@ -458,7 +458,7 @@ opacity: 0;
 }
 .btn{
     background: black;
-    color: white;
+    color:#fdfdff ;
     padding-block: .75rem;
     border-radius: 2rem;
     width: 10rem;
