@@ -393,7 +393,7 @@ overflow: hidden;
 inset: 0;
 
 }
-.image img{
+.image div{
     height:100%;
     width:100%;
 }
