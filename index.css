@@ -396,14 +396,16 @@ inset: 0;
     background:url(img/IMG_20230908_134018.jpg) ;
     background-size:100% 100%;
     background-position: center center;
-    
+    height:100%;
+    width:100%;
     background-repeat: no-repeat;
 }
 .img2{
     background:url(img/IMG_20230908_134048.jpg) ;
     background-size:100% 100%;
     background-position: center center;
-    
+    height:100%;
+    width:100%;
     background-repeat: no-repeat;
 }
 .img3{
@@ -411,14 +413,16 @@ inset: 0;
     
     background-size:100% 100%;
     background-position: center center;
-    
+    height:100%;
+    width:100%;
     background-repeat: no-repeat;
 }
 .img4{
     background:url(img/IMG_20230908_134031.jpg); 
     background-size:100% 100%;
     background-position: center center;
-    
+    height:100%;
+    width:100%;
     background-repeat: no-repeat;
 }
 .about{
