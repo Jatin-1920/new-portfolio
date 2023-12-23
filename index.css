@@ -473,8 +473,7 @@ transform: scale(0);
 transform-origin: 50% 50%;
 }
 .btn:hover{
-    background: palegreen;
-    color: black;
+    background: #333;
 }
 .racesWrapper{
     height:60vh;
