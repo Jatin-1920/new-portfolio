@@ -698,7 +698,7 @@ font-size: var(--p-text);
     .media-image{
         display: block;
         width: 100%;
-        max-height: 12.5rem;
+        height: 12.5rem;
         margin-bottom:1rem;
     }
     
