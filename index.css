@@ -356,7 +356,7 @@ a{
 .media-image img {
     height:12.5rem;
     width:100%;
-    object-fit:cover;
+    object-fit:none;
 }
 .content{
     height: 100dvh;
