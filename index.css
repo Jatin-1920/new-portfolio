@@ -357,6 +357,7 @@ a{
     height:12.5rem;
     width:100%;
     object-fit:cover;
+    aspect-ratio:4/3;
 }
 .content{
     height: 100dvh;
