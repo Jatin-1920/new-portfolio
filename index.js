@@ -219,7 +219,8 @@ canvas.addEventListener("mouseout",(e)=>{
 
 canvas.addEventListener("touchStart",(e)=>{
     drawing= true
-    [lastX,lastY] = [e.offsetX,e.offsetY]
+        const touch= e.touches[0]
+    [lastX,lastY] = [touch.offsetX, touch.offsetY]
 })
 canvas.addEventListener("touchmove",(e)=>{
    draw(e) 
