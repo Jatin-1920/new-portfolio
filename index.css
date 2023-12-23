@@ -211,7 +211,7 @@ height: 100%;
 font-family: j1;
 }
 .primary-navigation>a{
-    color:white;
+    color:#fdfdff;
 }
 .primary-navigation>a:hover{
     color: black;
@@ -268,7 +268,7 @@ a{
     color:black;
 }
 .left-side .title .name{
-    color: white;
+    color: #fdfdff;
 }
 
 .left-side{
@@ -279,7 +279,7 @@ a{
 }
 .right-side{
     background: rgb(217, 22, 22);
-    color: white;
+    color: #fdfdff;
 }
 
 .fancy{
