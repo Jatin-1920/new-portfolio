@@ -394,27 +394,29 @@ inset: 0;
 }
 .img1{
     background:url(img/IMG_20230908_134018.jpg) ;
-    background-size:cover;
+    background-size:100%;
     background-position:center;
+    
     background-repeat: no-repeat;
 }
 .img2{
     background:url(img/IMG_20230908_134048.jpg) ;
-    background-size:cover;
+    background-size:100%;
     background-position:center;
+    
     background-repeat: no-repeat;
 }
 .img3{
     background:url(img/Screenshot_2023-09-25-18-47-02-22_40deb401b9ffe8e1df2f1cc5ba480b12.jpg) ;
     
-    background-size:cover;
+    background-size:100%;
     background-position:center;
     
     background-repeat: no-repeat;
 }
 .img4{
     background:url(img/IMG_20230908_134031.jpg); 
-    background-size:cover;
+    background-size:100%;
     background-position:center;
     
     background-repeat: no-repeat;
