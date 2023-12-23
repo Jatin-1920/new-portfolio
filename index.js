@@ -217,17 +217,3 @@ canvas.addEventListener("mouseout",(e)=>{
 })
 
 
-canvas.addEventListener("touchStart",(e)=>{
-    drawing= true
-        const touch= e.touches[0]
-    [lastX,lastY] = [touch.offsetX, touch.offsetY]
-})
-canvas.addEventListener("touchmove",(e)=>{
-   draw(e) 
-})
-
-canvas.addEventListener("touchend",(e)=>{
-    drawing= false
-    clearCanvas()
-})
-
