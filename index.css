@@ -622,6 +622,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     overflow:hidden;
     padding:3rem;
     position:relative;
+    background:white;
 }
 .canvas{
     position: absolute;
