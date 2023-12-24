@@ -578,7 +578,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 
 .nav-social i{
     z-index:11;
-    animation:rotate 3s linear infinite;
+    
 }
 .nav-social i{
     height:3rem;
@@ -625,14 +625,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     background:rgba(45,85,255,.7);
 }
 
-@keyframes rotate{
-    from{
-        transform:rotate(0);
-    }
-    to{
-        transform:rotate(1turn);
-    }
-}
+
 .footer{
     width:100%;
     height:100dvh;
