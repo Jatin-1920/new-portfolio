@@ -126,7 +126,7 @@ body{
     scrollbar-color:#760026;
 }
 ::-webkit-scrollbar{
-     width: 7px;
+     width: 4.5px;
    }
    ::-webkit-scrollbar-track{
      background: linear-gradient(45deg,purple,#f80351,purple);
