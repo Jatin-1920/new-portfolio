@@ -120,12 +120,12 @@ function getScrollAmount(){
     return -(racesWidth-window.innerWidth)
 
 }
-
-const slider = gsap.to(races,{
+const tl = gsap.timeline()
+const slider = tl.to(races,{
     x:getScrollAmount,
     duration:5,ease:"none"
 
-})
+}).to(".racesWrapper",{position:"fixed"})
 
 ScrollTrigger.create({
     trigger:".racesWrapper",
