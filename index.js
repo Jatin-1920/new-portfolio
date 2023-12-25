@@ -97,11 +97,7 @@ contentSection.forEach((details,index)=>{
     })
 })
 } 
-  const tweenArray = document.querySelectorAll(".about-img div")
-const arrayDiv= Array.from(tweenArray)
-arrayDiv.forEach((e,i)=>{
-    e.style.left = `calc(${i} * 5)%`
-})
+  
 
 let tween = gsap.to(".work-slide-text",{xPercent:-100,repeat:-1,duration:5,ease:"linear"}).totalProgress(0.5)
 gsap.set(".work-slide",{xPercent:-50})
