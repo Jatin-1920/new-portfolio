@@ -139,7 +139,7 @@ ScrollTrigger.create({
 
 
     //  TEXT ANIMATION //
-TweenMax.staggerFrom(".about-img",{width:0%,duration:.8,scrollTrigger:{
+TweenMax.staggerFrom(".about-img div",{width:0%,duration:.8,scrollTrigger:{
     trigger:".about-img",
     start:"top 20%",
     end:"bottom bottom",
