@@ -38,6 +38,8 @@ const project = document.querySelector(".project")
 const content = document.querySelectorAll(".content")
 let state = false
 gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(TweenMax)
+
 menuToggle.addEventListener("click",(e)=>{
 state = !state
     gsap.set(".nav-social",{opacity:0,scale:0})
