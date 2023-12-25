@@ -149,7 +149,7 @@ var controller = new ScrollMagic();
   var scene = new ScrollScene({triggerElement: '.about-img'})
     .setTween(tweens)
     .addTo(controller);
-
+scene.addIndicators()
 
 const firstLine = document.querySelectorAll(".about-content h2 span")
 const secondLine =document.querySelector(".about-title span")
