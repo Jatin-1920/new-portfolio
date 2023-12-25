@@ -146,7 +146,7 @@ gsap.to(".about-img div",1,{y:"-100%",stagger:{
     amount:0.15
 },scrollTrigger:{
     trigger:".about-img",
-    start:"top 20%",
+    start:"top 35%",
     end:"bottom bottom"
 }}) 
 
