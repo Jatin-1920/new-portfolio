@@ -139,7 +139,11 @@ ScrollTrigger.create({
 
 
     //  TEXT ANIMATION //
-
+TweenMax.staggerFrom(".about-img",{width:0%,duration:.8,scrollTrigger:{
+    trigger:".about-img",
+    start:"top 20%",
+    end:"bottom bottom",
+}},0.04)
 
 const firstLine = document.querySelectorAll(".about-content h2 span")
 const secondLine =document.querySelector(".about-title span")
