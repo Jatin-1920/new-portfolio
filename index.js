@@ -142,14 +142,11 @@ ScrollTrigger.create({
 
 
     //  TEXT ANIMATION //
-var controller = new ScrollMagic();
-
-  var tweens = TweenMax.staggerFrom('.about-img div', .8, {width:0%},0.04);
-
-  var scene = new ScrollScene({triggerElement: '.about-img'})
-    .setTween(tweens)
-    .addTo(controller);
-scene.addIndicators()
+gsap.to(".about-img div",0.08,{width:0%,stagger:0.04,scrollTrigger:{
+    trigger:".about-img",
+    start:"top 20%",
+    end:"bottom bottom"
+}})
 
 const firstLine = document.querySelectorAll(".about-content h2 span")
 const secondLine =document.querySelector(".about-title span")
