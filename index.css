@@ -666,7 +666,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 .end-footer{
     position: absolute;
 bottom:1rem;
-    right:2rem;
+    left:2rem;
     width:100%;
     display:flex;
     flex-direction: column;
