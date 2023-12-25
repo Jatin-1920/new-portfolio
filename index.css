@@ -453,6 +453,14 @@ height: 100%;
     background-repeat:no-repeat;
     height:35dvh;
     width:100%;
+    position:relative;
+}
+.about-img div{
+    position: absolute;
+    width:5%;
+    height:100%;
+    background: white;
+    top:0;
 }
 
 .about-title{
