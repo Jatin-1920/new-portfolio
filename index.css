@@ -455,77 +455,11 @@ height: 100%;
     width:100%;
     overflow:hidden;
     position:relative;
+    display:grid;
+    grid-template-columns:repeat(20,1fr);
 }
 .about-img div{
-    position: fixed;
-    width:5%;
-    height:100%;
-    background: white;
-}
-.about-img div:nth-child(1){
-    left:0%;
-}
-.about-img div:nth-child(2){
-    left:5%;
-}
-.about-img div:nth-child(3){
-    left:10%;
-}
-.about-img div:nth-child(4){
-    left:15%;
-}
-.about-img div:nth-child(5){
-    left:20%;
-}
-.about-img div:nth-child(6){
-    left:25%;
-}
-.about-img div:nth-child(7){
-    left:30%;
-}
-
-.about-img div:nth-child(8){
-    left:35%;
-}
-.about-img div:nth-child(9){
-    left:40%;
-}
-
-.about-img div:nth-child(10){
-    left:45%;
-}
-.about-img div:nth-child(11){
-    left:50%;
-}
-.about-img div:nth-child(12){
-    left:55%;
-}
-
-.about-img div:nth-child(13){
-    left:60%;
-}
-
-.about-img div:nth-child(14){
-    left:65%;
-}
-.about-img div:nth-child(15){
-    left:70%;
-}
-
-.about-img div:nth-child(16){
-    left:75%;
-}
-.about-img div:nth-child(17){
-    left:80%;
-}
-.about-img div:nth-child(18){
-    left:85%;
-}
-.about-img div:nth-child(19){
-    left:90%;
-}
-.about-img div:nth-child(20){
-    left:95%;
+    background:white;
 }
 
 
