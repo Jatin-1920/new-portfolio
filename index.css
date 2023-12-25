@@ -446,7 +446,14 @@ margin-block: 10rem;
 place-items: center;
 height: 100%;
 }
-
+.about-img{
+    background:url(img/comp.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+    height:35dvh;
+    width:100%;
+}
 
 .about-title{
     font-size: 2rem;
