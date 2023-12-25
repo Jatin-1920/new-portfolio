@@ -142,7 +142,7 @@ ScrollTrigger.create({
 
 
     //  TEXT ANIMATION //
-gsap.to(".about-img div",1,{y:"-100%",ease:"power3.inOut",stagger:{
+gsap.to(".about-img div",1,{y:"-100%",stagger:{
     amount:0.15
 },scrollTrigger:{
     trigger:".about-img",
