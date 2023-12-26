@@ -454,7 +454,7 @@ height: 100%;
 
 .about-img{
     background:url(img/comp.jpg);
-    background-size:110% 100%;
+    background-size:100% 100%;
     background-position: center center;
     background-repeat:no-repeat;
     height:50dvh;
