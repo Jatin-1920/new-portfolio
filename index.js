@@ -227,8 +227,8 @@ canvas.addEventListener("mouseout",(e)=>{
 
 gsap.to(".about-img", {
   scrollTrigger: {
-      trigger:".parallax",
-      start:"top 50%",
+      trigger:".about-img",
+      start:"top top",
     scrub: true
   }, 
   y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
