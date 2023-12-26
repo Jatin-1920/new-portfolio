@@ -102,7 +102,7 @@ html {
     --bg-3:#edb74d;
     --bg-4:#151515;
     --bg-5:#6fb18a;
-    --m-g:3rem;
+    --m-g:5rem;
     --ms-text: clamp(2rem, 1.5vw + .65rem, 2.25rem);
     --h2-text: clamp(2rem, 1.5vw + 0.75rem, 2.5rem);
     --l-text: clamp(1.3rem, 0.75vw + 0.75rem, 1.5rem);
