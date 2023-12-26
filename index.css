@@ -114,6 +114,27 @@ html {
 --xl-text: clamp(2rem, 1.5vw + 0.5rem, 3.5rem);
   
 }
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
 body{
     text-rendering: optimizeSpeed;
     line-height:1.6;
