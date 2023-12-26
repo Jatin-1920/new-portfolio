@@ -225,13 +225,3 @@ canvas.addEventListener("mouseout",(e)=>{
     clearCanvas()
 })
 
-gsap.to(".about-img", {
-  scrollTrigger: {
-    scrub: true,
-      trigger:".about-img",
-      start:"top top",
-      end:"bottom bottom"
-  }, 
-  y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
-  ease: "none"
-});
