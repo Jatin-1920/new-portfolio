@@ -227,9 +227,8 @@ canvas.addEventListener("mouseout",(e)=>{
 gsap.to(".about-img", {
   scrollTrigger: {
       trigger:".about-img",
-      start:"top top",
-      end:"bottom bottom",
       scrub: true,
+      pin:false
   }, 
   y: "-10dvh",
   ease: "none"
