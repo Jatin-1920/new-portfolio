@@ -446,6 +446,11 @@ margin-block: 3rem;
 place-items: center;
 height: 100%;
 }
+.parallax{
+ height:50dvh;
+    width:100%;
+    overflow:hidden;   
+}
 
 .about-img{
     background:url(img/comp.jpg);
