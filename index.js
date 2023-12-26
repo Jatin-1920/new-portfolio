@@ -226,11 +226,11 @@ canvas.addEventListener("mouseout",(e)=>{
 })
 gsap.to(".about-img", {
   scrollTrigger: {
-    scrub: true,
       trigger:".about-img",
       start:"top top",
-      end:"bottom bottom"
+      end:"bottom bottom",
+      scrub: true,
   }, 
-  y: "-10dvh"
+  y: "-10dvh",
   ease: "none"
 });
