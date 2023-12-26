@@ -230,6 +230,6 @@ gsap.to(".about-img", {
       scrub: true,
       pin:false
   }, 
-  y: -50,
+  y:"-10dvh",
   ease: "none"
 });
