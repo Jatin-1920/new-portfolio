@@ -680,7 +680,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     gap:1rem;
 }
 .footer-links a {
-    color:silver;
+    color:#a9a9a9;
 }
 
 .footer-links a:hover {
