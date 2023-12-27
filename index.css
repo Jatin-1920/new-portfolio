@@ -343,7 +343,7 @@ a{
 }
 
 .project{
-    margin-block:var(--m-g);
+    margin-bottom:var(--m-g);
 }
 .content-container{
     display: flex;
