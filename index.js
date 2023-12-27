@@ -124,8 +124,8 @@ contentSection.forEach((details,index)=>{
 } 
   
 
-let tween = gsap.to(".work-slide-text",{x:"-100%",repeat:-1,duration:5,ease:"linear"}).totalProgress(0.5)
-gsap.set(".work-slide",{x:"-50%"})
+let tween = gsap.to(".work-slide-text",{xPercent:-100,repeat:-1,duration:5,ease:"linear"}).totalProgress(0.5)
+gsap.set(".work-slide",{xPercent:-50})
 
 window.addEventListener("scroll",()=>{
     if(window.pageYOffset>currentScroll) {
