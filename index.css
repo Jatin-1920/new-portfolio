@@ -308,8 +308,8 @@ a{
     margin-block: var(--m-g);
     height:6.5rem;
     font-size: 2rem;
-    background: black;
-    color:#fdfdff;
+    background:#073b3e ;
+    color:white;
     overflow: hidden;
     position: relative;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
