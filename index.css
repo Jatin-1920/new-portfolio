@@ -138,14 +138,7 @@ body{
      box-shadow: 0 -100vh 0 100vh rgb(238, 238, 155),0 0 15px 5px black;
    }
 
-.scrollContainer{
-    width:90%;
-    height:90%;
-    overflow-x:hidden;
-    overflow-y:scroll;
-    margin:auto;
-    border-radius:2rem;
-}
+
 .logo{
 width:3rem;
 height:3rem;
