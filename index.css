@@ -502,9 +502,9 @@ opacity: 0;
 }
 .btn{
     background: black;
-    color:#fdfdff ;
+    color:#073b3a;
     padding-block: .75rem;
-    border-radius: 2rem;
+    border-radius: .5rem;
     width: 10rem;
     display: flex;
     justify-content: center;
@@ -517,7 +517,7 @@ transform: scale(0);
 transform-origin: 50% 50%;
 }
 .btn:hover{
-    background: #36454f;
+    background: #18392b;
 }
 .racesWrapper{
     height:60dvh;
