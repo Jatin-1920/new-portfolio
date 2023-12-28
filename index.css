@@ -535,17 +535,17 @@ transform-origin: 50% 50%;
 }
 .races h2{
 font-size: 30dvw;
-color:red;
 flex-shrink: 0;
 padding:4rem;
 margin: 0;
 font-family:j1;
-    background:black;
+    background:#073b3e;
+    color:white;
 }
 
 .races .gsap{
-    background:#073b3a;
-    color:white;
+    background:#1e453a;
+    color:yellow;
 }
 /*.contact{
     height:100dvh;
