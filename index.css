@@ -538,6 +538,7 @@ font-size: 30dvw;
 flex-shrink: 0;
 padding:4rem;
 margin: 0;
+    border-right:1px solid black;
 font-family:j1;
     background:#073b3e;
     color:white;
