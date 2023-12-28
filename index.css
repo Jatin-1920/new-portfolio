@@ -545,8 +545,8 @@ font-family:j1;
 }
 
 .races .gsap{
-    color:#FF9C38 ;
-    background:#ffdd44;
+    color:#00416A  ;
+    background: yellow;
 }
 /*.contact{
     height:100dvh;
@@ -721,7 +721,7 @@ bottom:1rem;
 }
 .sm-text3{
     transform:rotate(23deg);
-    color:#004953;
+    color:#00416A ;
 }
 .sm-text4{
     color:#1e453e;
