@@ -706,6 +706,7 @@ bottom:1rem;
     font-family:j1;
     width:100%;
      place-items:center;
+     margin-top:2rem;
 }
 .sm-text1{
     transform: rotate(5deg);
