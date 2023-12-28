@@ -715,6 +715,7 @@ bottom:1rem;
 .sm-text2{
     transform:rotate(60deg);
     background:#073b3a;
+    color:white;
 }
 .sm-text3{
     transform:rotate(23deg);
