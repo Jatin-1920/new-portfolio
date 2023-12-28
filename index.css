@@ -710,13 +710,18 @@ bottom:1rem;
 .sm-text1{
     transform: rotate(5deg);
     background:yellow;
-    background-position:-50%;
+    
 }
 .sm-text2{
     transform:rotate(60deg);
+    background:#073b3a;
 }
 .sm-text3{
     transform:rotate(23deg);
+    background:tomato;
+}
+.sm-text4{
+    color:#1e453e;
 }
 @media (width<700px) {
 .small-title{
