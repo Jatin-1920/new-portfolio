@@ -709,6 +709,8 @@ bottom:1rem;
 }
 .sm-text1{
     transform: rotate(5deg);
+    background:yellow;
+    background-position:-50%;
 }
 .sm-text2{
     transform:rotate(60deg);
