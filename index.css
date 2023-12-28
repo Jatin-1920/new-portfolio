@@ -718,10 +718,11 @@ bottom:1rem;
 }
 .sm-text3{
     transform:rotate(23deg);
-    background:tomato;
+    color:mediumaquamarine;
 }
 .sm-text4{
     color:#1e453e;
+    background:tomato;
 }
 @media (width<700px) {
 .small-title{
