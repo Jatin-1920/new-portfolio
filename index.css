@@ -167,7 +167,8 @@ body{
     width:100%;
     display:grid;
     place-items:center;
-    color:white;
+    color:blue;
+    
 }
 .webIntroBlock{
     white-space:nowrap;
