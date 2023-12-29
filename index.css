@@ -140,6 +140,8 @@ body{
 .web-intro{
     position:fixed;
     inset:0;
+    background:#073b3e;
+    color:white;
     overflow:hidden;
     height:100vh;
     width:100%;
@@ -158,6 +160,13 @@ body{
 }
 .webIntroBlock{
     white-space:nowrap;
+    display:flex;
+    gap:3rem;
+    width:fit-content;
+    height:100%;
+    justify-content:center;
+    place-items:center;
+    border-bottom:1px solid black;
 }
 
 .logo{
