@@ -33,20 +33,24 @@ function webIntro() {
     ease:"expo.inOut"
   }).to(".webIntroBlock",1,{
     ease:"expo.inOut",
-    x:-300,
+    x:500,
     stagger:.1
+  })
+  gsap.to(".web-intro",1,{
+    delay:1.5,
+    flexDirection:"row"
   })
   gsap.to(".webIntroBlock",3,{
     delay:1.5,
     ease:"expo.inOut",
-    y:-400,
+    y:-500,
     rotate:-90,
     scale:4.5
   })
   gsap.to(".intro2",3,{
     delay:1.5,
     ease:"expo.inOut",
-    y:400,
+    y:500,
     rotate:-90,
     scale:4.5
   })
