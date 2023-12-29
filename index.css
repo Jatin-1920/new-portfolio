@@ -161,6 +161,7 @@ body{
 }
 .webIntroBlock span{
     overflow:hidden;
+    display:inline-block;
     opacity:0;
         transform:translateY(30px);
 }
