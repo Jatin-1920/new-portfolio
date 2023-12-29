@@ -52,11 +52,14 @@ function webIntro() {
     ease:"expo.inOut",
     x:0,
   })
-
-  gsap.to(".web-intro",{
-    display:"none",
-    delay:5,
+gsap.to(".webIntroBlock",.5,{
+  delay:5,
     opacity:0,
+    ease:"expo.inOut"
+  })
+  gsap.to(".web-intro",.7,{
+    yPercent:110,
+    delay:5.5,
     ease:"expo.inOut",
   })
 }
