@@ -163,7 +163,7 @@ body{
     white-space:nowrap;
     display:flex;
     gap:3rem;
-    font-size:2rem;
+    font-size:1.75rem;
     width:fit-content;
     height:100%;
     justify-content:center;
