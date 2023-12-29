@@ -150,9 +150,19 @@ body{
     flex-direction: column;
     justify-content:space-between;
 }
+.intro-overlay{
+  position: absolute;
+    inset:0;
+    height:100%;
+    width:100%;
+    z-index:997;
+    background:black;
+    opacity:.35;
+}
 .entry{
     position: absolute;
     inset:0;
+    z-index:998;
     height:100%;
     width:100%;
     display:grid;
