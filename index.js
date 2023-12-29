@@ -45,7 +45,7 @@ function webIntro() {
   gsap.to(".intro2",3,{
     delay:2,
     ease:"expo.inOut",
-    x:300,
+    x:0,
   })
 
   gsap.to(".web-intro",{
