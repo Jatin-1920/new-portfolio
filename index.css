@@ -187,7 +187,6 @@ body{
     height:100%;
     justify-content:center;
     place-items:center;
-    border-bottom:.75px solid black;
 }
 
 .logo{
