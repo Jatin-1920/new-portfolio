@@ -33,27 +33,18 @@ function webIntro() {
     ease:"expo.inOut"
   }).to(".webIntroBlock",1,{
     ease:"expo.inOut",
-    x:300,
+    x:-300,
     stagger:.1
   })
   
-  gsap.to(".webIntroBlock",2,{
+  gsap.to(".webIntroBlock",3,{
     delay:1.5,
     ease:"expo.inOut",
     rotate:-90,
-    scale:4.5
-  })
-  gsap.to(".webIntroBlock",2,{
-    delay:3.5,
-    ease:"expo.inOut",
-    y:-300
-  })
-  gsap.to(".intro2",2,{
-    delay:3.5,
-    ease:"expo.inOut",
+    scale:4.5,
     y:-300,
-    
   })
+  
   gsap.to(".intro2",3,{
     delay:1.5,
     ease:"expo.inOut",
@@ -63,7 +54,7 @@ function webIntro() {
   })
   gsap.to(".web-intro",{
     display:"none",
-    delay:7,
+    delay:5,
     opacity:0,
     ease:"expo.inOut",
   })
