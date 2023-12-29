@@ -159,6 +159,9 @@ body{
     background:black;
     opacity:.35;
 }
+.webIntroBlock span{
+    overflow:hidden;
+}
 .entry{
     position: absolute;
     inset:0;
