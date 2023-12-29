@@ -176,7 +176,7 @@ body{
     color:tomato;
     font-size:2rem;
     overflow:hidden;
-    border-bottom:1px solid tomato;
+    text-decoration:underline;
 }
 .webIntroBlock{
     white-space:nowrap;
