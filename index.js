@@ -40,8 +40,6 @@ function webIntro() {
   gsap.to(".webIntroBlock",3,{
     delay:1.5,
     ease:"expo.inOut",
-    rotate:-90,
-    scale:4.5,
     y:-300,
   })
   
@@ -49,9 +47,15 @@ function webIntro() {
     delay:1.5,
     ease:"expo.inOut",
     y:300,
-    rotate:-90,
-    scale:4.5
   })
+
+  gsap.to(".web-intro",3,{
+    delay:1.5,
+    scale:4.5,
+    rotate:-90,
+    ease:"expo.inOut",
+  })
+  
   gsap.to(".web-intro",{
     display:"none",
     delay:5,
