@@ -21,7 +21,45 @@ const locoScroll = new LocomotiveScroll({
 });
 
 
+// Web Intro Animation //
 
+const entry = document.querySelector(".entry")
+
+function webIntro() {
+  const gs = gsap.timeline()
+  gs.to(entry,1,{
+    y:-60,
+    opacity:0,
+    ease:"expo.inOut"
+  }).to(".webIntroBlock",1,{
+    ease:"expo.inOut",
+    x:-300,
+    stagger:.1
+  })
+  gsap.to(".webIntroBlock",3,{
+    delay:1.5,
+    ease:"expo.inOut",
+    y:-400,
+    rotate:-90,
+    scale:4.5
+  })
+  gsap.to(".intro2",3,{
+    delay:1.5,
+    ease:"expo.inOut",
+    y:400,
+    rotate:-90,
+    scale:4.5
+  })
+  gsap.to(".web-intro",{
+    display:"none",
+    delay:5,
+    opacity:0,
+    ease:"expo.inOut",
+  })
+}
+
+entry.addEventListener("click",webIntro)
+// Web Intro Animation //
 
 const left = document.getElementById("left")
 const header = document.querySelector(".header")
