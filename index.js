@@ -24,6 +24,9 @@ const locoScroll = new LocomotiveScroll({
 // Web Intro Animation //
 
 const entry = document.querySelector(".entry")
+
+const webSpan = document.querySelectorAll(".webIntroBlock span")
+
 gsap.set(".intro2",{x:-300})
 function webIntro() {
   const gs = gsap.timeline()
@@ -31,7 +34,7 @@ function webIntro() {
     y:-60,
     opacity:0,
     ease:"expo.inOut"
-  }).from(".webIntroBlock span",1,{
+  }).from(webSpan,1,{
     ease:"expo.inOut",
     y:-300,
   })
