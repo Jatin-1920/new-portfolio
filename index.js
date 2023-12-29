@@ -31,30 +31,23 @@ function webIntro() {
     y:-60,
     opacity:0,
     ease:"expo.inOut"
-  }).to(".webIntroBlock",1,{
-    ease:"expo.inOut",
-    x:-300,
-    stagger:.1
-  })
-  
-  gsap.to(".webIntroBlock",3,{
-    delay:1.5,
+  }).from(".webIntroBlock span",1,{
     ease:"expo.inOut",
     y:-300,
   })
   
-  gsap.to(".intro2",3,{
-    delay:1.5,
+  gsap.to(".webIntroBlock",3,{
+    delay:2,
     ease:"expo.inOut",
-    y:300,
+    x:-300,
+  })
+  gsap.set(".intro2",{x:-300})
+  gsap.to(".intro2",3,{
+    delay:2,
+    ease:"expo.inOut",
+    x:300,
   })
 
-  gsap.to(".web-intro",3,{
-    delay:1.5,
-    scale:4.5,
-    ease:"expo.inOut",
-  })
-  
   gsap.to(".web-intro",{
     display:"none",
     delay:5,
