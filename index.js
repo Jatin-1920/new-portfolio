@@ -28,6 +28,7 @@ const entry = document.querySelector(".entry")
 const webSpan = document.querySelectorAll(".webIntroBlock span")
 
 gsap.set(".intro2",{x:-300})
+gsap.set(webSpan,{opacity:0})
 function webIntro() {
   const gs = gsap.timeline()
   gs.to(entry,1,{
@@ -36,7 +37,8 @@ function webIntro() {
     ease:"expo.inOut"
   }).from(webSpan,1,{
     ease:"expo.inOut",
-    y:-300,
+    y:-30,
+    opacity:0
   })
   
   gsap.to(".webIntroBlock",3,{
