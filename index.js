@@ -36,16 +36,23 @@ function webIntro() {
     x:300,
     stagger:.1
   })
-  gsap.to(".web-intro",1,{
-    delay:1.5,
-    flexDirection:"row"
-  })
-  gsap.to(".webIntroBlock",3,{
+  
+  gsap.to(".webIntroBlock",2,{
     delay:1.5,
     ease:"expo.inOut",
-    y:-300,
     rotate:-90,
     scale:4.5
+  })
+  gsap.to(".webIntroBlock",2,{
+    delay:3.5,
+    ease:"expo.inOut",
+    y:-300
+  })
+  gsap.to(".intro2",2,{
+    delay:3.5,
+    ease:"expo.inOut",
+    y:-300,
+    
   })
   gsap.to(".intro2",3,{
     delay:1.5,
@@ -56,7 +63,7 @@ function webIntro() {
   })
   gsap.to(".web-intro",{
     display:"none",
-    delay:5,
+    delay:7,
     opacity:0,
     ease:"expo.inOut",
   })
