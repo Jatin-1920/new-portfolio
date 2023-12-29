@@ -162,7 +162,7 @@ body{
 .webIntroBlock{
     white-space:nowrap;
     display:flex;
-    gap:3rem;
+    gap:2rem;
     font-size:1.75rem;
     width:fit-content;
     height:100%;
