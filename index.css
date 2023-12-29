@@ -177,6 +177,7 @@ body{
 .webIntroBlock{
     white-space:nowrap;
     display:flex;
+    overflow:hidden;
     gap:2rem;
     font-size:1.75rem;
     width:fit-content;
