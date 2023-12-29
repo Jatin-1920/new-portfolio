@@ -176,6 +176,7 @@ body{
     color:tomato;
     font-size:2rem;
     overflow:hidden;
+    font-family:j2;
     text-decoration:underline;
 }
 .webIntroBlock{
@@ -188,6 +189,7 @@ body{
     height:100%;
     justify-content:center;
     place-items:center;
+    font-family:j1;
 }
 
 .logo{
