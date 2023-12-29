@@ -161,6 +161,8 @@ body{
 }
 .webIntroBlock span{
     overflow:hidden;
+    opacity:0;
+        transform:translateY(30px);
 }
 .entry{
     position: absolute;
