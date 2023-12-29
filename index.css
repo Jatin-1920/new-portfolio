@@ -174,8 +174,9 @@ body{
     display:grid;
     place-items:center;
     color:tomato;
-    font-size:2.5rem;
-    overflow:hidden; 
+    font-size:2rem;
+    overflow:hidden;
+    border-bottom:1px solid tomato;
 }
 .webIntroBlock{
     white-space:nowrap;
