@@ -28,7 +28,7 @@ const entry = document.querySelector(".entry")
 const webSpan = document.querySelectorAll(".webIntroBlock span")
 
 gsap.set(".intro2",{x:-300})
-
+gsap.set(webSpan,{opacity:0,y:30})
 function webIntro() {
   const gs = gsap.timeline()
   gs.to(entry,1,{
