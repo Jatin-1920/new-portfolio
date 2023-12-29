@@ -168,7 +168,7 @@ body{
     display:grid;
     place-items:center;
     color:tomato;
-    font-size:2rem;
+    font-size:3rem;
 }
 .webIntroBlock{
     white-space:nowrap;
