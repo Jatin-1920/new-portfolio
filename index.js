@@ -62,7 +62,7 @@ function webIntro() {
     rotate:45
   })
   gsap.to(".web-intro",0,{
-    delay:6.5,
+    delay:6.75,
     background:"none"
   })
   gsap.to(".loader",.5,{
