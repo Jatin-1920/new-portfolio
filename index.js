@@ -26,7 +26,7 @@ const locoScroll = new LocomotiveScroll({
 const entry = document.querySelector(".entry")
 
 function webIntro() {
-  const gs = gsap.timeline()
+  let gs = gsap.timeline()
   gs.to(entry,1,{
     y:-60,
     opacity:0,
