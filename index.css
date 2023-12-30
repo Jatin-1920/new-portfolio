@@ -167,10 +167,10 @@ body{
     background:white;
 }
 .loader1{
-    width:200px;
+    width:0;
 }
 .loader2{
-  width:100px;  
+  width:0;  
 }
 .entry{
     position: absolute;
