@@ -40,7 +40,7 @@ function webIntro() {
       delay:1.9,
     ease:"power2.inOut"
   })
-      gsap.to(".loader",,{
+      gsap.to(".loader",0,{
     background:"none",
         delay:5
   })
