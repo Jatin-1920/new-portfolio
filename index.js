@@ -63,6 +63,10 @@ function webIntro() {
     delay:6.75,
     display:"none"
   })
+  gsap.to(".loader",0,{
+    delay:6.75,
+    display:"none"
+  })
 }
 
 entry.addEventListener("click",webIntro)
