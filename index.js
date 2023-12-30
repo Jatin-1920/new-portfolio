@@ -34,11 +34,15 @@ function webIntro() {
   }).to(".loader1",2,{
     width:200,
     ease:"power2.inOut"
-  }).to(".loader2",2,{
+  }) 
+    gsap.to(".loader2",2,{
     width:100,
+      delay:1.9,
     ease:"power2.inOut"
-  },"-=0.1").to(".loader",{
+  })
+      gsap.to(".loader",,{
     background:"none",
+        delay:5
   })
   gsap.to(".loader1",.5,{
     y:-50,
