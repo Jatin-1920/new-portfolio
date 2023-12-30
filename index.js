@@ -34,10 +34,10 @@ function webIntro() {
   }).to(".loader1",2,{
     width:200,
     ease:"power2.inOut"
-  }).to(".loader2",1,{
+  }).to(".loader2",2,{
     width:100,
     ease:"power2.inOut"
-  }).to(".loader",{
+  },"-=.1").to(".loader",{
     background:"none",
   })
   gsap.to(".loader1",.5,{
