@@ -66,11 +66,13 @@ function webIntro() {
     rotate:45
   })
 
-  gs.to(".web-intro",.5,{
+  gsap.to(".web-intro",.5,{
     delay:6.25,
     opacity:0,
     ease:"power1.inOut"
-  }).to(".web-intro",0,{
+  })
+    gsap.to(".web-intro",0,{
+      delay:6.85,
     display:"none"
   })
 }
