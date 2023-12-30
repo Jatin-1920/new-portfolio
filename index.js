@@ -57,7 +57,7 @@ function webIntro() {
     delay:5.75,
     ease:"expo.inOut",
     scale:50,
-    x:2000,
+    x:2200,
     y:1000,
     rotate:45
   })
