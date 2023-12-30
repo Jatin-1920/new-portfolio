@@ -25,43 +25,38 @@ const locoScroll = new LocomotiveScroll({
 
 const entry = document.querySelector(".entry")
 
-const webSpan = document.querySelectorAll(".webIntroBlock span")
-
-gsap.set(".intro2",{x:-400})
-
 function webIntro() {
   const gs = gsap.timeline()
   gs.to(entry,1,{
     y:-60,
     opacity:0,
     ease:"expo.inOut"
-  }).to(webSpan,1,{
-    ease:"expo.inOut",
-    y:0,
-    opacity:1
-  })
-  
-  gsap.to(".webIntroBlock",3,{
-    delay:2,
-    ease:"expo.inOut",
-    x:-400,
-  })
-  
-  gsap.to(".intro2",3,{
-    delay:2,
-    ease:"expo.inOut",
-    x:0,
-  })
-gsap.to(".webIntroBlock",1,{
-  delay:5,
-  y:-30,
-    opacity:0,
+  }).to(".loader1",2,{
+    width:0,
     ease:"expo.inOut"
+  }).from(".loader2",2,{
+    width:0,
+    ease:"expo.inOut"
+  }).from(".loader",{
+    background:"none",
   })
-  gsap.to(".web-intro",.7,{
-    yPercent:110,
-    delay:6,
+  gsap.to(".loader1",0,{
+    y:-50,
+    rotate:90,
     ease:"expo.inOut",
+    delay:5
+  })
+  gsap.to(".loader1",0,{
+    y:-75,
+    x:-75,
+    ease:"expo.inOut",
+    delay:5
+  })
+  
+  gsap.to(".loader",1,{
+    delay:5.75,
+    ease:"expo.inOut",
+    scale:40
   })
 }
 
