@@ -46,7 +46,7 @@ function webIntro() {
     ease:"expo.inOut",
     delay:5
   })
-  gsap.to(".loader1",0,{
+  gsap.to(".loader2",0,{
     y:-75,
     x:-75,
     ease:"expo.inOut",
@@ -58,6 +58,10 @@ function webIntro() {
     ease:"expo.inOut",
     scale:40,
     rotate:45
+  })
+  gsap.to(".web-intro",0,{
+    delay:6.75,
+    display:"none"
   })
 }
 
