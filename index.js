@@ -40,13 +40,13 @@ function webIntro() {
   }).to(".loader",{
     background:"none",
   })
-  gsap.to(".loader1",0,{
+  gsap.to(".loader1",.5,{
     y:-50,
     rotate:90,
     ease:"expo.inOut",
     delay:5
   })
-  gsap.to(".loader2",0,{
+  gsap.to(".loader2",.5,{
     y:75,
     x:-75,
     ease:"expo.inOut",
