@@ -56,7 +56,7 @@ function webIntro() {
   gsap.to(".loader",1,{
     delay:5.75,
     ease:"expo.inOut",
-    scale:40,
+    scale:50,
     x:2000,
     y:500,
     rotate:45
