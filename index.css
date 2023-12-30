@@ -146,24 +146,27 @@ body{
     overflow:hidden;
     height:100dvh;
     width:100%;
+    display:grid;
+    place-items:center;
+}
+.loader{
+    position: absolute;
+    width:300px;
+    height:50px;
+    background:rgba(0,0,0,0.4);
     display:flex;
-    flex-direction: column;
-    justify-content:space-between;
 }
-.intro-overlay{
-  position: absolute;
-    inset:0;
+.loader1,loader2{
+    position:relative;
+    
     height:100%;
-    width:100%;
-    z-index:997;
-    background:black;
-    opacity:.35;
+    background:white;
 }
-.webIntroBlock span{
-    overflow:hidden;
-    display:inline-block;
-    opacity:0;
-        transform:translateY(30px);
+.loader1{
+    width:200px;
+}
+.loader2{
+  width:100px;  
 }
 .entry{
     position: absolute;
@@ -177,18 +180,6 @@ body{
     font-size:1.75rem;
     overflow:hidden;
     text-decoration:underline;
-}
-.webIntroBlock{
-    white-space:nowrap;
-    display:flex;
-    overflow:hidden;
-    gap:2rem;
-    font-size:1.75rem;
-    width:fit-content;
-    height:100%;
-    justify-content:center;
-    place-items:center;
-    
 }
 
 .logo{
