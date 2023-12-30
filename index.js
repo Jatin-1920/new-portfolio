@@ -72,7 +72,7 @@ function webIntro() {
     ease:"power1.inOut"
   })
     gsap.to(".web-intro",0,{
-      delay:6.8,
+      delay:6.75,
     display:"none"
   })
 }
