@@ -156,7 +156,7 @@ body{
     background:rgba(0,0,0,0.4);
     display:flex;
 }
-.loader1,loader2{
+.loader1,.loader2{
     position:relative;
     
     height:100%;
