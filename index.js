@@ -32,22 +32,22 @@ function webIntro() {
     opacity:0,
     ease:"expo.inOut"
   }).to(".loader1",2,{
-    width:0,
+    width:200,
     ease:"expo.inOut"
-  }).from(".loader2",2,{
-    width:0,
+  }).to(".loader2",2,{
+    width:100,
     ease:"expo.inOut"
-  }).from(".loader",{
+  }).to(".loader",{
     background:"none",
   })
   gsap.to(".loader1",0,{
     y:-50,
-    rotate:-90,
+    rotate:90,
     ease:"expo.inOut",
     delay:5
   })
   gsap.to(".loader2",0,{
-    y:-75,
+    y:75,
     x:-75,
     ease:"expo.inOut",
     delay:5
