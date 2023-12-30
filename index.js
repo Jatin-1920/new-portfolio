@@ -33,23 +33,23 @@ function webIntro() {
     ease:"expo.inOut"
   }).to(".loader1",2,{
     width:200,
-    ease:"expo.inOut"
-  }).to(".loader2",2,{
+    ease:"power2.inOut"
+  }).to(".loader2",1,{
     width:100,
-    ease:"expo.inOut"
+    ease:"power2.inOut"
   }).to(".loader",{
     background:"none",
   })
   gsap.to(".loader1",.5,{
     y:-50,
     rotate:90,
-    ease:"expo.inOut",
+    ease:"power2.inOut",
     delay:5
   })
   gsap.to(".loader2",.5,{
     y:75,
     x:-75,
-    ease:"expo.inOut",
+    ease:"power2.inOut",
     delay:5
   })
   
