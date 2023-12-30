@@ -71,6 +71,11 @@ function webIntro() {
     opacity:0,
     ease:"power1.inOut"
   })
+  gsap.to(".web-intro",0,{
+    delay:6.75,
+    display:"none"
+    
+  })
 }
 
 entry.addEventListener("click",webIntro)
