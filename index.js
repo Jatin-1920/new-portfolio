@@ -37,7 +37,7 @@ function webIntro() {
   }).to(".loader2",2,{
     width:100,
     ease:"power2.inOut"
-  },"-=.1").to(".loader",{
+  },"-=.2").to(".loader",{
     background:"none",
   })
   gsap.to(".loader1",.5,{
