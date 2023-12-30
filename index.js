@@ -54,6 +54,7 @@ function webIntro() {
   })
 gsap.to(".webIntroBlock",1,{
   delay:5,
+  y:-30,
     opacity:0,
     ease:"expo.inOut"
   })
