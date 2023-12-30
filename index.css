@@ -126,6 +126,7 @@ body{
     background:#fdfdff;
     scrollbar-width:thin;
     scrollbar-color:#760026;
+    visibility:hidden;
 }
 ::-webkit-scrollbar{
      width: 4.5px;
