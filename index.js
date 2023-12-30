@@ -54,7 +54,7 @@ function webIntro() {
   })
   
   gsap.to(".loader",1,{
-    delay:6.25,
+    delay:5.75,
     ease:"expo.inOut",
     scale:50,
     x:2200,
@@ -63,11 +63,11 @@ function webIntro() {
   })
   
   gsap.to(".loader",.5,{
-    delay:6.75,
+    delay:6.25,
     opacity:0
   })
   gsap.to(".web-intro",.25,{
-    delay:6.8,
+    delay:6.4,
     display:"none"
   })
 }
