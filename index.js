@@ -58,7 +58,7 @@ function webIntro() {
     ease:"expo.inOut",
     scale:50,
     x:2000,
-    y:500,
+    y:300,
     rotate:45
   })
   gsap.to(".web-intro",0,{
