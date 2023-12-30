@@ -67,7 +67,7 @@ function webIntro() {
     opacity:0
   })
   gsap.to(".web-intro",.25,{
-    delay:6.85,
+    delay:6.8,
     display:"none"
   })
 }
