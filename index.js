@@ -53,8 +53,8 @@ function webIntro() {
     delay:5
   })
   
-  gsap.to(".loader",1,{
-    delay:5.75,
+  gsap.to(".loader",0,{
+    delay:6.25,
     ease:"expo.inOut",
     scale:50,
     x:2200,
