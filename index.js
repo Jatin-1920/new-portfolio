@@ -43,13 +43,13 @@ function webIntro() {
   gsap.to(".loader1",.5,{
     y:-50,
     rotate:90,
-    ease:"power2.inOut",
+    ease:"expo.inOut",
     delay:5
   })
   gsap.to(".loader2",.5,{
     y:75,
     x:-75,
-    ease:"power2.inOut",
+    ease:"expo.inOut",
     delay:5
   })
   
