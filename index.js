@@ -42,7 +42,7 @@ function webIntro() {
   })
   gsap.to(".loader1",0,{
     y:-50,
-    rotate:90,
+    rotate:-90,
     ease:"expo.inOut",
     delay:5
   })
