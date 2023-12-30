@@ -43,19 +43,19 @@ function webIntro() {
   gsap.to(".loader1",.5,{
     y:-50,
     rotate:90,
-    ease:"expo.inOut",
+    ease:"power2.out",
     delay:5
   })
   gsap.to(".loader2",.5,{
     y:75,
     x:-75,
-    ease:"expo.inOut",
+    ease:"power2.out",
     delay:5
   })
   
   gsap.to(".loader",1,{
     delay:5.75,
-    ease:"expo.inOut",
+    ease:"power2.out",
     scale:50,
     x:2200,
     y:1000,
@@ -64,7 +64,8 @@ function webIntro() {
   
   gsap.to(".loader",.5,{
     delay:6.25,
-    opacity:0
+    opacity:0,
+    ease:"power2.out",
   })
   gsap.to(".web-intro",0,{
     delay:6.65,
