@@ -33,12 +33,12 @@ function webIntro() {
     ease:"expo.inOut"
   }).to(".loader1",2,{
     width:200,
-    ease:"power3.inOut"
+    ease:"power3.out"
   }) 
     gsap.to(".loader2",2,{
     width:100,
       delay:1.9,
-    ease:"power3.inOut"
+    ease:"power3.out"
   })
       gsap.to(".loader",0,{
     background:"none",
