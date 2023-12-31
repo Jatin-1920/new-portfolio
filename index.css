@@ -328,21 +328,21 @@ a{
 
 
 .right-side .title .name{
-    color:black;
+    color:white;
 }
 .left-side .title .name{
-    color: white;
+    color: black;
 }
 
 .left-side{
-    background:#fbfaf7 ;
+    background:#365572;
     z-index: 2;
-    color: black;
+    color: white;
 
 }
 .right-side{
     background:  #FF6969; 
-    color: white;
+    color: black;
 }
 
 .fancy{
