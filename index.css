@@ -801,7 +801,7 @@ font-size: var(--p-text);
     }
     .media-image{
         display: block;
-        max-width: 100%;
+        width: 100%;
         height: 12.5rem;
         margin-bottom:1rem;
     }
