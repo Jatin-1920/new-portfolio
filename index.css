@@ -787,9 +787,7 @@ font-size: var(--p-text);
     .content{
         width: 100%;
         height: 100%;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1.25fr .25fr .25fr .25fr;
+        margin-trim:block;
         }
     
     .content-container{
