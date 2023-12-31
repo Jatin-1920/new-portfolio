@@ -551,7 +551,7 @@ opacity: 0;
 .btn{
     color:black;
     background: #ffc09e;
-    border:.75px solid #ffa07a;
+    border:1px solid #ffa07a;
     font-family:Tahoma;
     padding-block: .5rem;
     word-spacing:2px;
