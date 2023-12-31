@@ -554,6 +554,7 @@ opacity: 0;
     border:.75px solid #f0806a;
     font-family:Trebuchet MS;
     padding-block: .5rem;
+    word-spacing:2px;
     text-transform: uppercase;
     border-radius:.275rem;
     font-size:.75rem;
