@@ -37,7 +37,7 @@ function webIntro() {
   }) 
     gsap.to(".loader2",2,{
     width:100,
-      delay:1.9,
+      delay:2.9,
     ease:"power3.inOut"
   })
       gsap.to(".loader",0,{
