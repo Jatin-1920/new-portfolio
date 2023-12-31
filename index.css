@@ -549,11 +549,11 @@ display:  inline-block;
 opacity: 0;
 }
 .btn{
-    background: #073b3a;
+    background: #ffc09e;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     color:white;
-    padding-block: .75rem;
-    border-radius: .5rem;
+    padding-block: .1rem;
+    
     width: 10rem;
     display: flex;
     justify-content: center;
