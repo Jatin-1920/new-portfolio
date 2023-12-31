@@ -551,7 +551,7 @@ opacity: 0;
 .btn{
     color:black;
     background: #ffc09e;
-    border:1px solid rgba(239,163,133,0.5);
+    border:1.25px solid rgba(239,163,133,0.5);
     font-family:Tahoma;
     padding-block: .5rem;
     word-spacing:2px;
