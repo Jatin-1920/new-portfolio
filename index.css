@@ -787,7 +787,6 @@ font-size: var(--p-text);
     .content{
         width: 100%;
         height: 100%;
-        margin-trim:block;
         }
     
     .content-container{
