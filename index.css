@@ -551,7 +551,7 @@ opacity: 0;
 .btn{
     color:black;
     background: #ffc09e;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-weight:bold;
     padding-block: .4rem;
     text-transform: uppercase;
     border-radius:.25rem;
