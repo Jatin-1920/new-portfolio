@@ -550,29 +550,41 @@ display:  inline-block;
 opacity: 0;
 }
 .btn{
-    color:black;
-    background:#ffcca3  ;
-    border:1px solid rgba(239,163,133,0.5);
     font-family:Tahoma;
-    padding-block: .5rem;
-    word-spacing:2px;
     text-transform: uppercase;
     border-radius:.35rem;
-    font-size:.75rem;
+    font-size:.875rem;
     width: 10rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap:1px;
     transition: all 350ms ease-in-out;
+}
+.btn1{
+    height:100%;
+    width:25%;
+    padding:.75rem 
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background:silver;
+    border-radius-left:.5rem;
+}
+.btn2{
+    height:100%;
+    width:75%;
+    padding:.75rem 
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background:tomato;
+    border-radius-right:.5rem;
 }
 .about .btn{
 width: 0px;
 transform: scale(0);
 transform-origin: 50% 50%;
 }
-.btn:hover{
-    background: #1e453e;
-}
+
 .racesWrapper{
     height:60dvh;
     display:flex;
