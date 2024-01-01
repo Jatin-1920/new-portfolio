@@ -562,17 +562,17 @@ opacity: 0;
 .btn1{
     height:100%;
     width:25%;
-    padding:.75rem 
+    padding:.75rem ;
     display:flex;
     justify-content:center;
     align-items: center;
-    background:silver;
+    background:violet;
     border-radius-left:.5rem;
 }
 .btn2{
     height:100%;
     width:75%;
-    padding:.75rem 
+    padding:.75rem ;
     display:flex;
     justify-content:center;
     align-items: center;
