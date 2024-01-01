@@ -562,10 +562,9 @@ opacity: 0;
 }
 .fa-play{
     position:absolute;
-    top:50%;
-    transform:translateY(-50%);
+    
     right:-20%;
-    left:auto;
+    
     height:100%;
     width:100%;
     color:white;
@@ -577,7 +576,6 @@ opacity: 0;
     width:20%;
     position:relative;
     display:flex;
-    justify-content:center;
     align-items: center;
     background:yellow;
     heigt:2.75rem;
