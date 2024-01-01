@@ -97,8 +97,8 @@ html {
 }
 :root{
     --h1-font:clamp(1.75rem,2vw + 1rem,3rem);
-    --bg-1:#edf2f8 ;
-    --bg-2:#ff6961;
+    --bg-1:#979a7b;
+    --bg-2:#f3f8f4;
     --bg-3:#edb74d;
     --bg-4:#151515;
     --bg-5:#6fb18a;
