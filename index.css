@@ -555,12 +555,14 @@ opacity: 0;
     font-size:.875rem;
     width: 10rem;
     display: flex;
+    color: black;
+    font-weight:bold;
     gap:1px;
     transition: all 350ms ease-in-out;
 }
 .btn1{
     
-    width:25%;
+    width:20%;
     
     display:flex;
     justify-content:center;
