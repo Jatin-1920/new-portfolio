@@ -567,10 +567,10 @@ opacity: 0;
     color:white;
     font-size:1rem;
     position: absolute;
-    right:-20%;
+    right:-1rem;
 }
 .btn1{
-    width:25%;
+    width:20%;
     display:flex;
     align-items: center;
     position:relative;
