@@ -562,8 +562,8 @@ opacity: 0;
     transition: all 350ms ease-in-out;
 }
 .play{
-    height:1rem;
-    width:1rem;
+    height:2rem;
+    width:1.5rem;
     font-size:.75rem;
     position: absolute;
     right:-1.6rem;
