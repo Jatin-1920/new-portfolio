@@ -549,11 +549,12 @@ display:  inline-block;
 opacity: 0;
 }
 .btn{
-    font-family:Arial;
+    font-family:Verdana;
     text-transform: uppercase;
     font-size:.875rem;
     width: 10rem;
     display: flex;
+    font-weight:500;
     color:var(--bg-1)  ;
     height:2.75rem;
     gap:.125rem;
