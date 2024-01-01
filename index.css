@@ -97,7 +97,7 @@ html {
 }
 :root{
     --h1-font:clamp(1.75rem,2vw + 1rem,3rem);
-    --bg-1:#D8D9CF ;
+    --bg-1:#d2d2ce ;
     --bg-2:#ff6961;
     --bg-3:#edb74d;
     --bg-4:#151515;
@@ -122,7 +122,7 @@ body{
     min-height:100vh;
     width:100%;
     font-family:j2;
-    color:white;
+    color:black;
 background:var(--bg-1);
     scrollbar-width:thin;
     scrollbar-color:#760026;
