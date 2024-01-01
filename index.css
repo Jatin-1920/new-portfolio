@@ -561,10 +561,6 @@ opacity: 0;
     transition: all 350ms ease-in-out;
 }
 .fa-play{
-    position:absolute;
-    
-    right:-20%;
-    
     height:100%;
     width:100%;
     color:white;
@@ -577,6 +573,8 @@ opacity: 0;
     position:relative;
     display:flex;
     align-items: center;
+    justify-content:end;
+    margin-right:-1rem;
     background:yellow;
     heigt:2.75rem;
     border-top-left-radius:.5rem;
