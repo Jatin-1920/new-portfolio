@@ -517,7 +517,7 @@ height: 100%;
     grid-template-columns:repeat(20,1fr);
 }
 .about-img div{
-    background:#fdfdff;
+    background:var(--bg-1)  ;
     height:100%;
 }
 
