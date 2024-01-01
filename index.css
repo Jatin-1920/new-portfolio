@@ -568,21 +568,21 @@ opacity: 0;
     position: absolute;
     right:-.875rem;
     top:25%;
-    background:tomato;
+    background:white;
     border-radius:100%;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 .fa-play{
-    color:white;
+    color:tomato;
 }
 .btn1{
     width:20%;
     display:flex;
     align-items: center;
     position:relative;
-    background:yellow;
+    background:#e9d700;
     height:2.75rem;
     border-top-left-radius:.5rem;
     border-bottom-left-radius:.5rem;
@@ -594,7 +594,7 @@ opacity: 0;
     display:flex;
     justify-content:center;
     align-items: center;
-    background:#fea993;
+    background:tomato;
     border-top-right-radius:.5rem;
     border-bottom-right-radius:.5rem;
 }
