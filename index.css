@@ -560,24 +560,27 @@ opacity: 0;
     transition: all 350ms ease-in-out;
 }
 .btn1{
-    height:100%;
+    
     width:25%;
-    padding:.75rem ;
+    
     display:flex;
     justify-content:center;
     align-items: center;
     background:violet;
-    border-radius-left:.5rem;
+    heigt:4rem;
+    border-top-right-radius:.5rem;
+    border-bottom-right-radius:.5rem;
 }
 .btn2{
-    height:100%;
+    height:4rem;
     width:75%;
-    padding:.75rem ;
+    
     display:flex;
     justify-content:center;
     align-items: center;
     background:tomato;
-    border-radius-right:.5rem;
+    border-top-right-radius:.5rem;
+    border-bottom-right-radius:.5rem;
 }
 .about .btn{
 width: 0px;
