@@ -565,7 +565,7 @@ opacity: 0;
     display:flex;
     justify-content:center;
     align-items: center;
-    background:violet;
+    background:silver;
     heigt:2.75rem;
     border-top-left-radius:.5rem;
     border-bottom-left-radius:.5rem;
@@ -577,7 +577,7 @@ opacity: 0;
     display:flex;
     justify-content:center;
     align-items: center;
-    background:tomato;
+    background:#fea993;
     border-top-right-radius:.5rem;
     border-bottom-right-radius:.5rem;
 }
