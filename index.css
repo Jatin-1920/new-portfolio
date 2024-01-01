@@ -558,7 +558,7 @@ opacity: 0;
     color: black;
     height:2.75rem;
     font-weight:bold;
-    gap:2px;
+    gap:1.5px;
     transition: all 350ms ease-in-out;
 }
 .fa-play{
