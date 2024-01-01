@@ -565,13 +565,10 @@ opacity: 0;
     height:100%;
     width:100%;
     color:white;
-    font-size:.875rem;
+    font-size:1rem;
     position: absolute;
     right:-1.6rem;
     top:25%;
-    background:tomato;
-    border-radius:50%;
-    padding:.25rem;
 }
 .btn1{
     width:20%;
