@@ -560,14 +560,22 @@ opacity: 0;
     gap:1px;
     transition: all 350ms ease-in-out;
 }
+.fa-play{
+    position:absolute;
+    top:50%;
+    right:-20%;
+    height:60%;
+    width:1.5rem;
+    color:white;
+}
 .btn1{
     
     width:20%;
-    
+    position:relative;
     display:flex;
     justify-content:center;
     align-items: center;
-    background:silver;
+    background:yellow;
     heigt:2.75rem;
     border-top-left-radius:.5rem;
     border-bottom-left-radius:.5rem;
