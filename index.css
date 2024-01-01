@@ -123,7 +123,8 @@ body{
     width:100%;
     font-family:j2;
     color:black;
-    background: #fdfdff ;
+    background: #FF861B;
+background: radial-gradient(circle at center center, #FF861B 0%, #F8E0BA 50%, #FFFEFE 100%)
     scrollbar-width:thin;
     scrollbar-color:#760026;
 }
