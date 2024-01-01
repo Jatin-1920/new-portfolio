@@ -561,14 +561,19 @@ opacity: 0;
     gap:1.5px;
     transition: all 350ms ease-in-out;
 }
-.fa-play{
+.play{
     height:100%;
-    width:100%;
+    width:1rem;
     color:white;
     font-size:1rem;
     position: absolute;
     right:-1.6rem;
     top:25%;
+    background:tomato;
+    border-radius:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 .btn1{
     width:20%;
