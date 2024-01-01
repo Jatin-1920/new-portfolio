@@ -551,12 +551,11 @@ opacity: 0;
 .btn{
     font-family:Arial;
     text-transform: uppercase;
-    font-size:1rem;
+    font-size:.875rem;
     width: 10rem;
     display: flex;
     color:var(--bg-1)  ;
     height:2.75rem;
-    font-weight:bold;
     gap:.125rem;
     transition: all 350ms ease-in-out;
 }
