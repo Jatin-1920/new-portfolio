@@ -97,7 +97,7 @@ html {
 }
 :root{
     --h1-font:clamp(1.75rem,2vw + 1rem,3rem);
-    --bg-1:#e5e2e7;
+    --bg-1:red;
     --bg-2:#151515;
     --bg-3:#edb74d;
     --bg-4:#151515;
@@ -356,8 +356,8 @@ a{
     margin-block: var(--m-g);
     height:6.5rem;
     font-size: 2rem;
-    background:#073b3e ;
-    color:white;
+    background:white;
+    color:var(--bg-1);
     overflow: hidden;
     position: relative;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
