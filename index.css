@@ -556,6 +556,7 @@ opacity: 0;
     width: 10rem;
     display: flex;
     color: black;
+    height:100%;
     font-weight:bold;
     gap:1px;
     transition: all 350ms ease-in-out;
@@ -570,13 +571,12 @@ opacity: 0;
 .btn1{
     
     width:20%;
-    position:relative;
     display:flex;
     align-items: center;
     justify-content:end;
     margin-right:-1rem;
     background:yellow;
-    heigt:2.75rem;
+    height:2.75rem;
     border-top-left-radius:.5rem;
     border-bottom-left-radius:.5rem;
 }
