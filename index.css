@@ -552,7 +552,7 @@ opacity: 0;
 .btn{
     font-family:Tahoma;
     text-transform: uppercase;
-    font-size:.75rem;
+    font-size:.875rem;
     width: 10rem;
     display: flex;
     gap:1px;
