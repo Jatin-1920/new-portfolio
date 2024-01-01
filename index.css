@@ -552,8 +552,7 @@ opacity: 0;
 .btn{
     font-family:Tahoma;
     text-transform: uppercase;
-    border-radius:.35rem;
-    font-size:.875rem;
+    font-size:.75rem;
     width: 10rem;
     display: flex;
     gap:1px;
@@ -567,12 +566,12 @@ opacity: 0;
     justify-content:center;
     align-items: center;
     background:violet;
-    heigt:4rem;
-    border-top-right-radius:.5rem;
-    border-bottom-right-radius:.5rem;
+    heigt:2.75rem;
+    border-top-left-radius:.5rem;
+    border-bottom-left-radius:.5rem;
 }
 .btn2{
-    height:4rem;
+    height:2.75rem;
     width:75%;
     
     display:flex;
