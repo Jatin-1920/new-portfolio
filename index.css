@@ -567,7 +567,8 @@ opacity: 0;
     color:white;
     font-size:1rem;
     position: absolute;
-    right:-1rem;
+    right:-2rem;
+    top:50%;
 }
 .btn1{
     width:20%;
