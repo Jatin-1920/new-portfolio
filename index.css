@@ -551,7 +551,7 @@ opacity: 0;
 }
 .btn{
     font-family:Tahoma;
-    text-transform: uppercase;
+    text-transform: Capitalize;
     font-size:.875rem;
     width: 10rem;
     display: flex;
@@ -568,14 +568,14 @@ opacity: 0;
     position: absolute;
     right:-.8125rem;
     top:25%;
-    background:white;
+    background:tomato;
     border-radius:100%;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 .fa-play{
-    color:tomato;
+    color:white;
 }
 .btn1{
     width:20%;
@@ -594,7 +594,7 @@ opacity: 0;
     display:flex;
     justify-content:center;
     align-items: center;
-    background:tomato;
+    background:white;
     border-top-right-radius:.5rem;
     border-bottom-right-radius:.5rem;
 }
