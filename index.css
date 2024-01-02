@@ -201,11 +201,12 @@ z-index:100;
 }
 .mouse-event{
     position: absolute; 
-    width: 3rem;
-    height: 3rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 100%;
-    background: palegreen;
-    mix-blend-mode: difference;
+    
+    background-image: radial-gradient(circle, #ffffff, #fcf9fb, #fbf2f3, #f7ede7, #edeade);
+    filter:blur(100px);
     z-index: 101;
     display: flex;
     justify-content: center;
