@@ -292,18 +292,18 @@ function draw(e) {
 function clearCanvas(){
     ctx.clearRect(0,0,canvas.width,canvas.height)
 }
-canvas.addEventListener("mousemove",(e)=>{
+canvas.addEventListener("mousedown",(e)=>{
     drawing= true
     [lastX,lastY] = [e.offsetX,e.offsetY]
-  draw(e)
+  
 })
-/*canvas.addEventListener("mousemove",(e)=>{
+canvas.addEventListener("mousemove",(e)=>{
    draw(e) 
-})*/
-/*canvas.addEventListener("mouseUp",(e)=>{
+})
+canvas.addEventListener("mouseup",(e)=>{
     drawing= false
     clearCanvas()
-})*/
+})
 canvas.addEventListener("mouseout",(e)=>{
     drawing= false
     clearCanvas()
