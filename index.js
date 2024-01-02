@@ -262,8 +262,8 @@ const canvas = document.querySelector(".canvas")
 const footer = document.querySelector(".footer")
 const ctx = canvas.getContext("2d")
 
-canvas.width = window.innerWidth
-canvas.height = window.innerHeight
+canvas.width = footer.clientWidth
+canvas.height = footer.clientHeight
 ctx.lineCap = "round"
 ctx.lineJoin = "round"
 ctx.lineWidth = 100
