@@ -313,7 +313,7 @@ gsap.to(".about-img", {
       scrub: true,
       pin:false
   }, 
-  y:"-10vh",
+  y:"-20vh",
   ease: "none"
 });
 // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
