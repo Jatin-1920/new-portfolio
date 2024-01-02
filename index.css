@@ -201,8 +201,8 @@ z-index:100;
 }
 .mouse-event{
     position: absolute; 
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     border-radius: 100%;
     z-index: 1;
     display: flex;
