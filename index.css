@@ -433,6 +433,7 @@ justify-content: center;
     flex-direction: column;
     width: 100%;
     padding-inline:1.5rem;
+    border:1px solid red;
 }
 .work-container{
     height: 100dvh;
