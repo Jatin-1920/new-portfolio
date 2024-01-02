@@ -141,7 +141,7 @@ background:var(--bg-1);
     position:fixed;
     inset:0;
     z-index:999;
-    background:var(--bg-1);
+    background:#edeade;
     color:white;
     overflow:hidden;
     height:100dvh;
