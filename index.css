@@ -823,7 +823,7 @@ font-size: var(--p-text);
     
     .content{
         width: 100%;
-        height: 70%;
+        height: fit-content;
         }
     
     .content-container{
