@@ -427,7 +427,7 @@ a{
     aspect-ratio:4 / 3;
 }
 .content{
-    height: 100dvh;
+    height: 100vh;
 justify-content: center;
     display: flex;
     flex-direction: column;
@@ -436,14 +436,14 @@ justify-content: center;
     
 }
 .work-container{
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
     display: grid;
     place-items: center;
 padding-inline: 2rem;
 }
 .project-image{
-    height: 50dvh;
+    height: 50vh;
     width: 100%;
 position: relative;
 overflow: hidden;
@@ -608,7 +608,7 @@ transform-origin: 50% 50%;
 }
 
 .racesWrapper{
-    height:100dvh;
+    height:100vh;
     display:grid;
     place-items:center;
     background:#edeade;
@@ -742,7 +742,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 
 .footer{
     width:100%;
-    height:100dvh;
+    height:100vh;
     color:black;
     overflow:hidden;
     padding:3rem;
@@ -755,6 +755,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     inset:0;
     width:100%;
     height:100%;
+    z-index:1;
 }
 .contact-title{
     font-size:var(--xl-text);
@@ -787,7 +788,7 @@ bottom:1rem;
     gap:.5rem;
 }
  .sm-text{
-    font-size:10dvw;
+    font-size:5dvw;
     display:grid;
     grid-template-columns: repeat(2,1fr);
     font-family:j1;
