@@ -766,6 +766,8 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 
 .footer-links{
+    position:relative;
+    z-index:5;
     display:flex;
     justify-content:space-evenly;
     gap:1rem;
@@ -786,6 +788,7 @@ bottom:1rem;
     display:flex;
     flex-direction: column;
     gap:.5rem;
+    z-index:1;
 }
  .sm-text{
     font-size:5dvw;
