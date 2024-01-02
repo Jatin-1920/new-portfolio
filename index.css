@@ -621,7 +621,7 @@ transform-origin: 50% 50%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .races h2{
-font-size: 30dvw;
+font-size: 15dvw;
 flex-shrink: 0;
 padding:4rem;
 margin: 0;
@@ -787,7 +787,7 @@ bottom:1rem;
     gap:.5rem;
 }
  .sm-text{
-    font-size:17dvw;
+    font-size:10dvw;
     display:grid;
     grid-template-columns: repeat(2,1fr);
     font-family:j1;
