@@ -857,7 +857,7 @@ font-size: var(--p-text);
         
     } 
     .parallax{
-        height:70dvh;
+        height:40dvh;
     }
     .about-img{
         height:60dvh;
