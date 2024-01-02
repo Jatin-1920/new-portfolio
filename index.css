@@ -206,7 +206,7 @@ z-index:100;
     border-radius: 100%;
 background: radial-gradient(circle, rgba(247,157,2,1) 0%, rgba(255,239,85,0.5673076923076923) 100%);
     filter:blur(75px);
-    z-index: -1;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items:center;
