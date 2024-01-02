@@ -856,8 +856,23 @@ font-size: var(--p-text);
         width: 100%;
         
     } 
+    .parallax{
+        height:70dvh;
+    }
+    .about-img{
+        height:60dvh;
+    }
+
+    .racesWrapper{
+        height:60dvh;
+    }
+    .races h2{
+        font-size:30dvw;
+    }
     .footer{
         padding:2rem 1.5rem;
     }
-    
+    .sm-text{
+        font-size:17dvw;
+    }
 }
