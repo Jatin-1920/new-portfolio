@@ -215,8 +215,20 @@ background: radial-gradient(circle, rgba(247,157,2,1) 0%, rgba(255,239,85,0.5673
     transform: translate(-50%,-50%);
     cursor: pointer;
     pointer-events: none;
-    transition: all .6s ease-in-out;
+    animation: transform 15s linear infinite;
 }
+
+@keyframes transform
+{
+    0%,
+  100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; } 
+   20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; } 
+   40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; } 
+   60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; } 
+   80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; } 
+}
+
+
 .scale{
     width: 8rem;
     height: 8rem;
