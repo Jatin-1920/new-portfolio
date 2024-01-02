@@ -820,11 +820,11 @@ font-size: var(--p-text);
 }
  .name{
     font-size: 1.25rem
- };
+ }
     
     .content{
         width: 100%;
-        height: 70dvh;
+        height:100%;
         }
     
     .content-container{
