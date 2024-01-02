@@ -503,7 +503,7 @@ place-items: center;
 height: 100%;
 }
 .parallax{
- height:50dvh;
+ height:75dvh;
     width:100%;
     overflow:hidden;   
     margin-top:var(--m-g);
