@@ -824,6 +824,7 @@ font-size: var(--p-text);
     .content{
         width: 100%;
         height: fit-content;
+        border-block:1px solid red;
         }
     
     .content-container{
