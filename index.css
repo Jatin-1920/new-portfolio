@@ -97,7 +97,7 @@ html {
 }
 :root{
     --h1-font:clamp(1.75rem,2vw + 1rem,3rem);
-    --bg-1:#faf9f6;
+    --bg-1:#f9f6ee;
     --bg-2: #ffc436;
     --bg-3:#edb74d;
     --bg-4:#151515;
@@ -581,7 +581,7 @@ opacity: 0;
     display:flex;
     align-items: center;
     position:relative;
-    background:#edaede;
+    background:#edeade;
     height:2.75rem;
     border-top-left-radius:.5rem;
     border-bottom-left-radius:.5rem;
