@@ -609,8 +609,8 @@ transform-origin: 50% 50%;
 
 .racesWrapper{
     height:60dvh;
-    display:flex;
-    align-items:center;
+    display:grid;
+    place-items:center;
     background:#edeade;
 }
 
