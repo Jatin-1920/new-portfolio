@@ -592,7 +592,7 @@ opacity: 0;
     display:flex;
     justify-content:center;
     align-items: center;
-    background:white;
+    background:#ededee;
     border-top-right-radius:.5rem;
     border-bottom-right-radius:.5rem;
 }
