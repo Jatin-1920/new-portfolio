@@ -1,6 +1,6 @@
 
 
-const locoScroll = new LocomotiveScroll({
+/* const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".scrollContainer"),
   smooth: true
 }); 
@@ -18,7 +18,7 @@ const locoScroll = new LocomotiveScroll({
   },
   // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
   pinType: document.querySelector(".scrollContainer").style.transform ? "transform" : "fixed"
-});
+}); */
 
 
 // Web Intro Animation //
@@ -317,7 +317,7 @@ gsap.to(".about-img", {
   ease: "none"
 });
 // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
-ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+/* ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
-ScrollTrigger.refresh();
+ScrollTrigger.refresh(); */
