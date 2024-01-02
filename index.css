@@ -137,6 +137,9 @@ background:var(--bg-1);
      background: linear-gradient(45deg,lightsalmon,#c97b95);
      box-shadow: 0 -100vh 0 100vh rgb(238, 238, 155),0 0 15px 5px black;
    }
+.scrollContainer{
+    overflow-x:hidden;
+}
 .web-intro{
     position:fixed;
     inset:0;
