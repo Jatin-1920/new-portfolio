@@ -356,7 +356,7 @@ a{
     margin-block: var(--m-g);
     height:6.5rem;
     font-size: 2rem;
-    background: white;
+    background: black;
     color:var(--bg-1);
     overflow: hidden;
     position: relative;
@@ -567,7 +567,7 @@ opacity: 0;
     position: absolute;
     right:-.8125rem;
     top:25%;
-    background:  var(--bg-1)  ;
+    background: tomato  ;
     border-radius:100%;
     display:flex;
     justify-content:center;
@@ -581,7 +581,7 @@ opacity: 0;
     display:flex;
     align-items: center;
     position:relative;
-    background:tomato;
+    background:#ffc436;
     height:2.75rem;
     border-top-left-radius:.5rem;
     border-bottom-left-radius:.5rem;
@@ -592,7 +592,7 @@ opacity: 0;
     display:flex;
     justify-content:center;
     align-items: center;
-    background:white;
+    background:tomato;
     border-top-right-radius:.5rem;
     border-bottom-right-radius:.5rem;
 }
@@ -606,7 +606,7 @@ transform-origin: 50% 50%;
     height:60dvh;
     display:flex;
     align-items:center;
-    background:#ff7f7f;
+    background:silver;
 }
 
 .races{
