@@ -581,7 +581,7 @@ opacity: 0;
     display:flex;
     align-items: center;
     position:relative;
-    background:#edeade;
+    background:white;
     height:2.75rem;
     border-top-left-radius:.5rem;
     border-bottom-left-radius:.5rem;
@@ -592,7 +592,7 @@ opacity: 0;
     display:flex;
     justify-content:center;
     align-items: center;
-    background:#ebebec;
+    background:#edeade;
     border-top-right-radius:.5rem;
     border-bottom-right-radius:.5rem;
 }
