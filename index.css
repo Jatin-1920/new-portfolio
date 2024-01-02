@@ -204,9 +204,8 @@ z-index:100;
     width: 10rem;
     height: 10rem;
     border-radius: 100%;
-    
-    background-image: radial-gradient(circle, #ffffff, #fcf9fb, #fbf2f3, #f7ede7, #edeade);
-    filter:blur(100px);
+background: radial-gradient(circle, rgba(247,157,2,1) 0%, rgba(255,239,85,0.5673076923076923) 100%);
+    filter:blur(50px);
     z-index: 101;
     display: flex;
     justify-content: center;
