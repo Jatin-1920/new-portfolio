@@ -755,7 +755,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     inset:0;
     width:100%;
     height:100%;
-    z-index:-1;
+    z-index:3;
 }
 .contact-title{
     font-size:var(--xl-text);
