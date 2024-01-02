@@ -579,14 +579,14 @@ opacity: 0;
     align-items:center;
 }
 .fa-play{
-    color:#e2dfd2;
+    color:#cdcdbc;
 }
 .btn1{
     width:20%;
     display:flex;
     align-items: center;
     position:relative;
-    background:white;
+    background:#efe8d8;
     height:2.75rem;
     border-top-left-radius:.5rem;
     border-bottom-left-radius:.5rem;
@@ -597,7 +597,7 @@ opacity: 0;
     display:flex;
     justify-content:center;
     align-items: center;
-    background:#e2dfd2;
+    background:#cdcdbc;
     border-top-right-radius:.5rem;
     border-bottom-right-radius:.5rem;
 }
