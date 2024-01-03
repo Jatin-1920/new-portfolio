@@ -849,6 +849,7 @@ font-size: var(--p-text);
         height: 12.5rem;
         margin-bottom:1rem;
         position:relative;
+        overflow:hidden;
     }
     .lay{
         position: absolute;
