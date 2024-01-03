@@ -861,8 +861,9 @@ font-size: var(--p-text);
         background:var(--bg-1);
     }
     .about{
-       display: block;
-        place-items: start;
+       display: flex;
+        flex-direction:column;
+        gap:1rem;
         width: 100%;
         }
     .about-content{
