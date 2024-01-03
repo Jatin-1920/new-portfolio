@@ -1,26 +1,45 @@
 
 
-/* const locoScroll = new LocomotiveScroll({
-  el: document.querySelector(".scrollContainer"),
-  smooth: true
-}); 
+gsap.registerPlugin(ScrollTrigger)
 
+const update = (time, deltaTime, frame) => {
+  lenis.raf(time * 1000)
+}
 
-       locoScroll.on("scroll", ScrollTrigger.update);
+const resize = (e) => {
+  ScrollTrigger.refresh()
+}
 
-// tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
-    ScrollTrigger.scrollerProxy(".scrollContainer", {
-        scrollTop(value) {
-          return arguments.length ? locoScroll.scrollTo(value, 0, 0) :    locoScroll.scroll.instance.scroll.y;
-  }, // we don't have to define a scrollLeft because we're only scrolling vertically.
-  getBoundingClientRect() {
-    return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+const lenis = new Lenis({
+  duration: .7,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  infinite: false,
+})
+
+lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+  // console.log({ scroll, limit, velocity, direction, progress })
+  ScrollTrigger.update()
+})
+
+gsap.ticker.add(update)
+
+ScrollTrigger.scrollerProxy(document.body, {
+  scrollTop(value) {
+    if (arguments.length) {
+      lenis.scroll = value
+    }
+    return lenis.scroll
   },
-  // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
-  pinType: document.querySelector(".scrollContainer").style.transform ? "transform" : "fixed"
-}); */
+  getBoundingClientRect() {
+    return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+  }
+})
 
+ScrollTrigger.defaults({ scroller: document.body })
 
+window.addEventListener('resize', resize)
+
+// animations //
 // Web Intro Animation //
 
 const entry = document.querySelector(".entry")
@@ -120,9 +139,6 @@ const projectImage = document.querySelector(".work-container")
 const project = document.querySelector(".project")
 const content = document.querySelectorAll(".content")
 let state = false
-gsap.registerPlugin(ScrollTrigger)
-
-
 menuToggle.addEventListener("click",(e)=>{
 state = !state
     gsap.set(".nav-social",{opacity:0,scale:0})
@@ -317,8 +333,4 @@ gsap.to(".about-img", {
   y:"-20vh",
   ease: "none"
 });
-// each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
-/* ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
-// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
-ScrollTrigger.refresh(); */
