@@ -107,7 +107,7 @@ html {
     --h2-text: clamp(2rem, 1.5vw + 0.75rem, 2.5rem);
     --l-text: clamp(1.3rem, 0.75vw + 0.75rem, 1.5rem);
     --p-text:clamp(1rem, 0.7vw + 0.35rem, 1.2rem);
-    --p1-text:clamp(1.35rem, 1vw + 0.3rem, 1.45rem);
+    --p1-text:clamp(1.25rem, 1vw + 0.15rem, 1.35rem);
     --h1-text: clamp(2.5rem, 3vw + 1rem, 3.5rem);
     --m-text: clamp(1rem, 0.75vw + 0.75rem, 3rem);
   --ml-text: clamp(1.35rem, 2vw + 1rem, 1.75rem);
