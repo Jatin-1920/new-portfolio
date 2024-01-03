@@ -2,19 +2,7 @@
 
 gsap.registerPlugin(ScrollTrigger)
 
-const bodyScrollBar = Scrollbar.init(document.body, { damping: 0.1, delegateTo: document });
- 
 
-
-// How to get them to work together
-ScrollTrigger.scrollerProxy("body", {
-  scrollTop(value) {
-    if (arguments.length) {
-      bodyScrollBar.scrollTop = value;
-    }
-    return bodyScrollBar.scrollTop;
-  }
-});
 // animations //
 // Web Intro Animation //
 
