@@ -138,7 +138,7 @@ let currentScroll = 0
 const photos =gsap.utils.toArray(".image:not(:first-child)")
 const allPhotos = gsap.utils.toArray(image)
 const contentSection = gsap.utils.toArray(".content:not(:first-child)")
-if(window.innerWidth>=750){
+if(window.innerWidth>750){
     gsap.set(photos,{yPercent:101})
 ScrollTrigger.create({
     trigger:project,
@@ -158,7 +158,7 @@ contentSection.forEach((details,index)=>{
         scrub:true
     })
 })
-} else{
+} else if (window.innerWidth<750){
   const mediaImage = document.querySelectorAll(".media-image")
   const imgs = document.querySelectorAll(".imgs")
   mediaImage.forEach(e =>{
