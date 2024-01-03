@@ -145,7 +145,7 @@ ScrollTrigger.create({
     start:"top top",
     end:"bottom bottom",
     pin:projectImage
-})
+}) 
 
 contentSection.forEach((details,index)=>{
     let headline = details.querySelector("h1")
@@ -158,7 +158,30 @@ contentSection.forEach((details,index)=>{
         scrub:true
     })
 })
-} 
+} else{
+  const mediaImage = document.querySelectorAll(".media-image")
+  const imgs = document.querySelectorAll(".imgs")
+  mediaImage.forEach(e =>{
+    gsap.to(".lay",.75,{ease:"power3.inOut",scrollTrigger:{
+      trigger:e,
+      start:"top 20%",
+      end:"bottom bottom",
+    }})
+    gsap.from(".imgs",1.25,{ease:"power3.inOut",scale:1.5,scrollTrigger:{
+      trigger:e,
+      start:"top 20%",
+      end:"bottom bottom",
+    }})
+  })
+  imgs.forEach(e =>{
+    
+    gsap.from(e,1.25,{ease:"power3.inOut",scale:1.5,scrollTrigger:{
+      trigger:".media-image",
+      start:"top 20%",
+      end:"bottom bottom",
+    }})
+  })
+}
   
 
 let tween = gsap.to(".work-slide-text",{xPercent:-100,repeat:-1,duration:5,ease:"linear"}).totalProgress(0.5)
