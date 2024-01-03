@@ -9,6 +9,7 @@ const lenis = new Lenis({
 
   function raf(time) {
       lenis.raf(time)
+      ScrollTrigger.update()
       requestAnimationFrame(raf)
   }
 
