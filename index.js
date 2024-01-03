@@ -167,15 +167,10 @@ contentSection.forEach((details,index)=>{
       start:"top 20%",
       end:"bottom bottom",
     }})
-    gsap.from(".imgs",1.25,{ease:"power3.inOut",scale:1.5,scrollTrigger:{
-      trigger:e,
-      start:"top 20%",
-      end:"bottom bottom",
-    }})
+    
   })
   imgs.forEach(e =>{
-    
-    gsap.from(e,1.25,{ease:"power3.inOut",scale:1.5,scrollTrigger:{
+    gsap.to(e,1.25,{ease:"power3.inOut",scale:1,scrollTrigger:{
       trigger:".media-image",
       start:"top 20%",
       end:"bottom bottom",
