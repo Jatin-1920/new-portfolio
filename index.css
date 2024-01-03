@@ -504,7 +504,7 @@ place-items: center;
 height: 100%;
 }
 .parallax{
- height:80vh;
+ height:55vh;
     width:100%;
     overflow:hidden;   
     margin-top:var(--m-g);
@@ -515,7 +515,7 @@ height: 100%;
     background-size:cover;
     background-position: center center;
     background-repeat:no-repeat;
-    height:100vh;
+    height:75vh;
     width:100%;
     overflow:hidden;
     position:relative;
