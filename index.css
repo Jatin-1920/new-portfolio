@@ -848,8 +848,15 @@ font-size: var(--p-text);
         width: 100%;
         height: 12.5rem;
         margin-bottom:1rem;
+        position:relative;
     }
-    
+    .lay{
+        position: absolute;
+        inset:0;
+        width:100%;
+        height:100%;
+        background:var(--bg-1);
+    }
     .about{
        display: block;
         place-items: start;
