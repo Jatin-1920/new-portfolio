@@ -1,7 +1,7 @@
 
 
 gsap.registerPlugin(ScrollTrigger)
-let bodyScrollBar = Scrollbar.init(document.body, { damping: 0.1, delegateTo: document });
+let bodyScrollBar = Scrollbar.init(document.body, { damping: 0.1 });
 
 // animations //
 // Web Intro Animation //
