@@ -158,26 +158,7 @@ contentSection.forEach((details,index)=>{
         scrub:true
     })
 })
-} else if (window.innerWidth<750){
-  const mediaImage = document.querySelectorAll(".media-image")
-  const imgs = document.querySelectorAll(".imgs")
-  mediaImage.forEach(e =>{
-    const lay = e.querySelector(".lay")
-    gsap.to(lay,.75,{x:"100%",ease:"power3.inOut",scrollTrigger:{
-      trigger:e,
-      start:"top 20%",
-      end:"bottom bottom",
-    }})
-    
-  })
-  imgs.forEach(e =>{
-    gsap.to(e,1.25,{ease:"power3.inOut",scale:1,scrollTrigger:{
-      trigger:e,
-      start:"top 20%",
-      end:"bottom bottom",
-    }})
-  })
-}
+} 
   
 
 let tween = gsap.to(".work-slide-text",{xPercent:-100,repeat:-1,duration:5,ease:"linear"}).totalProgress(0.5)
