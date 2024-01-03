@@ -415,7 +415,7 @@ a{
 }
 .content>p{
     margin-block: 1.5rem;
-    font-size:var(--p-text):
+    font-size:var(--p-text);
 }
 .media-image{
     display: none;
@@ -772,6 +772,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .footer-links a {
     color:#808080;
+    font-size:var(--p-text);
 }
 
 .footer-links a:hover {
@@ -779,6 +780,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 
 .end-footer{
+    font-size:var(--p-text);
     position: absolute;
 bottom:1rem;
     left:2rem;
