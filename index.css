@@ -850,6 +850,8 @@ font-size: var(--p-text);
         margin-bottom:1rem;
         position:relative;
         overflow:hidden;
+    .imgs{
+        transform:scale(1.5);
     }
     .lay{
         position: absolute;
