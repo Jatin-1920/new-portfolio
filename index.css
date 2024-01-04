@@ -853,6 +853,8 @@ font-size: var(--p-text);
     }
     .imgs{
         transform:scale(1.5);
+        max-width:100%;
+        object-fit:cover;
     }
     .lay{
        position: absolute;
