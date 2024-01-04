@@ -159,24 +159,30 @@ contentSection.forEach((details,index)=>{
     })
 })
 } else {
-  const mediaImage = document.querySelectorAll(".media-image")
-  const imgs = document.querySelectorAll(".imgs")
+  const mediaImage = document.querySelectorAll(".content")
+  
   mediaImage.forEach(e =>{
+    const md = e.querySelector(".media-image")
+    const imgs = md.querySelector(".imgs")
     const lay = e.querySelector(".lay")
+    const h1 = e.querySelector("h1")
+  const p = e.querySelector("p")
+    const btn = e.querySelector(".btn")
     gsap.to(lay,1,{x:"100%",ease:"power3.inOut",scrollTrigger:{
       trigger:e,
       start:"top 20%",
       end:"bottom bottom",
     }})
     
-  })
-  imgs.forEach(e =>{
-    gsap.to(e,1.25,{ease:"power1.inOut",scale:1,scrollTrigger:{
+    gsap.to(imgs,1.25,{ease:"power1.inOut",scale:1,scrollTrigger:{
       trigger:e,
       start:"top 20%",
       end:"bottom bottom",
     }})
+  gsap.from([h1,p,btn],1,{stagger:0.1,opacity:0,y:60})
+
   })
+  
 }
   
 
