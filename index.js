@@ -263,7 +263,7 @@ gsap.to(".about .btn",{scrollTrigger:{
 
 // date //
 const dates = document.querySelector(".date")
-
+const times = document.querySelector(".times")
 const date = new Date()
 const year = date.getFullYear()
 const month = date.getMonth() +1
