@@ -124,11 +124,7 @@ gsap.fromTo([firstNav,secondNav],{height:"0vh",skewY:3,transformOrigin:"right to
 link.forEach(li=>{
     
     li.addEventListener("mouseover",(e)=>{
-        gsap.to(e.target,{skewX:4,scrambleText:{
-          text:`${e.target.innerText}`,
-          chars:"01234@#975*¥7",
-          speed:0.3
-        },y:3,duration:2,ease:"Power3.inOut"
+        gsap.to(e.target,{skewX:4,y:3,duration:0.3,ease:"Power3.inOut"
     })
     })
     li.addEventListener("mouseleave",(e)=>{
