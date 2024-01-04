@@ -168,6 +168,7 @@ contentSection.forEach((details,index)=>{
     const h1 = e.querySelector("h1")
   const p = e.querySelector("p")
     const btn = e.querySelector(".btn")
+    gsap.set([h1,p,btn],{opacity:0,y:60})
     gsap.to(lay,1,{x:"100%",ease:"power3.inOut",scrollTrigger:{
       trigger:e,
       start:"top 20%",
@@ -179,9 +180,9 @@ contentSection.forEach((details,index)=>{
       start:"top 20%",
       end:"bottom bottom",
     }})
-  gsap.from([h1,p,btn],1,{ease:"power1.inOut",stagger:{
+  gsap.to([h1,p,btn],1,{ease:"power1.inOut",stagger:{
     amount:0.07
-  },opacity:0,y:60,scrollTrigger:{
+  },opacity:1,y:0,scrollTrigger:{
       trigger:e,
       start:"top 20%",
       end:"bottom bottom",
