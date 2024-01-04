@@ -264,13 +264,13 @@ gsap.to(".about .btn",{scrollTrigger:{
 // date //
 const dates = document.querySelector(".date")
 
-
-setInterval(showTime,1000)
-function showTime() {
-  const date = new Date()
+const date = new Date()
 const year = date.getFullYear()
 const month = date.getMonth() +1
 const dated = date.getDate()
+setInterval(showTime,1000)
+function showTime() {
+  
 let seconds = date.getSeconds()
 let mins = date.getMinutes()
 let hours = date.getHours()
@@ -278,12 +278,11 @@ let hours = date.getHours()
 hours = hours > 10 ? "0" + hours:hours;
 seconds = seconds > 10 ? "0" + seconds:seconds
 mins = mins > 10 ? "0" + mins:mins;
-if(hours>0){
-  dates.innerHTML = `${dated}-${month}-${year}  ${hours}-${min}-${seconds}`;
-} else{
-dates.innerHTML = `${dated}-${month}-${year}  ${min}-${seconds}`
+
+let currentTime = hours + ":" + mins + ":" + seconds
+  times.innerHTML = currentTime
 }
-}
+dates.innerHTML = dated + "-" + month + "-" + year
   showTime()
 
 let canvas = document.querySelector(".canvas")
