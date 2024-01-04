@@ -270,10 +270,10 @@ const month = date.getMonth() +1
 const dated = date.getDate()
 
 function showTime() {
-  
-let seconds = date.getSeconds()
-let mins = date.getMinutes()
-let hours = date.getHours()
+  let now = new Date()
+let seconds = now.getSeconds()
+let mins = now.getMinutes()
+let hours = now.getHours()
 
 hours = hours < 10 ? "0" + hours:hours;
 seconds = seconds 
