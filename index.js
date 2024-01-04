@@ -1,7 +1,7 @@
 
 
 gsap.registerPlugin(ScrollTrigger)
-
+gsap.registerPlugin(ScrambleText)
 // animations //
 // Web Intro Animation //
 
