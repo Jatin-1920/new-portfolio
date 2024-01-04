@@ -266,8 +266,19 @@ const dates = document.querySelector(".date")
 const date = new Date()
 const year = date.getFullYear()
 const month = date.getMonth() +1
-const dated = date.getDate() 
-dates.innerHTML = `${dated}-${month}-${year}`;
+const dated = date.getDate()
+const seconds = date.getSeconds()
+const min = date.getMinutes()
+const hours = date.getHours()
+if(hours>0){
+  dates.innerHTML = `${dated}-${month}-${year}  ${hours}-${min}-${seconds}`;
+} else{
+dates.innerHTML = `${dated}-${month}-${year}  ${min}-${seconds}`
+}
+
+
+  
+
 let canvas = document.querySelector(".canvas")
 let footer = document.querySelector(".footer")
 let ctx = canvas.getContext("2d")
