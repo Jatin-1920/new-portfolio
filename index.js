@@ -268,22 +268,24 @@ let date = new Date()
 const year = date.getFullYear()
 const month = date.getMonth() +1
 const dated = date.getDate()
-setInterval(showTime,1000)
+
 function showTime() {
   
 let seconds = date.getSeconds()
 let mins = date.getMinutes()
 let hours = date.getHours()
 
-hours = hours > 10 ? "0" + hours:hours;
-seconds = seconds > 10 ? "0" + seconds:seconds
-mins = mins > 10 ? "0" + mins:mins;
+hours = hours < 10 ? "0" + hours:hours;
+seconds = seconds 
+  < 10 ? "0" + seconds:seconds
+mins = mins < 10 ? "0" + mins:mins;
 
 let currentTime = hours + ":" + mins + ":" + seconds
   times.innerHTML = currentTime
 }
 dates.innerHTML = dated + "-" + month + "-" + year
   showTime()
+setInterval(showTime,1000)
 
 let canvas = document.querySelector(".canvas")
 let footer = document.querySelector(".footer")
