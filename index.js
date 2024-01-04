@@ -125,7 +125,7 @@ link.forEach(li=>{
     
     li.addEventListener("mouseover",(e)=>{
         gsap.to(e.target,2,{skewX:4,scrambleText:{
-          text:`e.target.innerText`,
+          text:`${e.target.innerText}`,
           chars:"01234@#975*¥7",
           speed:0.3
         },y:3,duration:0.3,ease:"Power3.inOut"
