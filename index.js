@@ -124,7 +124,11 @@ gsap.fromTo([firstNav,secondNav],{height:"0vh",skewY:3,transformOrigin:"right to
 link.forEach(li=>{
     
     li.addEventListener("mouseover",(e)=>{
-        gsap.to(e.target,{skewX:4,y:3,duration:0.3,ease:"Power3.inOut"
+        gsap.to(e.target,2,{skewX:4,scrambleText:{
+          text:`e.target.innerText`,
+          chars:"01234@#975*¥7",
+          speed:0.3
+        },y:3,duration:0.3,ease:"Power3.inOut"
     })
     })
     li.addEventListener("mouseleave",(e)=>{
@@ -180,6 +184,7 @@ contentSection.forEach((details,index)=>{
       start:"top 20%",
       end:"bottom bottom",
     }})
+    
   gsap.to([h1,p,btn],1,{ease:"power1.inOut",opacity:1,y:0,scrollTrigger:{
       trigger:e,
       start:"top 20%",
