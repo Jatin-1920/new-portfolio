@@ -544,6 +544,7 @@ overflow: hidden;
 }
 .about-content h2{
     margin-inline: auto;
+    display:  inline-block;
     overflow: hidden;
     font-size:var(--p1-text);
     font-weight: normal;
