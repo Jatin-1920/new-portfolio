@@ -322,7 +322,7 @@ a{
     font-family:j1;
 }
 .small-title{
-   font-size: var(--p-text);
+   font-size:var(--p-text);
    width: 50%;
    margin-left: auto;
 }
@@ -824,7 +824,6 @@ bottom:1rem;
 @media (width<750px) {
 .small-title{
 width: 100%;
-font-size: var(--p-text);
 }
  .name{
     font-size: 1.25rem;
