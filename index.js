@@ -179,7 +179,11 @@ contentSection.forEach((details,index)=>{
       start:"top 20%",
       end:"bottom bottom",
     }})
-  gsap.from([h1,p,btn],1,{stagger:0.1,opacity:0,y:60})
+  gsap.from([h1,p,btn],1,{stagger:0.1,opacity:0,y:60,scrollTrigger:{
+      trigger:e,
+      start:"top 20%",
+      end:"bottom bottom",
+  }})
 
   })
   
