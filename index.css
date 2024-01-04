@@ -818,6 +818,9 @@ bottom:1rem;
     color:#1e453e;
     background:tomato;
 }
+.times{
+    color:tomato
+}
 @media (width<750px) {
 .small-title{
 width: 100%;
@@ -893,4 +896,5 @@ font-size: var(--p-text);
     .sm-text{
         font-size:17dvw;
     }
+    
 }
