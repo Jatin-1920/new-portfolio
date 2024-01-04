@@ -819,7 +819,7 @@ bottom:1rem;
     background:tomato;
 }
 .times{
-    color:#fcc436;
+    color:red;
 }
 @media (width<750px) {
 .small-title{
