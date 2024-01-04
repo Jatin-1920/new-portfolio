@@ -855,6 +855,9 @@ font-size: var(--p-text);
         transform:scale(1.5);
         max-width:100%;
         object-fit:cover;
+        height:100%;
+        display:inline-block;
+        aspect-ratio:4/5;
     }
     .lay{
        position: absolute;
