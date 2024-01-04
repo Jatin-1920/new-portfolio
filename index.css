@@ -852,8 +852,7 @@ font-size: var(--p-text);
     }
     .imgs{
         transform:scale(1.5);
-        max-width:100%;
-        display:inline-block;
+        width:100%;
         aspect-ratio:4/5;
     }
     .lay{
