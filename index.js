@@ -171,7 +171,7 @@ contentSection.forEach((details,index)=>{
     
   })
   imgs.forEach(e =>{
-    gsap.to(e,1.25,{ease:"power1.inOut",scale:1,scrollTrigger:{
+    gsap.to(e,1.5,{ease:"power1.inOut",scale:1,scrollTrigger:{
       trigger:e,
       start:"top 20%",
       end:"bottom bottom",
