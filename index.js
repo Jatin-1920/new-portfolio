@@ -163,7 +163,7 @@ contentSection.forEach((details,index)=>{
   const imgs = document.querySelectorAll(".imgs")
   mediaImage.forEach(e =>{
     const lay = e.querySelector(".lay")
-    gsap.to(lay,1,{x:"100%",ease:"power1.inOut",scrollTrigger:{
+    gsap.to(lay,1,{x:"100%",ease:"power3.inOut",scrollTrigger:{
       trigger:e,
       start:"top 20%",
       end:"bottom bottom",
