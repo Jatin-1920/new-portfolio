@@ -852,7 +852,7 @@ font-size: var(--p-text);
         overflow:hidden;
     }
     .imgs{
-        transform:scale(1.5);
+        transform:scale(2);
     }
     .lay{
        position: absolute;
