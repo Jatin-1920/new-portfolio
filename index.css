@@ -555,7 +555,7 @@ opacity: 0;
 }
 .btn{
     
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size:.875rem;
     width: 10rem;
     display: flex;
