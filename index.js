@@ -163,7 +163,7 @@ contentSection.forEach((details,index)=>{
   const imgs = document.querySelectorAll(".imgs")
   mediaImage.forEach(e =>{
     const lay = e.querySelector(".lay")
-    gsap.to(lay,.75,{x:"100%",ease:"power1.inOut",scrollTrigger:{
+    gsap.to(lay,1,{x:"100%",ease:"power1.inOut",scrollTrigger:{
       trigger:e,
       start:"top 20%",
       end:"bottom bottom",
@@ -171,7 +171,7 @@ contentSection.forEach((details,index)=>{
     
   })
   imgs.forEach(e =>{
-    gsap.to(e,1.5,{ease:"power1.inOut",scale:1,scrollTrigger:{
+    gsap.to(e,1.25,{ease:"power1.inOut",scale:1,scrollTrigger:{
       trigger:e,
       start:"top 20%",
       end:"bottom bottom",
