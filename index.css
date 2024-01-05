@@ -272,6 +272,8 @@ nav{
     
 }
 .primary-navigation{
+    position:relative;
+    z-index:11;
     overflow:hidden;
     display: flex;
     flex-direction: column;
