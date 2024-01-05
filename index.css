@@ -304,9 +304,7 @@ a{
     overflow:hidden;
     z-index:10;
     opacity:0;
-    background-size:100% 100%;
-    background-position:0% 0%;
-    background-repeat:no-repeat;
+    
 }
 .movie-mask{
     margin-bottom:2rem;
