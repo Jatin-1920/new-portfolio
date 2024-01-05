@@ -150,9 +150,9 @@ movie.forEach(movie=>{
   movie.addEventListener("mouseover",e =>{
     showMovie(e.target.dataset.movie)
   })
- /* movie.addEventListener("mouseleave",e =>{
-    panMovie.style.background=""
-  }) */
+ movie.addEventListener("mouseleave",e =>{
+   gsap.to(panMovie,{opacity:0})
+  }) 
 })
 
 link.forEach(li=>{
