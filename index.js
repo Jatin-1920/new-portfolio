@@ -101,7 +101,9 @@ const image = document.querySelectorAll(".image")
 const projectImage = document.querySelector(".work-container")
 const project = document.querySelector(".project")
 const content = document.querySelectorAll(".content")
+const movieBtn = document querySelector(".movie-btn")
 let state = false
+let movieState = false;
 menuToggle.addEventListener("click",(e)=>{
 state = !state
     
@@ -121,7 +123,17 @@ gsap.fromTo([firstNav,secondNav],{height:"0vh",skewY:3,transformOrigin:"right to
     }})
     }
 })
+function showMovie() {
+  movieState = !movieState
+  movieBtn.innerHTML = movieState ? "×":"open"
+  if(movieState){
+    gsap.to(".nav-movie-block",{duration:1,ease:"power3.inOut",clipPath:"polygon(49.75% 0%, 50.25% 0%, 50.25% 100%, 49.75% 100%)"})
+  } else {
+    gsap.to(".nav-movie-block",{duration:1,ease:"power3.inOut",clipPath:"polygon(49.75%  49.75%, 50.25%  49.75%, 50.25% 49.75%, 49.75% 50.25%)"})
+  }
+}
 
+movieBtn.addEventListener("click",showMovie)
 
 link.forEach(li=>{
     
