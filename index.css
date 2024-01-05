@@ -298,6 +298,11 @@ a{
     height:25dvh;
     width:100%;
     overflow:hidden;
+    background:url(img/Germany.jpg);
+    background-size:100% 100%;
+    background-position:100% 100%;
+    background-repeat:no-repeat;
+    
 }
 .nav-movie-block{
     position: absolute;
