@@ -123,14 +123,18 @@ gsap.fromTo([firstNav,secondNav],{height:"0vh",skewY:3,transformOrigin:"right to
     }})
     }
 })
+const movieTimeline = gsap.timeline({paused:true})
+    movieTimeline.to(".nav-movie-block",{duration:1,ease:"power3.inOut",clipPath:"polygon(49.75% 0%, 50.25% 0%, 50.25% 100%, 49.75% 100%)"});
+    movieTimeline.to(".nav-movie-block",{duration:1,ease:"power3.inOut",clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"})
+  
+    
 function showMovie() {
   movieState = !movieState
   movieBtn.innerHTML = movieState ? "×":"open"
   if(movieState){
-    gsap.to(".nav-movie-block",{duration:1,ease:"power3.inOut",clipPath:"polygon(49.75% 0%, 50.25% 0%, 50.25% 100%, 49.75% 100%)"});
-    gsap.to(".nav-movie-block",{delay:1,duration:1,ease:"power3.inOut",clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"})
-  } else {
-    gsap.to(".nav-movie-block",{duration:1,ease:"power3.inOut",clipPath:"polygon(49.75%  49.75%, 50.25%  49.75%, 50.25% 49.75%, 49.75% 50.25%)"})
+    movieTimeline.reverse()
+  } else{
+    movieTimeline.play()
   }
 }
 
