@@ -269,6 +269,7 @@ nav{
     color: white;
     display: flex;
     flex-direction: column;
+    padding:1.5rem;
 }
 .primary-navigation{
     overflow:hidden;
