@@ -304,8 +304,8 @@ a{
     overflow:hidden;
     z-index:10;
     opacity:0;
-    background-size:fill;
-    background-position:100% 100%;
+    background-size:50%;
+    background-position:50%;
     background-repeat:no-repeat;
 }
 .movie-mask{
