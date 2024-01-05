@@ -323,8 +323,8 @@ grid-template-columns: repeat(4,1fr);
       color: black;
 }
 .jaipur,.greece,.nazi,.punjab{
-    background-size:cover;
-    background-position:center center;
+    background-size:100%;
+    background-position:100%;
     background-repeat:no-repeat;
     
 }
