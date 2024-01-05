@@ -152,7 +152,7 @@ movie.forEach(movie=>{
     showMovie(e.target.dataset.movie)
   })
  movie.addEventListener("mouseleave",e =>{
-   gsap.to(panMovie,{opacity:0})
+   panMovie.style.opacity="0"
   }) 
 })
 
