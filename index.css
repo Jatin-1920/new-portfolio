@@ -267,6 +267,8 @@ nav{
     z-index: 10;
     overflow: hidden;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 .primary-navigation{
     display: flex;
