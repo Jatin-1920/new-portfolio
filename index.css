@@ -362,6 +362,7 @@ grid-template-columns: repeat(4,1fr);
     height:100%;
 }
   .movie{
+      font-size:.875rem;
       padding:.5rem;
       display:flex;
       width:100%;
