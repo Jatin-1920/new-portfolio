@@ -229,7 +229,7 @@ z-index:100;
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0rem;
+    padding: 1rem 2rem;
     align-items: center;
     font-size: 1.25rem;
     position: fixed;
@@ -301,7 +301,7 @@ a{
 }
 .navMovie{
     display:flex;
-    justify-content: start;
+    justify-content: space-between;
     gap:.5rem;
     height:100%;
 }
