@@ -112,7 +112,7 @@ gsap.fromTo([firstNav,secondNav],{height:"0vh",skewY:3,transformOrigin:"right to
     amount:.1
 }})
       
-    gsap.from(".movie-mask",{scale:0,opacity:0,delay:.5, duration:.5,ease:"Power3.inOut"})
+    gsap.to(".movie-mask",{scale:1,opacity:1,delay:.5, duration:.5,ease:"Power3.inOut"})
 } else{
       gsap.to(".movie-mask",{opacity:0,scale:0})
     gsap.to(primaryNav,{display:"none",delay:.65})
