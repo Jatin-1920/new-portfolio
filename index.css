@@ -277,7 +277,7 @@ nav{
     font-size: var(--h1-font);
     justify-content: center;
 margin-left: 10dvw;
-height: 80dvh;
+height: 75dvh;
 font-family: j1;
 }
 .primary-navigation>a{
@@ -295,7 +295,7 @@ a{
 .nav-movie-block{
     display:flex;
     flex-direction: column;
-    height:20dvh;
+    height:25dvh;
     width:100%;
     font-size:var(--p-text);
     padding:1rem;
