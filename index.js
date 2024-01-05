@@ -153,9 +153,7 @@ movie.forEach(movie=>{
   })
  movie.addEventListener("mouseleave",e =>{
    panMovie.style.backgroundImage=""
-  /* panMovie.style.backgroundSize="cover"
-   panMovie.style.backgroundPosition="center center"
-   panMovie.style.backgroundRepeat="no-repeat" */
+
   }) 
 })
 
