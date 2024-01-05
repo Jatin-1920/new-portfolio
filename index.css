@@ -309,12 +309,14 @@ a{
     background-repeat:no-repeat;
 }
 .movie-mask{
+    margin-bottom:2rem;
     position:relative;
     z-index:11;
     height:25dvh;
     transform:scale(0);
     opacity:0;
-    width:100%;
+    width:95%;
+    margin-inline:auto;
     overflow:hidden;
     background:url(img/nazi.jpg);
     background-size:100% 100%;
