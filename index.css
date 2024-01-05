@@ -301,6 +301,7 @@ a{
     height:100%;
     width:100%;
     inset:0;
+    z-index:10;
     overflow:hidden;
     opacity:0;
     background-size:100%;
