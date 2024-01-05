@@ -324,6 +324,7 @@ a{
     background-repeat:no-repeat;
     
 }
+
 .movie-btn{
     width:3rem;
     height:3rem;
@@ -354,6 +355,9 @@ a{
         50.25% 49.75%,
         49.75% 50.25%
     );
+}
+.nav-movie-block h3{
+    font-family:j2;
 }
 .navMovie{
     display:grid;
