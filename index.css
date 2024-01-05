@@ -295,10 +295,11 @@ a{
 }
 .movie-mask{
     position:relative;
+    z-index:10;
     height:25dvh;
     width:100%;
     overflow:hidden;
-    background:url(img/Germany.jpg);
+    background:url(img/greece.jpg);
     background-size:100% 100%;
     background-position:100% 100%;
     background-repeat:no-repeat;
