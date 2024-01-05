@@ -155,6 +155,7 @@ movie.forEach(movie=>{
    panMovie.style.background=""
    panMovie.style.backgroundSize="100% 100%"
    panMovie.style.backgroundPosition="100% 100%"
+   panMovie.style.backgroundRepeat="no-repeat"
   }) 
 })
 
