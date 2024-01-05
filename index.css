@@ -357,7 +357,7 @@ a{
     );
 }
 .nav-movie-block h3{
-    font-family:j2;
+    font-size:var(--p-text);
 }
 .navMovie{
     display:grid;
