@@ -301,8 +301,8 @@ a{
     inset:0;
     overflow:hidden;
     opacity:0;
-    background-size:cover;
-    background-position:center center;
+    background-size:100%;
+    background-position:100%;
     background-repeat:no-repeat;
 }
 .movie-mask{
