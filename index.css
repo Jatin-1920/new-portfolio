@@ -301,8 +301,8 @@ a{
     padding:1rem;
 }
 .navMovie{
-    display:flex;
-    justify-content: space-between;
+    display:grid;
+grid-template-columns: repeat(4,1fr);
     gap:.5rem;
     height:100%;
 }
@@ -320,8 +320,26 @@ a{
       transition:all 0.35s ease-in-out;
   } 
 .movie:hover{
-    background:white;
       color: black;
+}
+.jaipur,.greece,.nazi,.punjab{
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    
+}
+.jaipur{
+    background:url(img/jaipur.jpg);
+}
+
+.nazi{
+    background:url(img/Germany.jpg);
+}
+.greece{
+    background:url(img/greece.jpg)
+}
+.punjab{
+    background:url(img/punjab.jpg)
 }
 .header{
     position: relative;
