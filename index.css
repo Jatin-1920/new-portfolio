@@ -315,8 +315,10 @@ a{
     color:white;
     border-radius:100%;
     position: absolute;
-    left:1rem;
-    top:1rem;
+    left:.5rem;
+    top:.5rem;
+    display: grid;
+    place-items:center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .nav-movie-block{
