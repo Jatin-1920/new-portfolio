@@ -104,7 +104,7 @@ const content = document.querySelectorAll(".content")
 let state = false
 menuToggle.addEventListener("click",(e)=>{
 state = !state
-    gsap.set(".nav-social",{opacity:0,scale:0})
+    
     menuToggle.innerHTML = state ? "Close":"Menu"
     if(state) {
     gsap.to(primaryNav,{display:"block"})
@@ -114,6 +114,7 @@ gsap.fromTo([firstNav,secondNav],{height:"0vh",skewY:3,transformOrigin:"right to
       
     gsap.from(".movie-mask",{scale:0,opacity:0,delay:.5, duration:.5,ease:"Power3.inOut"})
 } else{
+      gsap.to(".movie-mask",{opacity:0,scale:0})
     gsap.to(primaryNav,{display:"none",delay:.65})
     gsap.to([secondNav,firstNav],{height:"0vh",duration:.65,ease:"Power3.inOut",stagger:{
         amount:.07
