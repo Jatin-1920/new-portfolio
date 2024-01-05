@@ -143,7 +143,7 @@ function showMask() {
 movieBtn.addEventListener("click",showMask)
 
 function showMovie(movi){
- gsap.to(panMovie,.25,{opacity:1,background:`url(${movi})`,ease:"power2.inOut"}) 
+ gsap.to(panMovie,.25,{opacity:1,backgroundImage:`url(${movi})`,ease:"power2.inOut"}) 
   gsap.to(panMovie,.25,{backgroundSize:"cover", backgroundPosition:"center center",backgroundRepeat:"no-repeat"})
 }
 
@@ -152,10 +152,10 @@ movie.forEach(movie=>{
     showMovie(e.target.dataset.movie)
   })
  movie.addEventListener("mouseleave",e =>{
-   panMovie.style.background=""
-   panMovie.style.backgroundSize="cover"
+   panMovie.style.backgroundImage=""
+  /* panMovie.style.backgroundSize="cover"
    panMovie.style.backgroundPosition="center center"
-   panMovie.style.backgroundRepeat="no-repeat"
+   panMovie.style.backgroundRepeat="no-repeat" */
   }) 
 })
 
