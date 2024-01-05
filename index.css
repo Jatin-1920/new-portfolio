@@ -311,7 +311,12 @@ a{
     font-size:var(--p-text);
     padding:1rem;
     background: #00416A;
-    clip-path:polygon();
+    clip-path:polygon(
+        49.75% 49.75%,
+        50.25% 49.75%,
+        50.25% 49.75%,
+        49.75% 50.25%
+    );
 }
 .navMovie{
     display:grid;
