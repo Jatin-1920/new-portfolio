@@ -152,7 +152,9 @@ movie.forEach(movie=>{
     showMovie(e.target.dataset.movie)
   })
  movie.addEventListener("mouseleave",e =>{
-   panMovie.style.opacity="0"
+   panMovie.style.background=""
+   panMovie.style.backgroundSize="100% 100%"
+   panMovie.style.backgroundPosition="100% 100%"
   }) 
 })
 
