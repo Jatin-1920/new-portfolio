@@ -132,9 +132,9 @@ function showMovie() {
   movieState = !movieState
   movieBtn.innerHTML = movieState ? "×":"open"
   if(movieState){
-    movieTimeline.reverse()
-  } else{
     movieTimeline.play()
+  } else{
+    movieTimeline.reverse()
   }
 }
 
