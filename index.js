@@ -144,7 +144,7 @@ movieBtn.addEventListener("click",showMask)
 
 function showMovie(movi){
  gsap.to(panMovie,.25,{opacity:1,backgroundImage:`url(${movi})`,ease:"power2.inOut"}) 
-  gsap.to(panMovie,.25,{backgroundSize:"cover", backgroundPosition:"center center",backgroundRepeat:"no-repeat"})
+  /* gsap.to(panMovie,.25,{backgroundSize:"cover", backgroundPosition:"center center",backgroundRepeat:"no-repeat"}) */
 }
 
 movie.forEach(movie=>{
