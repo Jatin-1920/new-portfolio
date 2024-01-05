@@ -358,6 +358,7 @@ a{
 }
 .nav-movie-block h3{
     font-size:var(--p-text);
+    font-weight:normal;
 }
 .navMovie{
     display:grid;
