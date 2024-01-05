@@ -102,6 +102,8 @@ const projectImage = document.querySelector(".work-container")
 const project = document.querySelector(".project")
 const content = document.querySelectorAll(".content")
 const movieBtn = document.querySelector(".movie-btn")
+const movie= document.querySelectorAll(".movie")
+const panMovie = document.querySelector(".panMovie")
 let state = false
 let movieState = false;
 menuToggle.addEventListener("click",(e)=>{
@@ -128,7 +130,7 @@ const movieTimeline = gsap.timeline({paused:true})
     movieTimeline.to(".nav-movie-block",{duration:1,ease:"power3.inOut",clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"})
   
     
-function showMovie() {
+function showMask() {
   movieState = !movieState
   movieBtn.innerHTML = movieState ? "×":"open"
   if(movieState){
@@ -138,7 +140,20 @@ function showMovie() {
   }
 }
 
-movieBtn.addEventListener("click",showMovie)
+movieBtn.addEventListener("click",showMask)
+
+function showMovie(movi){
+ gsap.to(".panMovie",.25,{background:`url(${movi})`,ease:"power2.inOut"}) 
+}
+
+movie.forEach(movie=>{
+  movie.addEventListener("mouseover",e =>{
+    showMovie(e.target.dataset.movie)
+  })
+  movie.addEventListener("mouseleave",e =>{
+    panMovie.style.background=""
+  })
+})
 
 link.forEach(li=>{
     
