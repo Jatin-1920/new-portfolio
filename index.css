@@ -297,7 +297,7 @@ a{
 .movie-mask{
     position:relative;
     z-index:10;
-    height:calc(25dvh - 1.5rem);
+    height:25dvh;
     transform:scale(0);
     opacity:0;
     width:100%;
