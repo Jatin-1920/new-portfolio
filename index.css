@@ -271,6 +271,7 @@ nav{
     flex-direction: column;
 }
 .primary-navigation{
+    overflow:hidden;
     display: flex;
     flex-direction: column;
     gap: var(--h1-font);
@@ -296,6 +297,7 @@ a{
     position:relative;
     height:25dvh;
     width:100%;
+    overflow:hidden;
 }
 .nav-movie-block{
     position: absolute;
