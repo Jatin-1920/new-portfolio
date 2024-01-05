@@ -320,27 +320,11 @@ grid-template-columns: repeat(4,1fr);
       transition:all 0.35s ease-in-out;
   } 
 .movie:hover{
+    background:white;
       color: black;
 }
-.jaipur,.greece,.nazi,.punjab{
-    background-size:100%;
-    background-position:100%;
-    background-repeat:no-repeat;
-    
-}
-.jaipur{
-    background:url(img/jaipur.jpg);
-}
 
-.nazi{
-    background:url(img/Germany.jpg);
-}
-.greece{
-    background:url(img/greece.jpg)
-}
-.punjab{
-    background:url(img/punjab.jpg)
-}
+
 .header{
     position: relative;
     height: 100dvh;
