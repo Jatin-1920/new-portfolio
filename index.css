@@ -307,6 +307,16 @@ a{
     background-repeat:no-repeat;
     
 }
+.movie-btn{
+    width:5rem;
+    height:5rem;
+    color:white;
+    border-radius:100%;
+    position: absolute;
+    left:50%;
+    top:-2.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 .nav-movie-block{
     position: absolute;
     inset:0;
