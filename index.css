@@ -942,6 +942,7 @@ width: 100%;
     }
     .footer{
         padding:5rem 2rem;
+        gap:3rem;
     }
     .footer-link-container{
         display:flex;
