@@ -108,8 +108,10 @@ let state = false
 let movieState = false;
 menuToggle.addEventListener("click",(e)=>{
 state = !state
-    
+    setTimeout(()=>{
     menuToggle.innerHTML = state ? "Close":"Menu"
+  },1000 )
+    
     if(state) {
     gsap.to(primaryNav,{display:"block"})
 gsap.fromTo([firstNav,secondNav],{height:"0vh",skewY:3,transformOrigin:"right top"},{height:"100vh",skewY:0,duration:.8,ease:"Power3.inOut",stagger:{
@@ -135,7 +137,7 @@ function showMask() {
   movieState = !movieState
   setTimeout(()=>{
     movieBtn.innerHTML = movieState ? "Close":"Open"
-  },1000 )
+  },1500 )
   if(movieState){
     movieTimeline.play()
   } else{
