@@ -63,6 +63,19 @@ function webIntro() {
 entry.addEventListener("click",webIntro)
 // Web Intro Animation //
 
+// Card Stack Animation //
+const stackTimeline = gsap.timeline({scrollTrigger:{
+  trigger:".gsapPin",
+  start:"top top",
+end:"bottom bottom",
+  ease:"linear",
+  scrub:1
+}})
+stackTimeline.to(".gsapPin",{
+  stagger:.5
+})
+// Card Stack Animation //
+
 const left = document.getElementById("left")
 const header = document.querySelector(".header")
 let mouse = document.querySelector(".mouse-event")
