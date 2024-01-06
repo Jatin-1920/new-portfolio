@@ -832,7 +832,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 } 
 .uniq{
     color:#efe8d8;
-    font-weight:bold;
+    font-weight:600;
 }
 .footer-link-container{
     display:grid;
