@@ -133,7 +133,9 @@ const movieTimeline = gsap.timeline({paused:true})
     
 function showMask() {
   movieState = !movieState
-  movieBtn.innerHTML = movieState ? "Close":"Open"
+  setTimeout(()=>{
+    movieBtn.innerHTML = movieState ? "Close":"Open"
+  },1000 )
   if(movieState){
     movieTimeline.play()
   } else{
