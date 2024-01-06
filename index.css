@@ -307,7 +307,27 @@ a{
     background-size:cover;
     background-position:center center;
     background-repeat:no-repeat;
+    animation: backgroundEffect 30s linear infinite;
 }
+
+@keyframes backgroundEffect {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 40% 10%;
+  }
+  50% {
+    background-position: 0 10%;
+  }
+  75% {
+    background-position: 10% 40%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
 .movie-mask{
     margin-bottom:2rem;
     position:relative;
