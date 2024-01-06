@@ -844,7 +844,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     color:black;
     text-decoration:underline;
 }
-.social-footer{
+.social-footer footer-wrap{
     align-items:end;
 }
 .times{
@@ -922,6 +922,13 @@ width: 100%;
     .footer{
         padding:2rem;
     }
-    
+    .footer-link-container{
+        display:flex;
+        flex-direction:column;
+        gap:2rem;
+    }
+    .footer-link:nth-child(1){
+        order:3;
+    }
     
 }
