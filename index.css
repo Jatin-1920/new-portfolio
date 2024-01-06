@@ -357,6 +357,8 @@ a{
     position: absolute;
     right:.5rem;
     top:.5rem;
+    border:none;
+    outline:none;
     display: grid;
     place-items:center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
