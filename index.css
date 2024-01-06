@@ -830,7 +830,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
   font-size:var(--brg-heading);
     line-height:1.2;  
 } 
-.uniq{
+.contact-title .uniq{
     color:#efe8d8;
     font-weight:600;
 }
@@ -948,5 +948,8 @@ width: 100%;
     .contact-title{
         width:100%;
         margin:0;
+    }
+    .contact-title div{
+        line-height:1.3;
     }
 }
