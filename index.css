@@ -804,7 +804,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 .footer{
     width:100%;
     height:100vh;
-    color:black;
+    color:#313453;
     overflow:hidden;
     position:relative;
     background:white;
@@ -837,7 +837,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .footer-link-container{
     display:grid;
-    font-size:var(--p1-text);
+    font-size:var(--p-text);
     gap:2rem;
     justify-content:center;
     grid-template-columns:1fr 1.5fr 2fr;
@@ -846,6 +846,11 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     margin-bottom:1rem;
     font-size:var(--p1-text);
     font-weight:bold;
+}
+.mail-footer h4{
+    font-weight:normal;
+    color:#787786;
+    font-size:var(--p-text);
 }
 .footer-wrap{
     display:flex;
@@ -861,7 +866,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     text-align:right;
 }
 .mail{
-    font-size:var(--ml-text);
+    font-size:var(--p1-text);
 }
 .times{
     color:#fcc436;
@@ -958,7 +963,5 @@ width: 100%;
     .contact-title div{
         line-height:1.3;
     }
-    .mail{
-    font-size:var(--p1-text);
-    }
+    
 }
