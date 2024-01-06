@@ -87,7 +87,7 @@ ScrollTrigger.create({
   end:()=>`${stack.length * cardHeight}`,
   pin:true,
   scrub:true,
-  animation:stackAnimation
+  animation:stackAnimation,
   invalidateOnRefresh:true
 })
 ScrollTrigger.addEventListener("refreshInit", stackAnim)
