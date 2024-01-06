@@ -820,7 +820,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     height:100%;
     z-index:-1;
 }
-.footer h1 {
+.footer h2 {
     font-size:var(--xl-text);
     font-weight:500;
 }
@@ -844,8 +844,9 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     color:black;
     text-decoration:underline;
 }
-.social-footer footer-wrap{
+.social-footer .footer-wrap{
     align-items:end;
+    text-align:right;
 }
 .times{
     color:#fcc436;
