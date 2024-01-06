@@ -881,6 +881,8 @@ bottom:1rem;
 }
 .times{
     color:#fcc436;
+    display:flex;
+    justify-content:end;
 }
 @media (width<750px) {
 .small-title{
