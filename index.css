@@ -822,19 +822,17 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     z-index:-1;
 }
 .contact-title {
-    
-    display:flex;
-    flex-direction:column;
-    align-items:center;
     width:100%;
 }
-.contact-title h2{
+.contact-title div{
     font-weight:normal;
+    display:flex;
+    justify-content:center;
   font-size:var(--brg-heading);
     line-height:1.1;  
 } 
 .uniq{
-    color:var(--bg-1);
+    color:#efe8d8;
     font-weight:bold;
 }
 .footer-link-container{
