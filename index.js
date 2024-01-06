@@ -143,8 +143,9 @@ function showMask() {
 movieBtn.addEventListener("click",showMask)
 
 function showMovie(movi){
- gsap.to(panMovie,.25,{opacity:1,backgroundImage:`url(${movi})`,ease:"power2.inOut"}) 
-
+ gsap.to(panMovie,.4,{opacity:1,backgroundImage:`url(${movi})`,ease:"power3.inOut"}) 
+gsap.from(panMovie,.4,{  skewY: 2,
+    transformOrigin: "right top"})
 }
 
 movie.forEach(movie=>{
