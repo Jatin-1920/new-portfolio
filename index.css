@@ -812,6 +812,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     display:flex;
     flex-direction:column;
     gap:5rem;
+    justify-content:center;
 }
 
 .canvas{
