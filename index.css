@@ -845,10 +845,9 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 .footer-link h4{
     margin-bottom:1rem;
     font-size:var(--p1-text);
-    font-weight:bold;
+    font-weight:normal;
 }
 .mail-footer h4{
-    font-weight:normal;
     color:#787786;
     font-size:var(--p-text);
 }
