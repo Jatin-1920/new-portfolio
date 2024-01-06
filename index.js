@@ -1,7 +1,4 @@
-const lenis = new Lenis({
-  duration:1.2,
-  infinite:true
-})
+const lenis = new Lenis()
 
 function raf(time) {
   lenis.raf(time)
