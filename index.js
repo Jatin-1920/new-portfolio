@@ -82,7 +82,7 @@ function stackAnim() {
 }
 stackAnim()
 ScrollTrigger.create({
-  trigger:".gsapPin",
+  trigger:".scrollContainer",
   start:"top top",
   end:()=>`${stack.length * cardHeight}`,
   pin:true,
