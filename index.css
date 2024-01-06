@@ -328,6 +328,7 @@ a{
 
 .movie-btn{
     width:3rem;
+    font-size:.875rem;
     height:3rem;
     background:#b19470;
     z-index:12;
