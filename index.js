@@ -118,7 +118,7 @@ gsap.fromTo([firstNav,secondNav],{height:"0vh",skewY:3,transformOrigin:"right to
       
     gsap.to(".movie-mask",{scale:1,opacity:1,delay:.5, duration:.5,ease:"Power3.inOut"})
 } else{
-      movieState = !movieState;
+      
       gsap.to(".movie-mask",{opacity:0,scale:0})
     gsap.to(primaryNav,{display:"none",delay:.65})
     gsap.to([secondNav,firstNav],{height:"0vh",duration:.65,ease:"Power3.inOut",stagger:{
@@ -134,7 +134,7 @@ const movieTimeline = gsap.timeline({paused:true})
 function showMask() {
   movieState = !movieState
   movieBtn.innerHTML = movieState ? "Close":"Open"
-  if(movieState){
+  if(movieState && state){
     movieTimeline.play()
   } else{
     movieTimeline.reverse()
