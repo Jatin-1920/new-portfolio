@@ -823,7 +823,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     z-index:-1;
 }
 .contact-title {
-    width:60%;
+    max-width:100%;
     margin-inline:auto;
 }
 .contact-title div{
@@ -957,7 +957,6 @@ width: 100%;
     }
 
     .contact-title{
-        width:100%;
         margin:0;
     }
     .contact-title div{
