@@ -823,7 +823,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     z-index:-1;
 }
 .contact-title {
-    width:75%;
+    width:60%;
     margin-inline:auto;
 }
 .contact-title div{
