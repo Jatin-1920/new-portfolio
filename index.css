@@ -448,6 +448,7 @@ grid-template-columns: repeat(4,1fr);
    font-size:var(--p-text);
    width: 50%;
    margin-left: auto;
+    color:#787786;
 }
 .name{
     font-size: 1.5rem;
@@ -540,6 +541,7 @@ grid-template-columns: repeat(4,1fr);
 .content>p{
     margin-block: 1.5rem;
     font-size:var(--p-text);
+    color:#787786;
 }
 .media-image{
     display: none;
@@ -668,6 +670,7 @@ overflow: hidden;
     margin-inline: auto;
     display:  inline-block;
     overflow: hidden;
+    color:#787786;
     font-size:var(--p1-text);
     font-weight: normal;
 }
