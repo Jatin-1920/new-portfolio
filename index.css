@@ -837,6 +837,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .footer-link-container{
     display:grid;
+    font-size:var(--p-text);
     gap:2rem;
     justify-content:center;
     grid-template-columns:1fr 1.5fr 2fr;
