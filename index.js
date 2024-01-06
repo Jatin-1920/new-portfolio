@@ -136,7 +136,7 @@ function showMask() {
   movieBtn.innerHTML = movieState ? "Close":"Open"
   if(movieState && state){
     movieTimeline.play()
-  } else{
+  } else if (!movieState && !state){
     movieTimeline.reverse()
   }
 }
