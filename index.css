@@ -240,6 +240,9 @@ nav{
     position: relative;
     z-index: 100;
     font-family: j1;
+    background:none;
+    outline:none;
+    border:none;
 }
 .primary-nav{
     position: fixed;
