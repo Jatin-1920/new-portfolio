@@ -73,10 +73,10 @@ function stackAnim() {
   cardHeight = stack[0].offsetHeight
 
   stack.forEach((card,index)=>{
-    if(index>0){
+    if(index > 0){
      
       gsap.set(card,{y:index * cardHeight})
-       stackAnimation.to(card,{y:0,duration:index * 0.5})
+       stackAnimation.to(card,{y:0,ease:"none",duration:index * 0.5},0)
     }
   })
 }
