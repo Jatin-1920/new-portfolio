@@ -813,9 +813,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     flex-direction:column;
     gap:5rem;
 }
-.footer>*{
-    flex:1;
-}
+
 .canvas{
     position: absolute;
     inset:0;
@@ -824,15 +822,17 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     z-index:-1;
 }
 .contact-title {
-    font-size:var(--brg-heading);
-    line-height:1.1;
-    font-weight:500;
+    font-weight:normal;
     display:flex;
     flex-direction:column;
     align-items:center;
 }
+.contact-title h3{
+  font-size:var(--brg-heading);
+    line-height:1.1;  
+} 
 .uniq{
-    color:yellow;
+    color:var(--bg-1);
     font-weight:bold;
 }
 .footer-link-container{
