@@ -348,7 +348,9 @@ a{
     flex-direction: column;
     font-size:var(--p-text);
     padding:1rem;
-    background: #00416A;
+    backdrop-filter:blur(1rem);
+    border-radius:.75rem;
+    background: rgba(0,65,106,0.5);
     clip-path:polygon(
         49.75% 49.75%,
         50.25% 49.75%,
