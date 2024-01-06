@@ -822,10 +822,8 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     z-index:-1;
 }
 .contact-title {
-    width:100%;
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
+    width:75%;
+    margin-inline:auto;
 }
 .contact-title div{
     font-weight:normal;
@@ -946,5 +944,9 @@ width: 100%;
     align-items:start;
     text-align:left;
     }
-    
+
+    .contact-title{
+        width:100%;
+        margin:0;
+    }
 }
