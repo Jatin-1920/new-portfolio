@@ -64,15 +64,7 @@ entry.addEventListener("click",webIntro)
 // Web Intro Animation //
 
 // Card Stack Animation //
-const stackAnim = gsap.utils.toArray(".gsapPin")
-stackAnim.forEach(section=>{
-  gsap.to(section,{scrollTrigger:{
-    trigger:section,
-    start:"top top",
-    end:"bottom top",
-    scrub: true 
-  },yPercent:100,ease:"none"})
-})
+
 // Card Stack Animation //
 
 const left = document.getElementById("left")
