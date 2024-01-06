@@ -448,7 +448,7 @@ grid-template-columns: repeat(4,1fr);
    font-size:var(--p-text);
    width: 50%;
    margin-left: auto;
-    color:#787786;
+    
 }
 .name{
     font-size: 1.5rem;
