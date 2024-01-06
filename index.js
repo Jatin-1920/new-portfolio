@@ -108,7 +108,9 @@ let state = false
 let movieState = false;
 menuToggle.addEventListener("click",(e)=>{
 state = !state
+  menuToggle.disabled = true
     setTimeout(()=>{
+      menuToggle.disabled = false
     menuToggle.innerHTML = state ? "Close":"Menu"
   },1000 )
     
