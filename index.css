@@ -852,33 +852,11 @@ bottom:1rem;
     gap:.5rem;
     
 }
- .sm-text{
-    font-size:5dvw;
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    font-family:j1;
-    width:100%;
-     place-items:center;
-     margin-top:2rem;
-}
-.sm-text1{
-    transform: rotate(5deg);
-    background:yellow;
-    
-}
-.sm-text2{
-    transform:rotate(60deg);
-    background:#073b3a;
-    color:white;
-}
-.sm-text3{
-    transform:rotate(23deg);
-    color:#00416A ;
-}
-.sm-text4{
-    color:#1e453e;
-    background:tomato;
-}
+ .eye-svg{
+     width:100%;
+     height:100%;
+ }
+  
 .times{
     color:#fcc436;
     
@@ -954,8 +932,6 @@ width: 100%;
     .footer{
         padding:2rem 1.5rem;
     }
-    .sm-text{
-        font-size:17dvw;
-    }
+    
     
 }
