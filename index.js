@@ -64,33 +64,7 @@ entry.addEventListener("click",webIntro)
 // Web Intro Animation //
 
 // Card Stack Animation //
-let cardHeight
-const stack = document.querySelectorAll(".gsapPin")
-const stackAnimation = gsap.timeline()
 
-function stackAnim() {
-  stackAnimation.clear()
-  cardHeight = stack[0].offsetHeight
-
-  stack.forEach((card,index)=>{
-    if(index > 0){
-     
-      gsap.set(card,{y:index * cardHeight})
-       stackAnimation.to(card,{y:0,ease:"none",duration:index * 0.5},0)
-    }
-  })
-}
-stackAnim()
-ScrollTrigger.create({
-  trigger:".scrollContainer",
-  start:"top top",
-  end:()=>`${stack.length * cardHeight}`,
-  pin:true,
-  scrub:true,
-  animation:stackAnimation,
-  invalidateOnRefresh:true
-})
-ScrollTrigger.addEventListener("refreshInit", stackAnim)
 
 // Card Stack Animation //
 
