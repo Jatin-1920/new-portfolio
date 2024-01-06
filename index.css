@@ -860,6 +860,9 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     align-items:end;
     text-align:right;
 }
+.mail{
+    font-size:var(--p1-text);
+}
 .times{
     color:#fcc436;
     
