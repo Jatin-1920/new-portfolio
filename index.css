@@ -855,7 +855,13 @@ bottom:1rem;
  .eye-svg{
      width:100%;
      height:100%;
+     display:grid;
+     place-items:center;
  }
+.eye-svg svg{
+    width:100%;
+     height:100%;
+}
   
 .times{
     color:#fcc436;
