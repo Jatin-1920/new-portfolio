@@ -823,13 +823,16 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 }
 .contact-title {
     width:100%;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
 }
 .contact-title div{
     font-weight:normal;
     display:flex;
     justify-content:center;
   font-size:var(--brg-heading);
-    line-height:1.1;  
+    line-height:1.2;  
 } 
 .uniq{
     color:#efe8d8;
