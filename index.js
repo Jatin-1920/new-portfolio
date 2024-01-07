@@ -436,4 +436,179 @@ gsap.to(".about-img", {
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 ScrollTrigger.refresh();
+import {Curtains, Vec2, ShaderPass} from 'https://cdn.jsdelivr.net/npm/curtainsjs@8.1.2/src/index.mjs';
+
+const renderFs = `
+    #ifdef GL_FRAGMENT_PRECISION_HIGH
+    precision highp float;
+    #else
+    precision mediump float;
+    #endif
+
+    varying vec3 vVertexPosition;
+    varying vec2 vTextureCoord;
+
+    uniform sampler2D uRenderTexture;
+
+    uniform vec2 uResolution;
+    uniform float uHue;
+    uniform float uSaturation;
+    uniform float uTransition;
+
+    #define PI 3.14159265359
+
+
+    vec3 hueRotate(vec3 col, float hue) {
+        vec3 k = vec3(0.57735, 0.57735, 0.57735);
+        float cosAngle = cos(hue);
+        return col * cosAngle + cross(k, col) * sin(hue) + k * dot(k, col) * (1.0 - cosAngle);
+    }
+
+    vec3 saturate(vec3 rgb, float adjustment) {
+        vec3 W = vec3(0.2125, 0.7154, 0.0721);
+        vec3 intensity = vec3(dot(rgb, W));
+        return mix(intensity, rgb, adjustment);
+    }
+
+    vec3 rgb2glsl(vec3 rgb) {
+        return vec3(rgb.r / 255.0, rgb.g / 255.0, rgb.b / 255.0);
+    }
+
+    vec4 rgb2glsl(vec4 rgb) {
+        return vec4(rgb2glsl(rgb.rgb), rgb.a);
+    }
+
+    float transitionShape(float transitionValue, float curveStrength) {
+        vec2 textCoords = vTextureCoord;
+
+        textCoords.y += ((sin(textCoords.x * PI * 1.5) * ((textCoords.x) * 0.5 + 0.5) * sin(transitionValue * PI)) * curveStrength);
+        vec2 shaper = vec2(step(textCoords.x, 1.0), step(1.0 - textCoords.y, transitionValue));
+
+        return shaper.x * shaper.y;
+    }
+
+    void main() {
+        vec4 color = vec4(1.0);
+
+        // gold colors
+        vec3 gold1 = rgb2glsl(vec3(247.0, 182.0, 26.0));
+        vec3 gold2 = rgb2glsl(vec3(218.0, 155.0, 7.0));
+        vec3 gold3 = rgb2glsl(vec3(189.0, 136.0, 4.0));
+        vec3 gold4 = rgb2glsl(vec3(127.0, 91.0, 3.0));
+        vec3 gold5 = rgb2glsl(vec3(68.0, 50.0, 2.0));
+        vec3 gold6 = rgb2glsl(vec3(247.0, 186.0, 35.0));
+        vec3 gold7 = rgb2glsl(vec3(249.0, 196.0, 79.0));
+
+
+        gold1 = saturate(hueRotate(gold1, uHue), uSaturation);
+        gold2 = saturate(hueRotate(gold2, uHue), uSaturation);
+        gold3 = saturate(hueRotate(gold3, uHue), uSaturation);
+        gold4 = saturate(hueRotate(gold4, uHue), uSaturation);
+        gold5 = saturate(hueRotate(gold5, uHue), uSaturation);
+        gold6 = saturate(hueRotate(gold6, uHue), uSaturation);
+        gold7 = saturate(hueRotate(gold7, uHue), uSaturation);
+
+        float curveStrength = 0.1;
+
+        float transition1 = uTransition;
+        float transition2 = pow(uTransition, 3.0);
+        float transition3 = pow(uTransition, 6.0);
+        float transition4 = pow(uTransition, 9.0);
+
+        float shape1 = transitionShape(transition1, curveStrength);
+        vec4 finalShape1 = vec4(vec3(shape1 * gold5), shape1);
+
+        float shape2 = transitionShape(transition2, curveStrength);
+        vec4 finalShape2 = vec4(vec3(shape2 * gold4), shape2);
+
+        float shape3 = transitionShape(transition3, curveStrength);
+        vec4 finalShape3 = vec4(vec3(shape3 * gold3), shape3);
+
+        float shape4 = transitionShape(transition4, curveStrength);
+        vec4 finalShape4 = vec4(vec3(shape4 * gold2), shape4);
+
+
+        vec4 finalColor = mix(color, finalShape1, shape1);
+        finalColor = mix(finalColor, finalShape2, shape2);
+        finalColor = mix(finalColor, finalShape3, shape3);
+        finalColor = mix(finalColor, finalShape4, shape4);
+
+        gl_FragColor = finalColor;
+    }
+`;
+
+
+window.addEventListener('load', () => {
+    // create curtains instance
+    const curtains = new Curtains({
+        container: "canvas",
+        pixelRatio: Math.min(1.5, window.devicePixelRatio)
+    });
+
+    // on success
+    curtains.onSuccess(() => {
+        // used for resolution uniform
+        const curtainsBBox = curtains.getBoundingRect();
+
+
+        // render pass (display the effect)
+        const renderPassUniforms = {
+            resolution: {
+                name: "uResolution",
+                type: "2f",
+                value: new Vec2(curtainsBBox.width, curtainsBBox.height),
+            },
+            hue: {
+                name: "uHue",
+                type: "1f",
+                value: 4.28
+            },
+            saturation: {
+                name: "uSaturation",
+                type: "1f",
+                value: 1.5
+            },
+            pageTransition: {
+                name: "uTransition",
+                type: "1f",
+                value: 0.5 // should be set to 0 initially
+            },
+        };
+
+        const params = {
+            fragmentShader: renderFs,
+            depth: false,
+            uniforms: renderPassUniforms,
+        };
+
+        // post pro
+        const renderPass = new ShaderPass(curtains, params);
+
+        renderPass.onAfterResize(() => {
+            // update our window aspect ratio uniform
+            const boundingRect = renderPass.getBoundingRect();
+            renderPass.uniforms.resolution.value.set(boundingRect.width, boundingRect.height);
+        });
+
+
+        // GUI
+        const gui = new dat.GUI();
+
+        const guiHue = gui.add({hue: renderPass.uniforms.hue.value}, "hue", 0, Math.PI * 2, 0.01);
+        guiHue.onChange((value) => {
+            renderPass.uniforms.hue.value = value;
+        });
+
+        const guiSaturation = gui.add({saturation: renderPass.uniforms.saturation.value}, "saturation", 0, 3, 0.0625);
+        guiSaturation.onChange((value) => {
+            renderPass.uniforms.saturation.value = value;
+        });
+
+        const guiTransition = gui.add({transition: renderPass.uniforms.pageTransition.value}, "transition", 0, 1, 0.01);
+        guiTransition.onChange((value) => {
+            renderPass.uniforms.pageTransition.value = value;
+        });
+    });
+});
+
 
