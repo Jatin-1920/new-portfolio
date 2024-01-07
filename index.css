@@ -642,8 +642,7 @@ height: 100%;
     width:100%;
     overflow:hidden;
     position:relative;
-    display:grid;
-    grid-template-columns:repeat(10,1fr);
+    
 }
 
 .about-img div:nth-child(1){
