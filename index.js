@@ -541,7 +541,7 @@ const renderFs = `
 window.addEventListener('load', () => {
     // create curtains instance
     const curtains = new Curtains({
-        container: "canvas",
+        container: ".can",
         pixelRatio: Math.min(1.5, window.devicePixelRatio)
     });
 
