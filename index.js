@@ -444,5 +444,53 @@ ScrollTrigger.refresh();
 // circle animation //
 const circleInner = document.querySelector(".circle-inner")
 const circles = [...document.querySelectorAll(".circles")]
+
+circles.shift()
+
+let position = {
+  circleOne:{x:0,y:0},
+  circleTwo:{x:0,y:0},
+  circleThree:{x:0,y:0},
+  circleFour:{x:0,y:0},
+}
+
+let width = window.innerWidth;
+let height = window.innerHeight;
+ let x = 0;
+let y = 0;
+
+
+function lerps(start,end,t){
+  return start * (1 - t) + end * t;
+}
+
+circleInner.addEventListener("mousemove",e => {
+  x = e.clientX
+  y = e.clientY
+})
+
+function animateCircle(){
+  position.circleOne.x = lerps(position.circleOne.x,(x - (width / 2))*.2,.1);
+  position.circleOne.y = lerps(position.circleOne.y,(y - (height / 2))*.2,.1)
+
+  circles[0].style.transform = `translate(-50% , -50%) translate3d(${position.circleOne.x}px,${position.circleOne.y}px,0)`;
+
+
+  position.circleTwo.x = lerps(position.circleTwo.x,(-x + (width / 2))*.2,.1);
+  position.circleTwo.y = lerps(position.circleTwo.y,(y - (height / 2))*.2,.1)
+
+  circles[1].style.transform = `translate(-50% , -50%) translate3d(${position.circleThree.x}px,${position.circleThree.y}px,0)`
+
+  position.circleThree.x = lerps(position.circleThree.x,(x - (width / 2))*.2,.1);
+  position.circleThree.y = lerps(position.circleThree.y,(-y + (height / 2))*.2,.1)
+
+  circles[2].style.transform = `translate(-50% , -50%) translate3d(${position.circleFour.x}px,${position.circleFour.y}px,0)`
+
+  position.circleFour.x = lerps(position.circleFour.x,(-x + (width / 2))*.2,.1);
+  position.circleFour.y = lerps(position.circleFour.y,(-y + (height / 2))*.2,.1)
+
+  circles[3].style.transform = `translate(-50% , -50%) translate3d(${position.circleFour.x}px,${position.circleFour.y}px,0)`
+}
+
 // circle animation//
         
