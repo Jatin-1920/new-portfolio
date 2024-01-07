@@ -9,6 +9,7 @@ const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".gsapPin"),
   smooth: true,
   lerp:0.1,
+  multiplier:1.5,
   gestureDirection:"both",
 
   // for tablet smooth
