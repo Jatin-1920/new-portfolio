@@ -319,13 +319,28 @@ ScrollTrigger.create({
 
 
     //  TEXT ANIMATION //
-gsap.to(".about-img div",1,{ease:"none",y:"-100%",stagger:{
-    amount:0.15
-},scrollTrigger:{
+
+const clipPathValue = [
+  "polygon(10% 0,0 0 ,0 100% ,10% 100%,)",
+  "polygon(20% 0,10% 0 ,10% 100% ,20% 100%,)",
+  "polygon(30% 0,20% 0 ,20% 100% ,30% 100%,)",
+  "polygon(40% 0,30% 0 ,30% 100% ,40% 100%,)",
+  "polygon(50% 0,40% 0 ,40% 100% ,50% 100%,)",
+  "polygon(60% 0,50% 0 ,50% 100% ,60% 100%,)",
+  "polygon(70% 0,60% 0 ,60% 100% ,70% 100%,)",
+  "polygon(80% 0,70% 0 ,70% 100% ,80% 100%,)",
+  "polygon(90% 0,80% 0 ,80% 100% ,90% 100%,)",
+  "polygon(100% 0,90% 0 ,90% 100% ,100% 100%,)",
+]
+const aboutDiv = document.querySelectorAll(".about-img div")
+
+aboutDiv.forEach((mask,index)=>{
+  gsap.to(mask,1,{clipPath:clipPathValue[index % clipPathValue.length], delay:index * .1, scrollTrigger:{
     trigger:".about-img",
     start:"top 10%",
     end:"bottom bottom"
-}}) 
+}})
+})
 
 const firstLine = document.querySelectorAll(".about-content h2 span")
 const secondLine =document.querySelector(".about-title span")
