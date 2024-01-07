@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger,ScrambleText)
 
 
 const locoScroll = new LocomotiveScroll({
-  el: document.querySelector(".scrollContainer"),
+  el: document.querySelector(".gsapPin"),
   smooth: true,
 
   // for tablet smooth
@@ -17,7 +17,7 @@ const locoScroll = new LocomotiveScroll({
 });
 locoScroll.on("scroll", ScrollTrigger.update);
 
-ScrollTrigger.scrollerProxy(".scrollContainer", {
+ScrollTrigger.scrollerProxy(".gsapPin", {
   scrollTop(value) {
     return arguments.length
       ? locoScroll.scrollTo(value, 0, 0)
