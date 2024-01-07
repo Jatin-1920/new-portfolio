@@ -490,7 +490,10 @@ function animateCircle(){
   position.circleFour.y = lerps(position.circleFour.y,(-y + (height / 2))*.2,.1)
 
   circles[3].style.transform = `translate(-50% , -50%) translate3d(${position.circleFour.x}px,${position.circleFour.y}px,0)`
+
+  requestAnimationFrame(animateCircle)
 }
+animateCircle()
 
 // circle animation//
         
