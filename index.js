@@ -324,7 +324,7 @@ ScrollTrigger.create({
 
 
   gsap.to(".div",{ease:"none",duration:1,yPercent:-100, stagger:{
-    amount:.07
+    amount:.1
   },scrollTrigger:{
     trigger:".about-img",
     start:"top 10%",
