@@ -645,6 +645,40 @@ height: 100%;
     display:grid;
     grid-template-columns:repeat(10,1fr);
 }
+
+.about-img div:nth-child(1){
+    clip-path:"polygon(0% 0,0 0,0 100%,0 100%,)";
+}
+
+.about-img div:nth-child(2){
+    clip-path:"polygon(10% 0,10% 0,10% 100% ,10% 100%,)";
+}
+.about-img div:nth-child(3){
+    clip-path:"polygon(20% 0,20% 0 ,20% 100% ,20% 100%,)";
+}
+
+.about-img div:nth-child(4){
+    clip-path: "polygon(30% 0,30% 0 ,30% 100% ,30% 100%,)";
+}
+
+ .about-img div:nth-child(5){
+    clip-path:"polygon(40% 0,40% 0 ,40% 100% ,40% 100%,)";
+ }
+   .about-img div:nth-child(6){  
+      clip-path: "polygon(50% 0,50% 0 ,50% 100% ,50% 100%,)";
+   }
+.about-img div:nth-child(7) {
+    cli-path:"polygon(60% 0,60% 0 ,60% 100% ,60% 100%,)";
+}
+ .about-img div:nth-child(8){  
+     clip-path:"polygon(70% 0,70% 0 ,70% 100% ,70% 100%,)";
+ }
+.about-img div:nth-child(9){  
+    clip-path:"polygon(80% 0,80% 0 ,80% 100% ,80% 100%,)";
+}
+.about-img div:nth-child(10){  
+    clip-path:"polygon(90% 0,90% 0 ,90% 100% ,90% 100%,)";
+}
 .about-img div{
     background:url(img/comp.jpg);
     background-size:cover;
