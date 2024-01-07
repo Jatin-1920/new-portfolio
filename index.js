@@ -321,26 +321,14 @@ ScrollTrigger.create({
     //  TEXT ANIMATION //
 
 
-const aboutDivs = document.querySelectorAll(".div")
-let clipPathValues = [
-  "polygon(10% 0,0 0 ,0 100% ,10% 100%,)",
-  "polygon(20% 0,10% 0 ,10% 100% ,20% 100%,)",
-  "polygon(30% 0,20% 0 ,20% 100% ,30% 100%,)",
-  "polygon(40% 0,30% 0 ,30% 100% ,40% 100%,)",
-  "polygon(50% 0,40% 0 ,40% 100% ,50% 100%,)",
-  "polygon(60% 0,50% 0 ,50% 100% ,60% 100%,)",
-  "polygon(70% 0,60% 0 ,60% 100% ,70% 100%,)",
-  "polygon(80% 0,70% 0 ,70% 100% ,80% 100%,)",
-  "polygon(90% 0,80% 0 ,80% 100% ,90% 100%,)",
-  "polygon(100% 0,90% 0 ,90% 100% ,100% 100%,)",
-];
-aboutDivs.forEach((masks,index)=>{
-  gsap.to(masks,{duration:1,clipPath:clipPathValues[index % clipPathValues.length], stagger:.1,scrollTrigger:{
-    trigger:masks,
+
+
+  gsap.to(".div",{duration:1,width:0, stagger:.1,scrollTrigger:{
+    trigger:".div",
     start:"top 10%",
     end:"bottom bottom"
   }})
-})
+
 
 const firstLine = document.querySelectorAll(".about-content h2 span")
 const secondLine =document.querySelector(".about-title span")
