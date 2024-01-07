@@ -17,7 +17,7 @@ const locoScroll = new LocomotiveScroll({
 });
 locoScroll.on("scroll", ScrollTrigger.update);
 
-ScrollTrigger.scrollerProxy(".smooth-scroll", {
+ScrollTrigger.scrollerProxy(".scrollContainer", {
   scrollTop(value) {
     return arguments.length
       ? locoScroll.scrollTo(value, 0, 0)
