@@ -742,7 +742,7 @@ transform-origin: 50% 50%;
 }
 
 
-.circles-container{
+.circle-container{
     height:100dvh;
     width:100%;
     position:relative;
@@ -764,7 +764,7 @@ transform-origin: 50% 50%;
 background:#313453;
     
 }
-.circle-inner-container{
+.circle-inner{
     position:absolute;
     left:50%;
     width:90%;
