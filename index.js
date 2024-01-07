@@ -479,12 +479,12 @@ function animateCircle(){
   position.circleTwo.x = lerps(position.circleTwo.x,(-x + (width / 2))*.2,.1);
   position.circleTwo.y = lerps(position.circleTwo.y,(y - (height / 2))*.2,.1)
 
-  circles[1].style.transform = `translate(-50% , -50%) translate3d(${position.circleThree.x}px,${position.circleThree.y}px,0)`
+  circles[1].style.transform = `translate(-50% , -50%) translate3d(${position.circleTwo.x}px,${position.circleTwo.y}px,0)`
 
   position.circleThree.x = lerps(position.circleThree.x,(x - (width / 2))*.2,.1);
   position.circleThree.y = lerps(position.circleThree.y,(-y + (height / 2))*.2,.1)
 
-  circles[2].style.transform = `translate(-50% , -50%) translate3d(${position.circleFour.x}px,${position.circleFour.y}px,0)`
+  circles[2].style.transform = `translate(-50% , -50%) translate3d(${position.circleThree.x}px,${position.circleThree.y}px,0)`
 
   position.circleFour.x = lerps(position.circleFour.x,(-x + (width / 2))*.2,.1);
   position.circleFour.y = lerps(position.circleFour.y,(-y + (height / 2))*.2,.1)
