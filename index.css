@@ -871,7 +871,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     font-size:var(--p1-text);
 }
 .times{
-    color:#fcc436;
+    color:#cdcdbc;
     
 }
 @media (width<750px) {
