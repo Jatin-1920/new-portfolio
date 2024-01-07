@@ -332,7 +332,7 @@ const clipPathValue = [
   "polygon(90% 0,80% 0 ,80% 100% ,90% 100%,)",
   "polygon(100% 0,90% 0 ,90% 100% ,100% 100%,)",
 ]
-const aboutDiv = document.querySelectorAll(".about-img div")
+const aboutDiv = document.querySelectorAll(".div")
 
 aboutDiv.forEach((mask,index)=>{
   gsap.to(mask,1,{clipPath:clipPathValue[index % clipPathValue.length], delay:index * .1, scrollTrigger:{
