@@ -323,7 +323,7 @@ ScrollTrigger.create({
 
 
 
-  gsap.to(".div",{duration:1,width:0, stagger:.1,scrollTrigger:{
+  gsap.to(".div",{ease:"none",duration:1,yPercent:-100, stagger:.05,scrollTrigger:{
     trigger:".div",
     start:"top 10%",
     end:"bottom bottom"
