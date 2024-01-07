@@ -436,6 +436,8 @@ gsap.to(".about-img", {
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 ScrollTrigger.refresh();
+
+        const can = document.querySelector(".can")
 import {Curtains, Vec2, ShaderPass} from 'https://cdn.jsdelivr.net/npm/curtainsjs@8.1.2/src/index.mjs';
 
 const renderFs = `
@@ -541,7 +543,7 @@ const renderFs = `
 window.addEventListener('load', () => {
     // create curtains instance
     const curtains = new Curtains({
-        container: ".can",
+        container: can,
         pixelRatio: Math.min(1.5, window.devicePixelRatio)
     });
 
