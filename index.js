@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger,ScrambleText)
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".gsapPin"),
   smooth: true,
-  lerp:0.15,
+  lerp:0.05,
   gestureDirection:"both",
 
   // for tablet smooth
