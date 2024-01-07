@@ -320,7 +320,9 @@ ScrollTrigger.create({
 
     //  TEXT ANIMATION //
 
-const clipPathValue = [
+
+const aboutDivs = document.querySelectorAll(".div")
+let clipPathValues = [
   "polygon(10% 0,0 0 ,0 100% ,10% 100%,)",
   "polygon(20% 0,10% 0 ,10% 100% ,20% 100%,)",
   "polygon(30% 0,20% 0 ,20% 100% ,30% 100%,)",
@@ -331,11 +333,13 @@ const clipPathValue = [
   "polygon(80% 0,70% 0 ,70% 100% ,80% 100%,)",
   "polygon(90% 0,80% 0 ,80% 100% ,90% 100%,)",
   "polygon(100% 0,90% 0 ,90% 100% ,100% 100%,)",
-]
-const aboutDiv = document.querySelectorAll(".div")
-
-aboutDiv.forEach((mask,index)=>{
-  gsap.to(mask,1,{clipPath:clipPathValue[index % clipPathValue.length], stagger:.1,delay:15})
+];
+aboutDivs.forEach((masks,index)=>{
+  gsap.to(masks,{duration:1,clipPath:clipPathValues[index % clipPathValues.length], stagger:.1,scrollTrigger:{
+    trigger:masks,
+    start:"top 10%",
+    end:"bottom bottom"
+  }})
 })
 
 const firstLine = document.querySelectorAll(".about-content h2 span")
