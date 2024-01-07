@@ -441,4 +441,8 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 ScrollTrigger.refresh();
 
+// circle animation //
+const circleInner = document.querySelector(".circle-inner")
+const circles = [...document.querySelectorAll(".circles")]
+// circle animation//
         
