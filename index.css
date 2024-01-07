@@ -776,7 +776,7 @@ background:#313453;
     height:100%;
     transform:translateX(-50%);
 }
-.middle-circle,.circles{
+.circles{
     position:absolute;
     transform-origin:center;
     top:50%;
