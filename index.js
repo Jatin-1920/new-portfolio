@@ -31,7 +31,7 @@ ScrollTrigger.scrollerProxy(".scrollContainer", {
       height: window.innerHeight
     };
   }
-
+}
   
 // animations //
 // Web Intro Animation //
