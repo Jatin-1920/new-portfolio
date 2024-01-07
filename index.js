@@ -335,11 +335,7 @@ const clipPathValue = [
 const aboutDiv = document.querySelectorAll(".div")
 
 aboutDiv.forEach((mask,index)=>{
-  gsap.to(mask,1,{clipPath:clipPathValue[index % clipPathValue.length], delay:index * .1, scrollTrigger:{
-    trigger:".about-img",
-    start:"top 10%",
-    end:"bottom bottom"
-}})
+  gsap.to(mask,1,{clipPath:clipPathValue[index % clipPathValue.length], stagger:.1,delay:15})
 })
 
 const firstLine = document.querySelectorAll(".about-content h2 span")
