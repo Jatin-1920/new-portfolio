@@ -194,8 +194,6 @@ background:var(--bg-1);
 .logo{
 width:3rem;
 height:3rem;
-border-radius:100%;
-box-shadow: 0 25px 50px -12px rgb(0 0 0 /0.25);
 position:relative;
 z-index:100;
 }
@@ -204,6 +202,7 @@ z-index:100;
     width:100%;
     height:100%;
     inset:0;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 /0.25);
 }
 .mouse-event{
     position: absolute; 
