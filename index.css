@@ -1,4 +1,37 @@
+minimap_container{
+    position:fixed;
+    top:0px;
+    left:0px;
+    min-width:20px;
+    width:100%;
+    z-index:98;
+}
+.minimap_size{
+    position:relative;
+    z-index:50;
+    border:2px solid white;
+}
 
+.minimap_viewer{
+  width:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    transform-origin:0 0;
+    border:1px solid #787786;
+    z-index:50;
+}
+
+.minimap_content{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transform-origin:0 0;
+    border:1px solid white;
+    z-index:49;
+} 
 
 html {
     font-size: 100%;
