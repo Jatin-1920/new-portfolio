@@ -513,7 +513,7 @@ function getDimensions(){
     let bodyRatio = document.body.clientHeight / bodyWidth;
     let winRatio = window.innerHeight / window.innerWidth;
 
-    minimap.style.height = '15%';
+    minimap.style.width = '15%';
 
     realScale = minimap.clientWidth / bodyWidth;
 
