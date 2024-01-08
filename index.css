@@ -956,7 +956,8 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
     top:0px;
     left:0px;
     min-width:20px;
-    z-index:9;
+    width:100%;
+    z-index:98;
 }
 .minimap_size{
     position:relative;
