@@ -953,9 +953,9 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
 
 .minimap_container{
     position:fixed;
-    bottom:0px;
+    top:0px;
     left:0px;
-    min-height:20px;
+    min-width:20px;
     z-index:9;
 }
 .minimap_size{
@@ -968,7 +968,7 @@ clip-path:polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
   width:100%;
     position: absolute;
     left:0;
-    bottom:0;
+    top:0;
     transform-origin:0 0;
     border:1px solid #787786;
     z-index:10;
