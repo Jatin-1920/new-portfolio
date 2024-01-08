@@ -496,4 +496,31 @@ function animateCircle(){
 animateCircle()
 
 // circle animation//
-        
+
+// Minimap Webpage //
+
+let minimap = document.createElement('div')
+let minimapSize = document.createElement('div')
+let viewer = document.createElement('div')
+let minimapContent = document.createElement('iframe')
+
+let scale = 0.1
+let realScale;
+
+minimap.className = 'minimap_container';
+minimapSize.className = 'minimap_size';
+viewer.className = 'minimap_viewer';
+minimapContent.className = 'minimap_content';
+// Minimap Webpage //
+
+minimap.append(minimapSize,viewer,minimapContent)
+
+document.body.appendChild(minimap)
+
+const minihtml = document.documentElement.outerHTML.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,'')
+
+let iframeDoc = minimapContent.contentWindow.document
+
+iframeDoc.open()
+iframeDoc.write(minihtml)
+iframeDoc.close()
