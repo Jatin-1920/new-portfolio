@@ -276,24 +276,6 @@ contentSection.forEach((details,index)=>{
 }
   
 
-let tween = gsap.to(".work-slide-text",{xPercent:-100,repeat:-1,duration:5,ease:"linear"}).totalProgress(0.5)
-gsap.set(".work-slide",{xPercent:-50})
-
-window.addEventListener("scroll",()=>{
-    if(window.pageYOffset>currentScroll) {
-        isScrollingDown = true    } else{
-            isScrollingDown = false
-
-        }
-        gsap.to(tween,{
-            timeScale:isScrollingDown ? 1 :-1
-        })
-        currentScroll = window.pageYOffset
-})
-
-// skills slider //
-
-
 const races = document.querySelector(".races")
 function getScrollAmount(){
     let racesWidth = races.scrollWidth
@@ -524,3 +506,48 @@ let iframeDoc = minimapContent.contentWindow.document
 iframeDoc.open()
 iframeDoc.write(minihtml)
 iframeDoc.close()
+
+
+function getDimensions(){
+    let bodyWidth = document.body.clientWidth;
+    let bodyRatio = document.body.clientHeight / bodyWidth;
+    let winRatio = window.innerHeight / window.innerWidth;
+
+    minimap.style.height = '15%';
+
+    realScale = minimap.clientWidth / bodyWidth;
+
+    minimapSize.style.paddingTop = `${bodyRatio * 100}%`
+    viewer.style.paddingTop = `${winRatio * 100}%`;
+
+    minimapContent.style.transform = `scale(${realScale})`;
+    minimapContent.style.width = `${(100 / realScale)}%`
+    minimapContent.style.height = `${(100 / realScale)}%`
+}
+
+function trackScroll(){
+    viewer.style.transform = `translateY(${window.scrollY * realScale}px)`
+}
+
+getDimensions()
+
+window.addEventListener('resize', getDimensions)
+
+
+let tween = gsap.to(".work-slide-text",{xPercent:-100,repeat:-1,duration:5,ease:"linear"}).totalProgress(0.5)
+gsap.set(".work-slide",{xPercent:-50})
+
+window.addEventListener("scroll",()=>{
+  trackScroll()
+    if(window.pageYOffset>currentScroll) {
+        isScrollingDown = true    } else{
+            isScrollingDown = false
+
+        }
+        gsap.to(tween,{
+            timeScale:isScrollingDown ? 1 :-1
+        })
+        currentScroll = window.pageYOffset
+})
+
+// skills slider //
