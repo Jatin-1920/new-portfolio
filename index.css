@@ -752,7 +752,7 @@ transform-origin: 50% 50%;
 }
 .circleText{
     width:100%;
-    height:80%;
+    height:90%;
     position: absolute;
     inset:0;
     z-index:-1;
@@ -762,7 +762,7 @@ transform-origin: 50% 50%;
     transform:translateX(-50%);
     flex-direction: column;
     justify-content:space-between;
-    font-size:10dvw;
+    font-size:9dvw;
     font-weight:400;
     color:#cdcdbc;
 }
