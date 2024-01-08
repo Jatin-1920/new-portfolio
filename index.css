@@ -203,6 +203,7 @@ position:relative;
 z-index:100;
     font-family:logo;
     color:#313453;
+    mix-blend-mode: difference;
 }
 
 .mouse-event{
