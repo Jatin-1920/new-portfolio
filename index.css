@@ -747,7 +747,7 @@ transform-origin: 50% 50%;
     width:100%;
     position:relative;
     z-index:1;
-    color:#313453;
+    
     border-block:1px solid #313453;
 }
 .circleText{
@@ -761,7 +761,9 @@ transform-origin: 50% 50%;
     transform:translateX(-50%);
     flex-direction: column;
     justify-content:space-between;
-    font-size:13dvw;
+    font-size:10dvw;
+    font-weight:400;
+    color:#cdcdbc;
 }
 .buniq{
     font-family:logo;
@@ -771,6 +773,7 @@ transform-origin: 50% 50%;
     position:absolute;
     height:100%;
     width:1px;
+    z-index:1
     background:#313453;
     left:50%;
         transform:translateX(-50%);
@@ -781,6 +784,7 @@ transform-origin: 50% 50%;
     position:absolute;
     width:100%;
         top:50%;
+        z-index:1
         transform:translateY(-50%);
     height:1px;  
 background:#313453;
@@ -792,7 +796,7 @@ background:#313453;
     width:90%;
     max-width:1200px;
     height:100%;
-    z-index:-1;
+    z-index:1;
     transform:translateX(-50%);
 }
 .circles{
