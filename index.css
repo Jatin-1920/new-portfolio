@@ -760,7 +760,7 @@ transform-origin: 50% 50%;
     left:50%;
     transform:translateX(-50%);
     flex-direction: column;
-    justify-content:space-between;
+    justify-content:space-evenly;
     font-size:10dvw;
     font-weight:400;
     color:#cdcdbc;
