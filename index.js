@@ -274,7 +274,26 @@ contentSection.forEach((details,index)=>{
   })
   
 }
-  
+
+// skills slider //
+
+  let tween = gsap.to(".work-slide-text",{xPercent:-100,repeat:-1,duration:5,ease:"linear"}).totalProgress(0.5)
+gsap.set(".work-slide",{xPercent:-50})
+
+window.addEventListener("scroll",()=>{
+    if(window.pageYOffset>currentScroll) {
+        isScrollingDown = true    } else{
+            isScrollingDown = false
+
+        }
+        gsap.to(tween,{
+            timeScale:isScrollingDown ? 1 :-1
+        })
+        currentScroll = window.pageYOffset
+})
+
+// skills slider //
+
 
 const races = document.querySelector(".races")
 function getScrollAmount(){
@@ -481,7 +500,7 @@ animateCircle()
 
 // Minimap Webpage //
 
-let minimap = document.createElement('div')
+ let minimap = document.createElement('div')
 let minimapSize = document.createElement('div')
 let viewer = document.createElement('div')
 let minimapContent = document.createElement('iframe')
@@ -532,22 +551,41 @@ function trackScroll(){
 getDimensions()
 
 window.addEventListener('resize', getDimensions)
+window.addEventListener('scroll', trackScroll) 
 
 
-let tween = gsap.to(".work-slide-text",{xPercent:-100,repeat:-1,duration:5,ease:"linear"}).totalProgress(0.5)
-gsap.set(".work-slide",{xPercent:-50})
 
-window.addEventListener("scroll",()=>{
-  trackScroll()
-    if(window.pageYOffset>currentScroll) {
-        isScrollingDown = true    } else{
-            isScrollingDown = false
+/* .minimap_container{
+    position:fixed;
+    top:0px;
+    left:0px;
+    min-width:20px;
+    width:100%;
+    z-index:98;
+}
+.minimap_size{
+    position:relative;
+    z-index:50;
+    border:2px solid white;
+}
 
-        }
-        gsap.to(tween,{
-            timeScale:isScrollingDown ? 1 :-1
-        })
-        currentScroll = window.pageYOffset
-})
+.minimap_viewer{
+  width:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    transform-origin:0 0;
+    border:1px solid #787786;
+    z-index:50;
+}
 
-// skills slider //
+.minimap_content{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transform-origin:0 0;
+    border:1px solid white;
+    z-index:49;
+} */
