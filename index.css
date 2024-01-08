@@ -747,7 +747,7 @@ transform-origin: 50% 50%;
     width:100%;
     position:relative;
     z-index:1;
-    
+    color:#313453;
     border-block:1px solid #313453;
 }
 .circleText{
@@ -762,7 +762,6 @@ transform-origin: 50% 50%;
     justify-content:space-between;
     font-size:9dvw;
     font-weight:400;
-    color:#787786;
 }
 .buniq{
     font-family:logo;
