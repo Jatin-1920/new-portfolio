@@ -500,6 +500,7 @@ animateCircle()
 
 // Minimap Webpage //
 
+/*
  let minimap = document.createElement('div')
 let minimapSize = document.createElement('div')
 let viewer = document.createElement('div')
@@ -553,7 +554,7 @@ getDimensions()
 window.addEventListener('resize', getDimensions)
 window.addEventListener('scroll', trackScroll) 
 
-
+*/
 
 /* .minimap_container{
     position:fixed;
