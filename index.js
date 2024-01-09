@@ -419,12 +419,12 @@ function draw(e) {
 }
 
 
-canvas.addEventListener("mousedown",(e)=>{
+canvas.addEventListener("mousemove",(e)=>{
     drawing= true
     [lastX,lastY] = [e.offsetX,e.offsetY]
   
 })
-canvas.addEventListener("mousemove",draw)
+/*canvas.addEventListener("mousemove",draw)*/
 canvas.addEventListener("mouseup",()=> drawing= false )
 canvas.addEventListener("mouseout",()=> drawing= false)
 
