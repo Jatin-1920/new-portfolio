@@ -428,12 +428,13 @@ canvas.addEventListener("mousemove",draw)
 canvas.addEventListener("mouseup",()=> drawing= false )
 canvas.addEventListener("mouseout",()=> drawing= false)
 
-canvas.addEventListener("touchstart",(e)=>{
+canvas.addEventListener("touchmove",(e)=>{
     drawing= true
+      draw(e.touches[0])
     [lastX,lastY] = [e.offsetX,e.offsetY]
   
 })
-canvas.addEventListener("touchmove",draw)
+
 canvas.addEventListener("touchend",()=> drawing= false )
 
 
