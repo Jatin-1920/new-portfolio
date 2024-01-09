@@ -418,23 +418,15 @@ function draw(e) {
   }
 }
 
-function clearCanvas(){
-    ctx.clearRect(0,0,canvas.width,canvas.height)
-}
+
 canvas.addEventListener("mousedown",(e)=>{
     drawing= true
     [lastX,lastY] = [e.offsetX,e.offsetY]
   
 })
 canvas.addEventListener("mousemove",draw)
-canvas.addEventListener("mouseup",(e)=>{
-    drawing= false
-    clearCanvas()
-})
-canvas.addEventListener("mouseout",(e)=>{
-    drawing= false
-    clearCanvas()
-})
+canvas.addEventListener("mouseup",()=> drawing= false )
+canvas.addEventListener("mouseout",()=> drawing= false)
 gsap.to(".about-img", {
   scrollTrigger: {
       trigger:".about-img",
