@@ -427,6 +427,17 @@ canvas.addEventListener("mousedown",(e)=>{
 canvas.addEventListener("mousemove",draw)
 canvas.addEventListener("mouseup",()=> drawing= false )
 canvas.addEventListener("mouseout",()=> drawing= false)
+
+canvas.addEventListener("touchstart",(e)=>{
+    drawing= true
+    [lastX,lastY] = [e.offsetX,e.offsetY]
+  
+})
+canvas.addEventListener("touchmove",draw)
+canvas.addEventListener("touchend",()=> drawing= false )
+
+
+
 gsap.to(".about-img", {
   scrollTrigger: {
       trigger:".about-img",
