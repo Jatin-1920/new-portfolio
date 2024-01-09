@@ -421,6 +421,7 @@ function draw(e) {
 
 canvas.addEventListener("mousemove",(e)=>{
     drawing= true
+      draw()
     [lastX,lastY] = [e.offsetX,e.offsetY]
   
 })
