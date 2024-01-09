@@ -400,7 +400,7 @@ function draw(e) {
     ctx.beginPath() 
     ctx.moveTo(lastX,lastY)
     ctx.strokeStyle = `hsl(${hue},100%,50%)`
-    ctx.lineTo(e.offsetX,e.offsetY)
+    ctx.lineTo(lastX,lastY)
     ctx.stroke()
     [lastX,lastY] = [e.offsetX,e.offsetY]
     hue++
@@ -417,9 +417,7 @@ canvas.addEventListener("mousedown",(e)=>{
     [lastX,lastY] = [e.offsetX,e.offsetY]
   
 })
-canvas.addEventListener("mousemove",(e)=>{
-   draw(e) 
-})
+canvas.addEventListener("mousemove",draw)
 canvas.addEventListener("mouseup",(e)=>{
     drawing= false
     clearCanvas()
