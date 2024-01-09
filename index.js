@@ -400,7 +400,7 @@ function draw(e) {
     ctx.beginPath() 
     ctx.moveTo(lastX,lastY)
     ctx.strokeStyle = `hsl(${hue},100%,50%)`
-    ctx.lineTo(lastX,lastY)
+    ctx.lineTo(e.offsetX,e.offsetY)
     ctx.stroke()
     [lastX,lastY] = [e.offsetX,e.offsetY]
     hue++
