@@ -399,12 +399,13 @@ function draw(e) {
     if(!drawing) return ;
     ctx.beginPath() 
     ctx.moveTo(lastX,lastY)
-    ctx.strokeStyle = `hsl(${hue},100%,50%)`
+  ctx.strokeStyle = `hsl(${hue},100%,50%)`
+  ctx.lineWidth = hue
     ctx.lineTo(e.offsetX,e.offsetY)
     ctx.stroke()
-    [lastX,lastY] = [e.offsetX,e.offsetY]
-    hue++
-    if(hue>=360){
+    [lastX,lastY] = [e.offsetX,e.offsetY];
+    hue++;
+    if (hue>=360){
         hue = 0
     }
 }
