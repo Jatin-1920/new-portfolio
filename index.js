@@ -393,7 +393,7 @@ let drawing = false;
 let lastX = 0;
 let lastY = 0;
 let hue = 0;
-let direction= true
+let direction = true;
 
 function draw(e) {
     if(!drawing) return ;
@@ -419,24 +419,15 @@ function draw(e) {
 }
 
 
-canvas.addEventListener("mousemove",(e)=>{
-    drawing= true
-      draw()
+canvas.addEventListener("mousedown",(e)=>{
+    drawing = true
+  
     [lastX,lastY] = [e.offsetX,e.offsetY]
   
 })
-/*canvas.addEventListener("mousemove",draw)*/
-canvas.addEventListener("mouseup",()=> drawing= false )
-canvas.addEventListener("mouseout",()=> drawing= false)
-
-canvas.addEventListener("touchmove",(e)=>{
-    drawing= true
-      draw(e.touches[0])
-    [lastX,lastY] = [e.offsetX,e.offsetY]
-  
-})
-
-canvas.addEventListener("touchend",()=> drawing= false )
+canvas.addEventListener("mousemove",draw)
+canvas.addEventListener("mouseup",() => drawing = false )
+canvas.addEventListener("mouseout",() => drawing = false)
 
 
 
