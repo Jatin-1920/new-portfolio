@@ -382,8 +382,8 @@ let canvas = document.querySelector(".canvas")
 let footer = document.querySelector(".footer")
 let ctx = canvas.getContext("2d")
 
-canvas.width = footer.clientWidth
-canvas.height = footer.clientHeight
+canvas.width = window.innerWidth
+canvas.height = window.innerHeight
 ctx.lineCap = "round"
 ctx.lineJoin = "round"
 ctx.lineWidth = 100
@@ -396,7 +396,7 @@ let hue = 0;
 let direction= true
 
 function draw(e) {
-    if(!drawing) return 
+    if(!drawing) return ;
     ctx.beginPath() 
     ctx.moveTo(lastX,lastY)
     ctx.strokeStyle = `hsl(${hue},100%,50%)`
